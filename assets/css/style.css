@@ -1671,3 +1671,66 @@ header nav .nav-link:hover {
     justify-content: center;
   }
 }
+
+/* Thu nhỏ modal Chọn kiểu mẫu trên Mobile */
+@media (max-width: 575.98px) {
+  #quickAddModal .modal-body {
+    padding: 1rem;
+  }
+  #quickAddImage {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  #quickAddProductName {
+    font-size: 0.95rem;
+  }
+  #quickAddProductDesc {
+    font-size: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  #quickAddColors .btn, #quickAddStorages .btn {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.8rem;
+  }
+  #quickAddQty {
+    width: 45px !important;
+    height: 32px;
+    padding: 0;
+    font-size: 0.85rem;
+  }
+  #quickAddQtyMinus, #quickAddQtyPlus {
+    padding: 0.15rem 0.5rem;
+    height: 32px;
+  }
+  #quickAddPrice {
+    font-size: 1.1rem;
+  }
+  #quickAddModal .modal-title {
+    font-size: 1.1rem;
+  }
+  #quickAddModal .modal-footer .btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Căn chỉnh lại toast (thanh thông báo) sang phải trên mobile */
+  .toast-box {
+    left: auto !important;
+    right: 16px !important;
+  }
+  .toast-message {
+    min-width: auto !important;
+    max-width: calc(100vw - 32px) !important;
+  }
+  
+  /* Nếu ở giao diện thanh toán (checkout) */
+  .checkout-toast {
+    right: 16px !important;
+    left: auto !important;
+    width: auto !important;
+    max-width: calc(100vw - 32px) !important;
+  }
+}
