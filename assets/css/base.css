@@ -1,0 +1,160 @@
+/* Bien giao dien dung chung */
+:root {
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-footer: "Times New Roman", Times, serif;
+  --brand-dark: #0f172a;
+  --brand-blue: #2251ff;
+  --brand-blue-soft: #e8efff;
+  --brand-orange: #ff7a18;
+  --brand-orange-soft: #fff1e7;
+  --brand-green: #10b981;
+  --text-main: #162033;
+  --text-sub: #5d6b82;
+  --border-soft: rgba(22, 32, 51, 0.1);
+  --shadow-lg: 0 30px 70px rgba(15, 23, 42, 0.14);
+  --shadow-md: 0 18px 35px rgba(15, 23, 42, 0.08);
+  --radius-xl: 32px;
+}
+
+/* Cau hinh mac dinh cua trang */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  background: radial-gradient(circle at top left, rgba(34, 81, 255, 0.1), transparent 30%), radial-gradient(circle at top right, rgba(255, 122, 24, 0.12), transparent 25%), #f4f7fb;
+}
+
+footer {
+  font-family: var(--font-footer);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Thanh phan duoc dung lai o nhieu khu vuc */
+.btn {
+  padding: 0.78rem 1.35rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.btn-outline-dark {
+  border-width: 1.5px;
+}
+
+.section-space {
+  padding: 5.5rem 0;
+}
+
+.category-pill strong,
+.category-pill small,
+.product-name,
+.product-desc {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.section-soft {
+  background: linear-gradient(180deg, rgba(232, 239, 255, 0.65), rgba(255, 255, 255, 0.95)), #fff;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  color: var(--brand-blue);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(34, 81, 255, 0.08);
+}
+
+.section-heading {
+  max-width: 700px;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.75s ease,
+    transform 0.75s ease;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Nut nhan chinh cua giao dien */
+.btn-accent {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--brand-orange), #ff9351);
+  box-shadow: 0 4px 15px rgba(255, 122, 24, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 122, 24, 0.4);
+}
+
+.section-muted {
+  background: #fff;
+}
+
+/* Toast animations for modal */
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+}
+

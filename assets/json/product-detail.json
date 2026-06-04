@@ -1,0 +1,2915 @@
+[
+  {
+    "groupId": "iphone-17e-trang-512gb",
+    "id": "iphone-17e-trang-512gb",
+    "name": "iPhone 17e Trắng (512GB)",
+    "brand": "iPhone",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "iPhone 17e dùng chip Apple A19, camera Fusion 48MP, màn hình Super Retina XDR 6.1 inch và có đúng 2 tuỳ chọn bộ nhớ 256GB/512GB.",
+    "rating": 4.8,
+    "reviewCount": 15,
+    "images": ["./assets/img/Iphone/iphone-17e-trang-512gb-cu_1774510860.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 17990000,
+        "oldPrice": 24490000
+      },
+      {
+        "label": "512GB",
+        "price": 24490000,
+        "oldPrice": 24990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Trắng",
+        "code": "#FAFAFA",
+        "image": "./assets/img/Iphone/iphone-17e-trang-512gb-cu_1774510860.png",
+        "gallery": ["./assets/img/Iphone/iphone-17e-trang-512gb-cu_1774510860.png"]
+      }
+    ],
+    "details": [
+      "iPhone 17e Trắng (512GB) mang đến trải nghiệm sử dụng mượt mà với màn hình 6.1 inch Super Retina XDR, 2532 x 1170 pixels và bộ xử lý Apple A19, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau 48MP Fusion, hỗ trợ zoom quang học 2x kết hợp camera trước 12MP, f/1.9 hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 8GB, bộ nhớ 256GB hoặc 512GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4005mAh cùng công nghệ USB-C, sạc nhanh 20W giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.1 inch Super Retina XDR, 2532 x 1170 pixels",
+      "Chip xử lý": "Apple A19",
+      "RAM": "8GB",
+      "Bộ nhớ trong": "256GB hoặc 512GB",
+      "Camera sau": "48MP Fusion, hỗ trợ zoom quang học 2x",
+      "Camera trước": "12MP, f/1.9",
+      "Pin": "4005mAh",
+      "Sạc": "USB-C, sạc nhanh 20W",
+      "Hệ điều hành": "iOS 26",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "iphone-17e-hong-256gb",
+    "id": "iphone-17e-hong-256gb",
+    "name": "iPhone 17e Hồng (256GB)",
+    "brand": "iPhone",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "iPhone 17e dùng chip Apple A19, camera Fusion 48MP, màn hình Super Retina XDR 6.1 inch và có đúng 2 tuỳ chọn bộ nhớ 256GB/512GB.",
+    "rating": 4.8,
+    "reviewCount": 31,
+    "images": ["./assets/img/Iphone/iphone-17e-hong-256gb-cu_1774509788.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 17990000,
+        "oldPrice": 24490000
+      },
+      {
+        "label": "512GB",
+        "price": 24490000,
+        "oldPrice": 24990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Hồng",
+        "code": "#FCE7E6",
+        "image": "./assets/img/Iphone/iphone-17e-hong-256gb-cu_1774509788.png",
+        "gallery": ["./assets/img/Iphone/iphone-17e-hong-256gb-cu_1774509788.png"]
+      }
+    ],
+    "details": [
+      "iPhone 17e Hồng (256GB) mang đến trải nghiệm sử dụng mượt mà với màn hình 6.1 inch Super Retina XDR, 2532 x 1170 pixels và bộ xử lý Apple A19, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau 48MP Fusion, hỗ trợ zoom quang học 2x kết hợp camera trước 12MP, f/1.9 hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 8GB, bộ nhớ 256GB hoặc 512GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4000mAh cùng công nghệ USB-C, sạc nhanh 20W giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.1 inch Super Retina XDR, 2532 x 1170 pixels",
+      "Chip xử lý": "Apple A19",
+      "RAM": "8GB",
+      "Bộ nhớ trong": "256GB hoặc 512GB",
+      "Camera sau": "48MP Fusion, hỗ trợ zoom quang học 2x",
+      "Camera trước": "12MP, f/1.9",
+      "Pin": "4000mAh",
+      "Sạc": "USB-C, sạc nhanh 20W",
+      "Hệ điều hành": "iOS 26",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "iphone-17-pro-max-bac",
+    "id": "iphone-17-pro-max-bac",
+    "name": "iPhone 17 Pro Max Bạc",
+    "brand": "iPhone",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "iPhone 17 Pro Max là bản cao cấp của dòng iPhone 17, nổi bật với màn hình lớn, chip A19 Pro, camera Pro và thời lượng pin rất dài.",
+    "rating": 5.0,
+    "reviewCount": 60,
+    "images": ["./assets/img/Iphone/iphone-17-pro-max-bac-cu-1tb_1763111830.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 36990000,
+        "oldPrice": 37990000
+      },
+      {
+        "label": "512GB",
+        "price": 42990000,
+        "oldPrice": 44990000
+      },
+      {
+        "label": "1TB",
+        "price": 50990000,
+        "oldPrice": 51990000
+      },
+      {
+        "label": "2TB",
+        "price": 61990000,
+        "oldPrice": 63990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Bạc",
+        "code": "#f5f5f5",
+        "image": "./assets/img/Iphone/iphone-17-pro-max-bac-cu-1tb_1763111830.png",
+        "gallery": ["./assets/img/Iphone/iphone-17-pro-max-bac-cu-1tb_1763111830.png"]
+      }
+    ],
+    "details": [
+      "iPhone 17 Pro Max Bạc mang đến trải nghiệm sử dụng mượt mà với màn hình 6.9 inch Super Retina XDR, ProMotion 120Hz và bộ xử lý Apple A19 Pro, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Hệ thống camera Pro 48MP kết hợp camera trước 12MP Center Stage hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB, 512GB hoặc 1TB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 5000mAh cùng công nghệ USB-C, hỗ trợ sạc nhanh giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.9 inch Super Retina XDR, ProMotion 120Hz",
+      "Chip xử lý": "Apple A19 Pro",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB, 512GB hoặc 1TB",
+      "Camera sau": "Hệ thống camera Pro 48MP",
+      "Camera trước": "12MP Center Stage",
+      "Pin": "5000mAh",
+      "Sạc": "USB-C, hỗ trợ sạc nhanh",
+      "Hệ điều hành": "iOS 26",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "iphone-17-pro-max-cam",
+    "id": "iphone-17-pro-max-cam",
+    "name": "iPhone 17 Pro Max Cam",
+    "brand": "iPhone",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "iPhone 17 Pro Max là bản cao cấp của dòng iPhone 17, nổi bật với màn hình lớn, chip A19 Pro, camera Pro và thời lượng pin rất dài.",
+    "rating": 5.0,
+    "reviewCount": 21,
+    "images": ["./assets/img/Iphone/iphone-17-pro-max-cam-cu_1759916325.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 36990000,
+        "oldPrice": 37990000
+      },
+      {
+        "label": "512GB",
+        "price": 42990000,
+        "oldPrice": 44990000
+      },
+      {
+        "label": "1TB",
+        "price": 50990000,
+        "oldPrice": 51990000
+      },
+      {
+        "label": "2TB",
+        "price": 61990000,
+        "oldPrice": 63990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Cam",
+        "code": "#F77E2C",
+        "image": "./assets/img/Iphone/iphone-17-pro-max-cam-cu_1759916325.png",
+        "gallery": ["./assets/img/Iphone/iphone-17-pro-max-cam-cu_1759916325.png"]
+      }
+    ],
+    "details": [
+      "iPhone 17 Pro Max Cam mang đến trải nghiệm sử dụng mượt mà với màn hình 6.9 inch Super Retina XDR, ProMotion 120Hz và bộ xử lý Apple A19 Pro, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Hệ thống camera Pro 48MP kết hợp camera trước 12MP Center Stage hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB, 512GB hoặc 1TB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 5000mAh cùng công nghệ USB-C, hỗ trợ sạc nhanh giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.9 inch Super Retina XDR, ProMotion 120Hz",
+      "Chip xử lý": "Apple A19 Pro",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB, 512GB hoặc 1TB",
+      "Camera sau": "Hệ thống camera Pro 48MP",
+      "Camera trước": "12MP Center Stage",
+      "Pin": "5000mAh",
+      "Sạc": "USB-C, hỗ trợ sạc nhanh",
+      "Hệ điều hành": "iOS 26",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "iphone-17-pro-xanh",
+    "id": "iphone-17-pro-xanh",
+    "name": "iPhone 17 Pro Xanh",
+    "brand": "iPhone",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "iPhone 17 Pro dùng chip Apple A19 Pro, màn hình ProMotion 120Hz và hệ thống camera Pro, phù hợp nhu cầu quay chụp và xử lý tác vụ nặng.",
+    "rating": 4.9,
+    "reviewCount": 9,
+    "images": ["./assets/img/Iphone/iphone-17-pro-xanh-cu_1761029029.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 34990000,
+        "oldPrice": 36990000
+      },
+      {
+        "label": "512GB",
+        "price": 39990000,
+        "oldPrice": 41490000
+      },
+      {
+        "label": "1TB",
+        "price": 44990000,
+        "oldPrice": 47990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh",
+        "code": "#32374A",
+        "image": "./assets/img/Iphone/iphone-17-pro-xanh-cu_1761029029.png",
+        "gallery": ["./assets/img/Iphone/iphone-17-pro-xanh-cu_1761029029.png"]
+      }
+    ],
+    "details": [
+      "iPhone 17 Pro Xanh mang đến trải nghiệm sử dụng mượt mà với màn hình Super Retina XDR, ProMotion 120Hz và bộ xử lý Apple A19 Pro, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Hệ thống camera Pro 48MP kết hợp camera trước 12MP Center Stage hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB, 512GB hoặc 1TB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4252mAh cùng công nghệ USB-C, hỗ trợ sạc nhanh giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "Super Retina XDR, ProMotion 120Hz",
+      "Chip xử lý": "Apple A19 Pro",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB, 512GB hoặc 1TB",
+      "Camera sau": "Hệ thống camera Pro 48MP",
+      "Camera trước": "12MP Center Stage",
+      "Pin": "4252mAh",
+      "Sạc": "USB-C, hỗ trợ sạc nhanh",
+      "Hệ điều hành": "iOS 26",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "iphone-17-xanh-lam-512gb",
+    "id": "iphone-17-xanh-lam-512gb",
+    "name": "iPhone 17 Xanh Lam (512GB)",
+    "brand": "iPhone",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "iPhone 17 là bản tiêu chuẩn của dòng iPhone 17, nổi bật với chip Apple A19, camera 48MP Fusion Main và thời lượng pin xem video tối đa 30 giờ.",
+    "rating": 4.8,
+    "reviewCount": 21,
+    "images": ["./assets/img/Iphone/iphone-17-xanh-lam-cu-512gb_1763175755.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 24390000,
+        "oldPrice": 24990000
+      },
+      {
+        "label": "512GB",
+        "price": 31490000,
+        "oldPrice": 31990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh",
+        "code": "#A8BCDD",
+        "image": "./assets/img/Iphone/iphone-17-xanh-lam-cu-512gb_1763175755.png",
+        "gallery": ["./assets/img/Iphone/iphone-17-xanh-lam-cu-512gb_1763175755.png"]
+      }
+    ],
+    "details": [
+      "iPhone 17 Xanh Lam (512GB) mang đến trải nghiệm sử dụng mượt mà với màn hình 6.3 inch Super Retina XDR và bộ xử lý Apple A19, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau 48MP Fusion Main kết hợp camera trước 12MP Center Stage hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 8GB, bộ nhớ 256GB hoặc 512GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 3692mAh cùng công nghệ USB-C, sạc nhanh khoảng 50% trong 20 phút với adapter phù hợp giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.3 inch Super Retina XDR",
+      "Chip xử lý": "Apple A19",
+      "RAM": "8GB",
+      "Bộ nhớ trong": "256GB hoặc 512GB",
+      "Camera sau": "48MP Fusion Main",
+      "Camera trước": "12MP Center Stage",
+      "Pin": "3692mAh",
+      "Sạc": "USB-C, sạc nhanh khoảng 50% trong 20 phút với adapter phù hợp",
+      "Hệ điều hành": "iOS 26",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "iphone-17-den",
+    "id": "iphone-17-den",
+    "name": "iPhone 17 Đen",
+    "brand": "iPhone",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "iPhone 17 là bản tiêu chuẩn của dòng iPhone 17, nổi bật với chip Apple A19, camera 48MP Fusion Main và thời lượng pin xem video tối đa 30 giờ.",
+    "rating": 4.9,
+    "reviewCount": 35,
+    "images": ["./assets/img/Iphone/iphone-17-den-cu_1761190356.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 24390000,
+        "oldPrice": 24990000
+      },
+      {
+        "label": "512GB",
+        "price": 31490000,
+        "oldPrice": 31990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Đen",
+        "code": "#494D4F",
+        "image": "./assets/img/Iphone/iphone-17-den-cu_1761190356.png",
+        "gallery": ["./assets/img/Iphone/iphone-17-den-cu_1761190356.png"]
+      }
+    ],
+    "details": [
+      "iPhone 17 Đen mang đến trải nghiệm sử dụng mượt mà với màn hình 6.3 inch Super Retina XDR và bộ xử lý Apple A19, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau 48MP Fusion Main kết hợp camera trước 12MP Center Stage hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 8GB, bộ nhớ 256GB hoặc 512GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 3692mAh cùng công nghệ USB-C, sạc nhanh khoảng 50% trong 20 phút với adapter phù hợp giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.3 inch Super Retina XDR",
+      "Chip xử lý": "Apple A19",
+      "RAM": "8GB",
+      "Bộ nhớ trong": "256GB hoặc 512GB",
+      "Camera sau": "48MP Fusion Main",
+      "Camera trước": "12MP Center Stage",
+      "Pin": "3692mAh",
+      "Sạc": "USB-C, sạc nhanh khoảng 50% trong 20 phút với adapter phù hợp",
+      "Hệ điều hành": "iOS 26",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "asus-gaming-v16-black",
+    "id": "asus-gaming-v16-black",
+    "name": "Asus Gaming V16 Đen",
+    "brand": "Asus",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "ASUS Gaming V16 V3607VU dùng Intel Core 5 210H, RAM 16GB, SSD 512GB, RTX 4050 6GB và màn hình 16 inch WUXGA 144Hz.",
+    "rating": 4.8,
+    "reviewCount": 57,
+    "images": ["./assets/img/Asus/asus_gaming_v16_v3607_black_1_ef14c13760.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 21420000,
+        "oldPrice": 26990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Đen",
+        "code": "#2B2E33",
+        "image": "./assets/img/Asus/asus_gaming_v16_v3607_black_1_ef14c13760.png",
+        "gallery": ["./assets/img/Asus/asus_gaming_v16_v3607_black_1_ef14c13760.png"]
+      }
+    ],
+    "details": [
+      "Asus Gaming V16 Đen nổi bật với màn hình 16 inch WUXGA, tần số quét 144Hz và bộ xử lý Intel Core 5 210H, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Card đồ họa NVIDIA GeForce RTX 4050 6GB hỗ trợ tốt hơn cho chơi game, thiết kế cơ bản, chỉnh sửa hình ảnh/video và các tác vụ cần hiệu năng đồ họa cao.",
+      "Viên pin 63Wh cùng kiểu dáng Laptop gaming 16 inch giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "16 inch WUXGA, tần số quét 144Hz",
+      "CPU": "Intel Core 5 210H",
+      "RAM": "16GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "NVIDIA GeForce RTX 4050 6GB",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "63Wh",
+      "Khối lượng": "Laptop gaming 16 inch"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "asus-tuf-gaming-fa607nu",
+    "id": "asus-tuf-gaming-fa607nu",
+    "name": "Asus TUF Gaming A16",
+    "brand": "Asus",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "ASUS TUF Gaming A15/A16 dùng Ryzen 7 7435HS, RAM 16GB DDR5 và SSD 512GB, phù hợp học tập, làm việc đồ hoạ và chơi game.",
+    "rating": 4.8,
+    "reviewCount": 13,
+    "images": ["./assets/img/Asus/asus_tuf_gaming_fa607nu_01_8f99d6ac66.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 19990000,
+        "oldPrice": 23990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Mặc định",
+        "code": "#2B2E33",
+        "image": "./assets/img/Asus/asus_tuf_gaming_fa607nu_01_8f99d6ac66.png",
+        "gallery": ["./assets/img/Asus/asus_tuf_gaming_fa607nu_01_8f99d6ac66.png"]
+      }
+    ],
+    "details": [
+      "Asus TUF Gaming A16 nổi bật với màn hình 15.6 inch Full HD, tần số quét cao và bộ xử lý AMD Ryzen 7 7435HS, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB DDR5, ổ cứng 512GB SSD NVMe PCIe Gen 4 giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Card đồ họa NVIDIA GeForce RTX 4050/4060 tuỳ phiên bản hỗ trợ tốt hơn cho chơi game, thiết kế cơ bản, chỉnh sửa hình ảnh/video và các tác vụ cần hiệu năng đồ họa cao.",
+      "Viên pin 90Wh cùng kiểu dáng Laptop gaming giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "15.6 inch Full HD, tần số quét cao",
+      "CPU": "AMD Ryzen 7 7435HS",
+      "RAM": "16GB DDR5",
+      "Ổ cứng": "512GB SSD NVMe PCIe Gen 4",
+      "Card đồ họa": "NVIDIA GeForce RTX 4050/4060 tuỳ phiên bản",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "90Wh",
+      "Khối lượng": "Laptop gaming"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "asus-vivobook-m1405-bac",
+    "id": "asus-vivobook-m1405-bac",
+    "name": "Asus Vivobook 14 Bạc",
+    "brand": "Asus",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "ASUS Vivobook 14/S 14 là dòng laptop mỏng nhẹ, phù hợp học tập và văn phòng với RAM 16GB, SSD 512GB.",
+    "rating": 4.8,
+    "reviewCount": 15,
+    "images": ["./assets/img/Asus/asus_vivobook_m1405naq_bac_01_e071d0ffd2.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 12990000,
+        "oldPrice": 15990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Bạc",
+        "code": "#D1D5DB",
+        "image": "./assets/img/Asus/asus_vivobook_m1405naq_bac_01_e071d0ffd2.png",
+        "gallery": ["./assets/img/Asus/asus_vivobook_m1405naq_bac_01_e071d0ffd2.png"]
+      }
+    ],
+    "details": [
+      "Asus Vivobook 14 Bạc nổi bật với màn hình 14 inch và bộ xử lý AMD Ryzen hoặc Intel Core tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa Đồ họa tích hợp đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 42Wh cùng kiểu dáng Mỏng nhẹ giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "14 inch",
+      "CPU": "AMD Ryzen hoặc Intel Core tuỳ phiên bản",
+      "RAM": "16GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "Đồ họa tích hợp",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "42Wh",
+      "Khối lượng": "Mỏng nhẹ"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "asus-vivobook-s14-xam",
+    "id": "asus-vivobook-s14-xam",
+    "name": "Asus Vivobook S 14 Xám",
+    "brand": "Asus",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "ASUS Vivobook 14/S 14 là dòng laptop mỏng nhẹ, phù hợp học tập và văn phòng với RAM 16GB, SSD 512GB.",
+    "rating": 4.9,
+    "reviewCount": 11,
+    "images": ["./assets/img/Asus/asus_vivobook_s14_m3407ga_xam_01_d838912be9.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 12990000,
+        "oldPrice": 15990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xám",
+        "code": "#4E545C",
+        "image": "./assets/img/Asus/asus_vivobook_s14_m3407ga_xam_01_d838912be9.png",
+        "gallery": ["./assets/img/Asus/asus_vivobook_s14_m3407ga_xam_01_d838912be9.png"]
+      }
+    ],
+    "details": [
+      "Asus Vivobook S 14 Xám nổi bật với màn hình 14 inch và bộ xử lý AMD Ryzen hoặc Intel Core tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa Đồ họa tích hợp đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 70Wh cùng kiểu dáng Mỏng nhẹ giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "14 inch",
+      "CPU": "AMD Ryzen hoặc Intel Core tuỳ phiên bản",
+      "RAM": "16GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "Đồ họa tích hợp",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "70Wh",
+      "Khối lượng": "Mỏng nhẹ"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "dell-inspiron-14-bac",
+    "id": "dell-inspiron-14-bac",
+    "name": "Dell Inspiron 14 Bạc",
+    "brand": "Dell",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "Dell Inspiron 14 là laptop văn phòng/học tập, thiết kế bền, hiệu năng ổn định với RAM 16GB và SSD 512GB.",
+    "rating": 4.8,
+    "reviewCount": 56,
+    "images": ["./assets/img/Dell/dell_14_dc14250_bac_01_187ecc6453.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 25490000,
+        "oldPrice": 28990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Bạc",
+        "code": "#E1E4E6",
+        "image": "./assets/img/Dell/dell_14_dc14250_bac_01_187ecc6453.png",
+        "gallery": ["./assets/img/Dell/dell_14_dc14250_bac_01_187ecc6453.png"]
+      }
+    ],
+    "details": [
+      "Dell Inspiron 14 Bạc nổi bật với màn hình 14 inch và bộ xử lý AMD Ryzen hoặc Intel Core tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa Đồ họa tích hợp đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 54Wh cùng kiểu dáng Laptop văn phòng mỏng nhẹ giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "14 inch",
+      "CPU": "AMD Ryzen hoặc Intel Core tuỳ phiên bản",
+      "RAM": "16GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "Đồ họa tích hợp",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "54Wh",
+      "Khối lượng": "Laptop văn phòng mỏng nhẹ"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "dell-inspiron-14-plus-bac",
+    "id": "dell-inspiron-14-plus-bac",
+    "name": "Dell Inspiron 14 Plus Bạc",
+    "brand": "Dell",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "Dell Inspiron 14 là laptop văn phòng/học tập, thiết kế bền, hiệu năng ổn định với RAM 16GB và SSD 512GB.",
+    "rating": 4.9,
+    "reviewCount": 63,
+    "images": ["./assets/img/Dell/dell_14_dc14255_bac_01_c517769386.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 25490000,
+        "oldPrice": 28990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Bạc",
+        "code": "#CCD3DB",
+        "image": "./assets/img/Dell/dell_14_dc14255_bac_01_c517769386.png",
+        "gallery": ["./assets/img/Dell/dell_14_dc14255_bac_01_c517769386.png"]
+      }
+    ],
+    "details": [
+      "Dell Inspiron 14 Plus Bạc nổi bật với màn hình 14 inch và bộ xử lý AMD Ryzen hoặc Intel Core tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa Đồ họa tích hợp đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 64Wh cùng kiểu dáng Laptop văn phòng mỏng nhẹ giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "14 inch",
+      "CPU": "AMD Ryzen hoặc Intel Core tuỳ phiên bản",
+      "RAM": "16GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "Đồ họa tích hợp",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "64Wh",
+      "Khối lượng": "Laptop văn phòng mỏng nhẹ"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "dell-inspiron-15-bac",
+    "id": "dell-inspiron-15-bac",
+    "name": "Dell Inspiron 15 Bạc",
+    "brand": "Dell",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "Dell Inspiron 15/DC15250 là laptop 15 inch cho học tập, văn phòng và giải trí cơ bản.",
+    "rating": 4.8,
+    "reviewCount": 28,
+    "images": ["./assets/img/Dell/dell_15_dc15250_silver_01_050bd1cfe2.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 23590000,
+        "oldPrice": 23990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Bạc",
+        "code": "#E2E5E8",
+        "image": "./assets/img/Dell/dell_15_dc15250_silver_01_050bd1cfe2.png",
+        "gallery": ["./assets/img/Dell/dell_15_dc15250_silver_01_050bd1cfe2.png"]
+      }
+    ],
+    "details": [
+      "Dell Inspiron 15 Bạc nổi bật với màn hình 15.6 inch và bộ xử lý Intel Core/Ryzen tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa Đồ họa tích hợp đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 54Wh cùng kiểu dáng Laptop 15 inch giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "15.6 inch",
+      "CPU": "Intel Core/Ryzen tuỳ phiên bản",
+      "RAM": "16GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "Đồ họa tích hợp",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "54Wh",
+      "Khối lượng": "Laptop 15 inch"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "dell-inspiron-16-den",
+    "id": "dell-inspiron-16-den",
+    "name": "Dell Inspiron 16 Đen",
+    "brand": "Dell",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "Dell Inspiron 16 có màn hình lớn 16 inch, phù hợp làm việc đa nhiệm và học tập.",
+    "rating": 4.9,
+    "reviewCount": 68,
+    "images": ["./assets/img/Dell/dell_16_dc16250_black_01_04d6a9e57c.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 26990000,
+        "oldPrice": 29990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Đen",
+        "code": "#1A1C1E",
+        "image": "./assets/img/Dell/dell_16_dc16250_black_01_04d6a9e57c.png",
+        "gallery": ["./assets/img/Dell/dell_16_dc16250_black_01_04d6a9e57c.png"]
+      }
+    ],
+    "details": [
+      "Dell Inspiron 16 Đen nổi bật với màn hình 16 inch và bộ xử lý Intel Core/Ryzen tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa Đồ họa tích hợp hoặc rời tuỳ cấu hình đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 54Wh cùng kiểu dáng Laptop 16 inch giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "16 inch",
+      "CPU": "Intel Core/Ryzen tuỳ phiên bản",
+      "RAM": "16GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "Đồ họa tích hợp hoặc rời tuỳ cấu hình",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "54Wh",
+      "Khối lượng": "Laptop 16 inch"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "xiaomi-poco-c85-8gb-256gb-xanh",
+    "id": "xiaomi-poco-c85-8gb-256gb-xanh",
+    "name": "Xiaomi POCO C85 Xanh",
+    "brand": "Xiaomi",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Máy thuộc nhóm điện thoại Xiaomi POCO/realme tầm trung, ưu tiên hiệu năng, bộ nhớ lớn và giá tốt.",
+    "rating": 4.7,
+    "reviewCount": 44,
+    "images": ["./assets/img/Xiaomi/xiaomi-poco-c85-8gb-256gb-xanh_1769826456.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 6290000,
+        "oldPrice": 7490000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh",
+        "code": "#C6E5E8",
+        "image": "./assets/img/Xiaomi/xiaomi-poco-c85-8gb-256gb-xanh_1769826456.png",
+        "gallery": ["./assets/img/Xiaomi/xiaomi-poco-c85-8gb-256gb-xanh_1769826456.png"]
+      }
+    ],
+    "details": [
+      "Xiaomi POCO C85 Xanh mang đến trải nghiệm sử dụng mượt mà với màn hình Màn hình lớn, tần số quét cao và bộ xử lý Chip tầm trung tối ưu hiệu năng, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Camera chính độ phân giải cao kết hợp camera trước Camera selfie hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 8GB, bộ nhớ 256GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 6000mAh cùng công nghệ Sạc nhanh giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "Màn hình lớn, tần số quét cao",
+      "Chip xử lý": "Chip tầm trung tối ưu hiệu năng",
+      "RAM": "8GB",
+      "Bộ nhớ trong": "256GB",
+      "Camera sau": "Camera chính độ phân giải cao",
+      "Camera trước": "Camera selfie",
+      "Pin": "6000mAh",
+      "Sạc": "Sạc nhanh",
+      "Hệ điều hành": "Android",
+      "SIM": "2 Nano-SIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "hp-250r-g10-silver",
+    "id": "hp-250r-g10-silver",
+    "name": "HP 250R G10 Silver",
+    "brand": "HP",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "HP 250/250R là dòng laptop văn phòng phổ thông, phù hợp học tập, làm việc và sử dụng hằng ngày.",
+    "rating": 4.7,
+    "reviewCount": 58,
+    "images": ["./assets/img/Hp/hp_250r_g10_silver_01_cf923f35fe.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 10990000,
+        "oldPrice": 13990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Silver",
+        "code": "#C0C0C0",
+        "image": "./assets/img/Hp/hp_250r_g10_silver_01_cf923f35fe.png",
+        "gallery": ["./assets/img/Hp/hp_250r_g10_silver_01_cf923f35fe.png"]
+      }
+    ],
+    "details": [
+      "HP 250R G10 Silver nổi bật với màn hình 15.6 inch và bộ xử lý Intel Core tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 8GB hoặc 16GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa Đồ họa tích hợp đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 41Wh cùng kiểu dáng Laptop văn phòng giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "15.6 inch",
+      "CPU": "Intel Core tuỳ phiên bản",
+      "RAM": "8GB hoặc 16GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "Đồ họa tích hợp",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "41Wh",
+      "Khối lượng": "Laptop văn phòng"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "hp-omnibook-7-14-fs-silver",
+    "id": "hp-omnibook-7-14-fs-silver",
+    "name": "HP OmniBook 7 14 Silver",
+    "brand": "HP",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "HP OmniBook 7 14 là laptop mỏng nhẹ cao cấp, phù hợp làm việc di động và học tập.",
+    "rating": 4.9,
+    "reviewCount": 32,
+    "images": ["./assets/img/Hp/hp_omnibook_7_14_fs_silver_01_7384270d28.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 24990000,
+        "oldPrice": 27990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Silver",
+        "code": "#D2D7DF",
+        "image": "./assets/img/Hp/hp_omnibook_7_14_fs_silver_01_7384270d28.png",
+        "gallery": ["./assets/img/Hp/hp_omnibook_7_14_fs_silver_01_7384270d28.png"]
+      }
+    ],
+    "details": [
+      "HP OmniBook 7 14 Silver nổi bật với màn hình 14 inch và bộ xử lý Intel Core Ultra/AMD Ryzen AI tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa Đồ họa tích hợp đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 59Wh cùng kiểu dáng Laptop mỏng nhẹ giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "14 inch",
+      "CPU": "Intel Core Ultra/AMD Ryzen AI tuỳ phiên bản",
+      "RAM": "16GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "Đồ họa tích hợp",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "59Wh",
+      "Khối lượng": "Laptop mỏng nhẹ"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "hp-250-g10-silver",
+    "id": "hp-250-g10-silver",
+    "name": "HP 250 G10 Silver",
+    "brand": "HP",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "HP 250/250R là dòng laptop văn phòng phổ thông, phù hợp học tập, làm việc và sử dụng hằng ngày.",
+    "rating": 4.7,
+    "reviewCount": 55,
+    "images": ["./assets/img/Hp/hp_250_g10_sliver_01_3eddbbedd9.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 10990000,
+        "oldPrice": 13990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Silver",
+        "code": "#C0C0C0",
+        "image": "./assets/img/Hp/hp_250_g10_sliver_01_3eddbbedd9.png",
+        "gallery": ["./assets/img/Hp/hp_250_g10_sliver_01_3eddbbedd9.png"]
+      }
+    ],
+    "details": [
+      "HP 250 G10 Silver nổi bật với màn hình 15.6 inch và bộ xử lý Intel Core tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 8GB hoặc 16GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa Đồ họa tích hợp đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 41Wh cùng kiểu dáng Laptop văn phòng giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "15.6 inch",
+      "CPU": "Intel Core tuỳ phiên bản",
+      "RAM": "8GB hoặc 16GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "Đồ họa tích hợp",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "41Wh",
+      "Khối lượng": "Laptop văn phòng"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "hp-250r-g9-black",
+    "id": "hp-250r-g9-black",
+    "name": "HP 250R G9 Black",
+    "brand": "HP",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "HP 250/250R là dòng laptop văn phòng phổ thông, phù hợp học tập, làm việc và sử dụng hằng ngày.",
+    "rating": 4.6,
+    "reviewCount": 28,
+    "images": ["./assets/img/Hp/hp_250r_g9_black_01_4fe59a48f0.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 10990000,
+        "oldPrice": 13990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "code": "#2F3136",
+        "image": "./assets/img/Hp/hp_250r_g9_black_01_4fe59a48f0.png",
+        "gallery": ["./assets/img/Hp/hp_250r_g9_black_01_4fe59a48f0.png"]
+      }
+    ],
+    "details": [
+      "HP 250R G9 Black nổi bật với màn hình 15.6 inch và bộ xử lý Intel Core tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 8GB hoặc 16GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa Đồ họa tích hợp đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 41Wh cùng kiểu dáng Laptop văn phòng giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "15.6 inch",
+      "CPU": "Intel Core tuỳ phiên bản",
+      "RAM": "8GB hoặc 16GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "Đồ họa tích hợp",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "41Wh",
+      "Khối lượng": "Laptop văn phòng"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "lenovo-gaming-loq-15arp10e-xam",
+    "id": "lenovo-gaming-loq-15arp10e-xam",
+    "name": "Lenovo Gaming LOQ 15ARP10E Xám",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "Lenovo LOQ 15ARP9/15ARP10E là laptop gaming tầm trung, nổi bật với CPU Ryzen, RAM lớn và card đồ hoạ NVIDIA RTX.",
+    "rating": 4.8,
+    "reviewCount": 54,
+    "images": ["./assets/img/Lenovo/lenovo_gaming_loq_15arp10e_xam_01_9030b306bc.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 22490000,
+        "oldPrice": 24990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xám",
+        "code": "#60646B",
+        "image": "./assets/img/Lenovo/lenovo_gaming_loq_15arp10e_xam_01_9030b306bc.png",
+        "gallery": ["./assets/img/Lenovo/lenovo_gaming_loq_15arp10e_xam_01_9030b306bc.png"]
+      }
+    ],
+    "details": [
+      "Lenovo Gaming LOQ 15ARP10E Xám nổi bật với màn hình 15.6 inch Full HD, 144Hz và bộ xử lý AMD Ryzen 7 7435HS hoặc Ryzen 5 7235HS tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 24GB DDR5, ổ cứng 512GB hoặc 1TB SSD NVMe PCIe Gen 4 giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Card đồ họa NVIDIA GeForce RTX 4050/3050 tuỳ phiên bản hỗ trợ tốt hơn cho chơi game, thiết kế cơ bản, chỉnh sửa hình ảnh/video và các tác vụ cần hiệu năng đồ họa cao.",
+      "Viên pin 60Wh cùng kiểu dáng Khoảng 2.38kg giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "15.6 inch Full HD, 144Hz",
+      "CPU": "AMD Ryzen 7 7435HS hoặc Ryzen 5 7235HS tuỳ phiên bản",
+      "RAM": "24GB DDR5",
+      "Ổ cứng": "512GB hoặc 1TB SSD NVMe PCIe Gen 4",
+      "Card đồ họa": "NVIDIA GeForce RTX 4050/3050 tuỳ phiên bản",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "60Wh",
+      "Khối lượng": "Khoảng 2.38kg"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "lenovo-gaming-legion-5-15ahp11-black",
+    "id": "lenovo-gaming-legion-5-15ahp11-black",
+    "name": "Lenovo Gaming Legion 5 15AHP11 Black",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "Lenovo Legion 5 là laptop gaming hiệu năng cao, phù hợp chơi game, học đồ hoạ và dựng video.",
+    "rating": 4.9,
+    "reviewCount": 65,
+    "images": ["./assets/img/Lenovo/lenovo_gaming_legion_5_15ahp11_black_01_23c781a788.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 31990000,
+        "oldPrice": 35990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "code": "#4A4D53",
+        "image": "./assets/img/Lenovo/lenovo_gaming_legion_5_15ahp11_black_01_23c781a788.png",
+        "gallery": ["./assets/img/Lenovo/lenovo_gaming_legion_5_15ahp11_black_01_23c781a788.png"]
+      }
+    ],
+    "details": [
+      "Lenovo Gaming Legion 5 15AHP11 Black nổi bật với màn hình 15.6 inch, tần số quét cao và bộ xử lý AMD Ryzen hiệu năng cao, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB hoặc 24GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Card đồ họa NVIDIA GeForce RTX dòng gaming hỗ trợ tốt hơn cho chơi game, thiết kế cơ bản, chỉnh sửa hình ảnh/video và các tác vụ cần hiệu năng đồ họa cao.",
+      "Viên pin 80Wh cùng kiểu dáng Laptop gaming giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "15.6 inch, tần số quét cao",
+      "CPU": "AMD Ryzen hiệu năng cao",
+      "RAM": "16GB hoặc 24GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "NVIDIA GeForce RTX dòng gaming",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "80Wh",
+      "Khối lượng": "Laptop gaming"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "lenovo-gaming-loq-e-15-iax9e",
+    "id": "lenovo-gaming-loq-e-15-iax9e",
+    "name": "Lenovo Gaming LOQ E 15 IAX9E",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "Lenovo LOQ 15ARP9/15ARP10E là laptop gaming tầm trung, nổi bật với CPU Ryzen, RAM lớn và card đồ hoạ NVIDIA RTX.",
+    "rating": 4.8,
+    "reviewCount": 59,
+    "images": ["./assets/img/Lenovo/Lenovo_Gaming_LOQ_E_15_IAX_9_E_1_cb0600a2d8.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 22490000,
+        "oldPrice": 24990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Mặc định",
+        "code": "#60646B",
+        "image": "./assets/img/Lenovo/Lenovo_Gaming_LOQ_E_15_IAX_9_E_1_cb0600a2d8.png",
+        "gallery": ["./assets/img/Lenovo/Lenovo_Gaming_LOQ_E_15_IAX_9_E_1_cb0600a2d8.png"]
+      }
+    ],
+    "details": [
+      "Lenovo Gaming LOQ E 15 IAX9E nổi bật với màn hình 15.6 inch Full HD, 144Hz và bộ xử lý AMD Ryzen 7 7435HS hoặc Ryzen 5 7235HS tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 24GB DDR5, ổ cứng 512GB hoặc 1TB SSD NVMe PCIe Gen 4 giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Card đồ họa NVIDIA GeForce RTX 4050/3050 tuỳ phiên bản hỗ trợ tốt hơn cho chơi game, thiết kế cơ bản, chỉnh sửa hình ảnh/video và các tác vụ cần hiệu năng đồ họa cao.",
+      "Viên pin 60Wh cùng kiểu dáng Khoảng 2.38kg giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "15.6 inch Full HD, 144Hz",
+      "CPU": "AMD Ryzen 7 7435HS hoặc Ryzen 5 7235HS tuỳ phiên bản",
+      "RAM": "24GB DDR5",
+      "Ổ cứng": "512GB hoặc 1TB SSD NVMe PCIe Gen 4",
+      "Card đồ họa": "NVIDIA GeForce RTX 4050/3050 tuỳ phiên bản",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "60Wh",
+      "Khối lượng": "Khoảng 2.38kg"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "lenovo-loq-15arp9-xam",
+    "id": "lenovo-loq-15arp9-xam",
+    "name": "Lenovo LOQ 15ARP9 Xám",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "Lenovo LOQ 15ARP9/15ARP10E là laptop gaming tầm trung, nổi bật với CPU Ryzen, RAM lớn và card đồ hoạ NVIDIA RTX.",
+    "rating": 4.8,
+    "reviewCount": 47,
+    "images": ["./assets/img/Lenovo/lenovo_loq_15arp9_xam_1_b24b7d71b5.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 22490000,
+        "oldPrice": 24990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xám",
+        "code": "#60646B",
+        "image": "./assets/img/Lenovo/lenovo_loq_15arp9_xam_1_b24b7d71b5.png",
+        "gallery": ["./assets/img/Lenovo/lenovo_loq_15arp9_xam_1_b24b7d71b5.png"]
+      }
+    ],
+    "details": [
+      "Lenovo LOQ 15ARP9 Xám nổi bật với màn hình 15.6 inch Full HD, 144Hz và bộ xử lý AMD Ryzen 7 7435HS hoặc Ryzen 5 7235HS tuỳ phiên bản, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 24GB DDR5, ổ cứng 512GB hoặc 1TB SSD NVMe PCIe Gen 4 giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Card đồ họa NVIDIA GeForce RTX 4050/3050 tuỳ phiên bản hỗ trợ tốt hơn cho chơi game, thiết kế cơ bản, chỉnh sửa hình ảnh/video và các tác vụ cần hiệu năng đồ họa cao.",
+      "Viên pin 60Wh cùng kiểu dáng Khoảng 2.38kg giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "15.6 inch Full HD, 144Hz",
+      "CPU": "AMD Ryzen 7 7435HS hoặc Ryzen 5 7235HS tuỳ phiên bản",
+      "RAM": "24GB DDR5",
+      "Ổ cứng": "512GB hoặc 1TB SSD NVMe PCIe Gen 4",
+      "Card đồ họa": "NVIDIA GeForce RTX 4050/3050 tuỳ phiên bản",
+      "Hệ điều hành": "Windows 11",
+      "Pin": "60Wh",
+      "Khối lượng": "Khoảng 2.38kg"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "oppo-a5i-pro-8gb-128gb-tim",
+    "id": "oppo-a5i-pro-8gb-128gb-tim",
+    "name": "OPPO A5i Pro Tím",
+    "brand": "OPPO",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "OPPO A5i Pro 8GB/128GB nổi bật với pin 6000mAh, sạc nhanh 45W, RAM 8GB và camera chính 50MP.",
+    "rating": 4.6,
+    "reviewCount": 20,
+    "images": ["./assets/img/Oppo/oppo-a5i-pro-8gb-128gb-tim_1775616386.png"],
+    "storages": [
+      {
+        "label": "128GB",
+        "price": 6290000,
+        "oldPrice": 6990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Tím",
+        "code": "#3F265C",
+        "image": "./assets/img/Oppo/oppo-a5i-pro-8gb-128gb-tim_1775616386.png",
+        "gallery": ["./assets/img/Oppo/oppo-a5i-pro-8gb-128gb-tim_1775616386.png"]
+      }
+    ],
+    "details": [
+      "OPPO A5i Pro Tím mang đến trải nghiệm sử dụng mượt mà với màn hình 6.67 inch, độ sáng tối đa khoảng 1000 nits và bộ xử lý Snapdragon 6s Gen 1, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau 50MP kết hợp camera trước 5MP hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 8GB, bộ nhớ 128GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 6000mAh cùng công nghệ 45W giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.67 inch, độ sáng tối đa khoảng 1000 nits",
+      "Chip xử lý": "Snapdragon 6s Gen 1",
+      "RAM": "8GB",
+      "Bộ nhớ trong": "128GB",
+      "Camera sau": "50MP",
+      "Camera trước": "5MP",
+      "Pin": "6000mAh",
+      "Sạc": "45W",
+      "Hệ điều hành": "ColorOS trên nền Android",
+      "SIM": "2 Nano-SIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "oppo-reno15-f-5g-256gb-xanh-aurora",
+    "id": "oppo-reno15-f-5g-256gb-xanh-aurora",
+    "name": "OPPO Reno15 F 5G Xanh Aurora",
+    "brand": "OPPO",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "OPPO Reno15 F 5G 12GB/256GB có chip Snapdragon 6 Gen 1 5G, pin 7000mAh, sạc 80W và camera selfie 50MP.",
+    "rating": 4.8,
+    "reviewCount": 29,
+    "images": ["./assets/img/Oppo/oppo-reno15-f-5g-256gb-xanh-aurora_1775618961.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 12990000,
+        "oldPrice": 12990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh",
+        "code": "#C5DAF5",
+        "image": "./assets/img/Oppo/oppo-reno15-f-5g-256gb-xanh-aurora_1775618961.png",
+        "gallery": ["./assets/img/Oppo/oppo-reno15-f-5g-256gb-xanh-aurora_1775618961.png"]
+      }
+    ],
+    "details": [
+      "OPPO Reno15 F 5G Xanh Aurora mang đến trải nghiệm sử dụng mượt mà với màn hình 6.57 inch Full HD+ và bộ xử lý Snapdragon 6 Gen 1 5G, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Chính 50MP + 8MP + 2MP kết hợp camera trước 50MP siêu rộng hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 7000mAh cùng công nghệ 80W giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.57 inch Full HD+",
+      "Chip xử lý": "Snapdragon 6 Gen 1 5G",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB",
+      "Camera sau": "Chính 50MP + 8MP + 2MP",
+      "Camera trước": "50MP siêu rộng",
+      "Pin": "7000mAh",
+      "Sạc": "80W",
+      "Hệ điều hành": "ColorOS 16 trên nền Android 16",
+      "SIM": "2 Nano-SIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "oppo-a6t-6gb-256gb-xanh",
+    "id": "oppo-a6t-6gb-256gb-xanh",
+    "name": "OPPO A6T Xanh",
+    "brand": "OPPO",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "OPPO A6t 6GB/256GB dùng chip Snapdragon 685, pin 6100mAh, màn hình 6.75 inch và bộ nhớ 256GB.",
+    "rating": 4.6,
+    "reviewCount": 52,
+    "images": ["./assets/img/Oppo/oppo-a6t-6gb-256gb-xanh_1775551833.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 7490000,
+        "oldPrice": 7490000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh",
+        "code": "#D6DBEE",
+        "image": "./assets/img/Oppo/oppo-a6t-6gb-256gb-xanh_1775551833.png",
+        "gallery": ["./assets/img/Oppo/oppo-a6t-6gb-256gb-xanh_1775551833.png"]
+      }
+    ],
+    "details": [
+      "OPPO A6T Xanh mang đến trải nghiệm sử dụng mượt mà với màn hình 6.75 inch HD+ và bộ xử lý Snapdragon 685, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau 13MP + QVGA kết hợp camera trước 5MP hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 6GB, bộ nhớ 256GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 6100mAh cùng công nghệ 15W giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.75 inch HD+",
+      "Chip xử lý": "Snapdragon 685",
+      "RAM": "6GB",
+      "Bộ nhớ trong": "256GB",
+      "Camera sau": "13MP + QVGA",
+      "Camera trước": "5MP",
+      "Pin": "6100mAh",
+      "Sạc": "15W",
+      "Hệ điều hành": "ColorOS trên nền Android",
+      "SIM": "2 Nano-SIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "samsung-galaxy-a07-xanh-la",
+    "id": "samsung-galaxy-a07-xanh-la",
+    "name": "Samsung Galaxy A07 Xanh Lá",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy A07 màu xanh lá là mẫu máy phổ thông dễ dùng, có thời lượng pin tốt và giao diện One UI thân thiện cho nhu cầu cơ bản mỗi ngày.",
+    "rating": 4.6,
+    "reviewCount": 35,
+    "images": ["./assets/img/Samsung/samsung-galaxy-a07-xanh-la_1755316838.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 4220000,
+        "oldPrice": 5480000
+      },
+      {
+        "label": "512GB",
+        "price": 4720000,
+        "oldPrice": 6130000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh",
+        "code": "#1A4844",
+        "image": "./assets/img/Samsung/samsung-galaxy-a07-xanh-la_1755316838.png",
+        "gallery": ["./assets/img/Samsung/samsung-galaxy-a07-xanh-la_1755316838.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy A07 Xanh Lá mang đến trải nghiệm sử dụng mượt mà với màn hình OLED/AMOLED 6.1 - 6.9 inch, tần số quét cao và bộ xử lý Hiệu năng mạnh, tối ưu chơi game và đa nhiệm, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Camera độ phân giải cao, hỗ trợ chụp đêm và quay video kết hợp camera trước Camera selfie sắc nét hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 6GB, bộ nhớ 256GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 5000mAh đáp ứng tốt nhu cầu sử dụng trong ngày, từ liên lạc, xem nội dung đến xử lý các tác vụ thường xuyên."
+    ],
+    "specs": {
+      "Màn hình": "OLED/AMOLED 6.1 - 6.9 inch, tần số quét cao",
+      "Chip xử lý": "Hiệu năng mạnh, tối ưu chơi game và đa nhiệm",
+      "RAM": "6GB",
+      "Bộ nhớ trong": "256GB",
+      "Camera sau": "Camera độ phân giải cao, hỗ trợ chụp đêm và quay video",
+      "Camera trước": "Camera selfie sắc nét",
+      "Pin": "5000mAh",
+      "Hệ điều hành": "Android hoặc iOS tùy dòng máy"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-z-fold7-xanh-navy-512gb",
+    "id": "galaxy-z-fold7-xanh-navy-512gb",
+    "name": "Samsung Galaxy Z Fold7 Xanh Navy 512GB",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy Z Fold7 là điện thoại gập dạng sách, phù hợp đa nhiệm, làm việc và giải trí trên màn hình lớn.",
+    "rating": 5.0,
+    "reviewCount": 27,
+    "images": ["./assets/img/Samsung/galaxy-z-fold7-xanh-navy-512gb_1765596425.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 46990000,
+        "oldPrice": 49990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh Navy",
+        "code": "#1F2F56",
+        "image": "./assets/img/Samsung/galaxy-z-fold7-xanh-navy-512gb_1765596425.png",
+        "gallery": ["./assets/img/Samsung/galaxy-z-fold7-xanh-navy-512gb_1765596425.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy Z Fold7 Xanh Navy 512GB mang đến trải nghiệm sử dụng mượt mà với màn hình Màn hình gập Dynamic AMOLED 2X và bộ xử lý Snapdragon cao cấp for Galaxy, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Cụm camera đa ống kính kết hợp camera trước Camera trên màn hình phụ và màn hình chính hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 512GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4400mAh cùng công nghệ Sạc nhanh có dây, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "Màn hình gập Dynamic AMOLED 2X",
+      "Chip xử lý": "Snapdragon cao cấp for Galaxy",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "512GB",
+      "Camera sau": "Cụm camera đa ống kính",
+      "Camera trước": "Camera trên màn hình phụ và màn hình chính",
+      "Pin": "4400mAh",
+      "Sạc": "Sạc nhanh có dây, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-z-fold6-xanh-navy-1tb",
+    "id": "galaxy-z-fold6-xanh-navy-1tb",
+    "name": "Samsung Galaxy Z Fold6 Xanh Navy 1TB",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy Z Fold6 dùng chip Snapdragon 8 Gen 3 for Galaxy, thiết kế gập dạng sách và màn hình lớn cho đa nhiệm.",
+    "rating": 4.9,
+    "reviewCount": 4,
+    "images": ["./assets/img/Samsung/galaxy-z-fold6-xanh-navy-1tb_1745642637.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 32990000,
+        "oldPrice": 43990000
+      },
+      {
+        "label": "512GB",
+        "price": 36990000,
+        "oldPrice": 47990000
+      },
+      {
+        "label": "1TB",
+        "price": 44990000,
+        "oldPrice": 54990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh Navy",
+        "code": "#2A2E42",
+        "image": "./assets/img/Samsung/galaxy-z-fold6-xanh-navy-1tb_1745642637.png",
+        "gallery": ["./assets/img/Samsung/galaxy-z-fold6-xanh-navy-1tb_1745642637.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy Z Fold6 Xanh Navy 1TB mang đến trải nghiệm sử dụng mượt mà với màn hình Màn hình chính 7.6 inch Dynamic AMOLED 2X, màn hình phụ 6.3 inch và bộ xử lý Snapdragon 8 Gen 3 for Galaxy, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau 50MP + 12MP + 10MP kết hợp camera trước 10MP màn hình phụ, 4MP dưới màn hình chính hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB, 512GB hoặc 1TB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4400mAh cùng công nghệ Sạc nhanh 25W, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "Màn hình chính 7.6 inch Dynamic AMOLED 2X, màn hình phụ 6.3 inch",
+      "Chip xử lý": "Snapdragon 8 Gen 3 for Galaxy",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB, 512GB hoặc 1TB",
+      "Camera sau": "50MP + 12MP + 10MP",
+      "Camera trước": "10MP màn hình phụ, 4MP dưới màn hình chính",
+      "Pin": "4400mAh",
+      "Sạc": "Sạc nhanh 25W, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-z-fold6-xam-metal",
+    "id": "galaxy-z-fold6-xam-metal",
+    "name": "Samsung Galaxy Z Fold6 Xám Metal",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy Z Fold6 dùng chip Snapdragon 8 Gen 3 for Galaxy, thiết kế gập dạng sách và màn hình lớn cho đa nhiệm.",
+    "rating": 4.9,
+    "reviewCount": 57,
+    "images": ["./assets/img/Samsung/galaxy-z-fold6-xam-metal_1720665444.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 32990000,
+        "oldPrice": 43990000
+      },
+      {
+        "label": "512GB",
+        "price": 36990000,
+        "oldPrice": 47990000
+      },
+      {
+        "label": "1TB",
+        "price": 44990000,
+        "oldPrice": 54990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xám",
+        "code": "#9C9C9C",
+        "image": "./assets/img/Samsung/galaxy-z-fold6-xam-metal_1720665444.png",
+        "gallery": ["./assets/img/Samsung/galaxy-z-fold6-xam-metal_1720665444.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy Z Fold6 Xám Metal mang đến trải nghiệm sử dụng mượt mà với màn hình Màn hình chính 7.6 inch Dynamic AMOLED 2X, màn hình phụ 6.3 inch và bộ xử lý Snapdragon 8 Gen 3 for Galaxy, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau 50MP + 12MP + 10MP kết hợp camera trước 10MP màn hình phụ, 4MP dưới màn hình chính hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB, 512GB hoặc 1TB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4400mAh cùng công nghệ Sạc nhanh 25W, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "Màn hình chính 7.6 inch Dynamic AMOLED 2X, màn hình phụ 6.3 inch",
+      "Chip xử lý": "Snapdragon 8 Gen 3 for Galaxy",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB, 512GB hoặc 1TB",
+      "Camera sau": "50MP + 12MP + 10MP",
+      "Camera trước": "10MP màn hình phụ, 4MP dưới màn hình chính",
+      "Pin": "4400mAh",
+      "Sạc": "Sạc nhanh 25W, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-z-fold6-hong-rose-512gb",
+    "id": "galaxy-z-fold6-hong-rose-512gb",
+    "name": "Samsung Galaxy Z Fold6 Hồng Rose 512GB",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy Z Fold6 dùng chip Snapdragon 8 Gen 3 for Galaxy, thiết kế gập dạng sách và màn hình lớn cho đa nhiệm.",
+    "rating": 4.9,
+    "reviewCount": 4,
+    "images": ["./assets/img/Samsung/galaxy-z-fold6-hong-rose-512gb_1745642022.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 32990000,
+        "oldPrice": 43990000
+      },
+      {
+        "label": "512GB",
+        "price": 36990000,
+        "oldPrice": 47990000
+      },
+      {
+        "label": "1TB",
+        "price": 44990000,
+        "oldPrice": 54990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Hồng",
+        "code": "#EFDEE2",
+        "image": "./assets/img/Samsung/galaxy-z-fold6-hong-rose-512gb_1745642022.png",
+        "gallery": ["./assets/img/Samsung/galaxy-z-fold6-hong-rose-512gb_1745642022.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy Z Fold6 Hồng Rose 512GB mang đến trải nghiệm sử dụng mượt mà với màn hình Màn hình chính 7.6 inch Dynamic AMOLED 2X, màn hình phụ 6.3 inch và bộ xử lý Snapdragon 8 Gen 3 for Galaxy, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau 50MP + 12MP + 10MP kết hợp camera trước 10MP màn hình phụ, 4MP dưới màn hình chính hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB, 512GB hoặc 1TB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4400mAh cùng công nghệ Sạc nhanh 25W, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "Màn hình chính 7.6 inch Dynamic AMOLED 2X, màn hình phụ 6.3 inch",
+      "Chip xử lý": "Snapdragon 8 Gen 3 for Galaxy",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB, 512GB hoặc 1TB",
+      "Camera sau": "50MP + 12MP + 10MP",
+      "Camera trước": "10MP màn hình phụ, 4MP dưới màn hình chính",
+      "Pin": "4400mAh",
+      "Sạc": "Sạc nhanh 25W, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-z-flip7-xanh-navy-512gb",
+    "id": "galaxy-z-flip7-xanh-navy-512gb",
+    "name": "Samsung Galaxy Z Flip7 Xanh Navy 512GB",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy Z Flip7 là điện thoại gập vỏ sò, tập trung vào thiết kế nhỏ gọn, màn hình ngoài tiện lợi và camera linh hoạt.",
+    "rating": 4.9,
+    "reviewCount": 16,
+    "images": ["./assets/img/Samsung/galaxy-z-flip7-xanh-navy-512gb_1765596471.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 26990000,
+        "oldPrice": 29990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh Navy",
+        "code": "#354779",
+        "image": "./assets/img/Samsung/galaxy-z-flip7-xanh-navy-512gb_1765596471.png",
+        "gallery": ["./assets/img/Samsung/galaxy-z-flip7-xanh-navy-512gb_1765596471.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy Z Flip7 Xanh Navy 512GB mang đến trải nghiệm sử dụng mượt mà với màn hình Màn hình gập Dynamic AMOLED 2X và bộ xử lý Chip cao cấp dòng Galaxy Z, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Camera kép kết hợp camera trước Camera selfie trên màn hình chính hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 512GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4300mAh cùng công nghệ Sạc nhanh có dây, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "Màn hình gập Dynamic AMOLED 2X",
+      "Chip xử lý": "Chip cao cấp dòng Galaxy Z",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "512GB",
+      "Camera sau": "Camera kép",
+      "Camera trước": "Camera selfie trên màn hình chính",
+      "Pin": "4300mAh",
+      "Sạc": "Sạc nhanh có dây, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-z-flip6-xanh-mint-512gb",
+    "id": "galaxy-z-flip6-xanh-mint-512gb",
+    "name": "Samsung Galaxy Z Flip6 Xanh Mint 512GB",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy Z Flip6 dùng chip Snapdragon 8 Gen 3 for Galaxy, RAM 12GB, thiết kế gập nhỏ gọn và camera chính 50MP.",
+    "rating": 4.8,
+    "reviewCount": 7,
+    "images": ["./assets/img/Samsung/galaxy-z-flip6-xanh-mint-512gb_1745640719.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 19990000,
+        "oldPrice": 28990000
+      },
+      {
+        "label": "512GB",
+        "price": 22990000,
+        "oldPrice": 32990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh",
+        "code": "#D3EEE4",
+        "image": "./assets/img/Samsung/galaxy-z-flip6-xanh-mint-512gb_1745640719.png",
+        "gallery": ["./assets/img/Samsung/galaxy-z-flip6-xanh-mint-512gb_1745640719.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy Z Flip6 Xanh Mint 512GB mang đến trải nghiệm sử dụng mượt mà với màn hình 6.7 inch Dynamic AMOLED 2X, màn hình phụ 3.4 inch và bộ xử lý Snapdragon 8 Gen 3 for Galaxy, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau 50MP + 12MP kết hợp camera trước 10MP hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB hoặc 512GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4000mAh cùng công nghệ Sạc nhanh 25W, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.7 inch Dynamic AMOLED 2X, màn hình phụ 3.4 inch",
+      "Chip xử lý": "Snapdragon 8 Gen 3 for Galaxy",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB hoặc 512GB",
+      "Camera sau": "50MP + 12MP",
+      "Camera trước": "10MP",
+      "Pin": "4000mAh",
+      "Sạc": "Sạc nhanh 25W, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-z-flip6-xanh-maya",
+    "id": "galaxy-z-flip6-xanh-maya",
+    "name": "Samsung Galaxy Z Flip6 Xanh Maya",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy Z Flip6 dùng chip Snapdragon 8 Gen 3 for Galaxy, RAM 12GB, thiết kế gập nhỏ gọn và camera chính 50MP.",
+    "rating": 4.8,
+    "reviewCount": 53,
+    "images": ["./assets/img/Samsung/galaxy-z-flip6-xanh-maya_1720664910.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 19990000,
+        "oldPrice": 28990000
+      },
+      {
+        "label": "512GB",
+        "price": 22990000,
+        "oldPrice": 32990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh",
+        "code": "#D6E5F8",
+        "image": "./assets/img/Samsung/galaxy-z-flip6-xanh-maya_1720664910.png",
+        "gallery": ["./assets/img/Samsung/galaxy-z-flip6-xanh-maya_1720664910.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy Z Flip6 Xanh Maya mang đến trải nghiệm sử dụng mượt mà với màn hình 6.7 inch Dynamic AMOLED 2X, màn hình phụ 3.4 inch và bộ xử lý Snapdragon 8 Gen 3 for Galaxy, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau 50MP + 12MP kết hợp camera trước 10MP hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB hoặc 512GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4000mAh cùng công nghệ Sạc nhanh 25W, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.7 inch Dynamic AMOLED 2X, màn hình phụ 3.4 inch",
+      "Chip xử lý": "Snapdragon 8 Gen 3 for Galaxy",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB hoặc 512GB",
+      "Camera sau": "50MP + 12MP",
+      "Camera trước": "10MP",
+      "Pin": "4000mAh",
+      "Sạc": "Sạc nhanh 25W, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-s26-ultra-xanh-512gb",
+    "id": "galaxy-s26-ultra-xanh-512gb",
+    "name": "Samsung Galaxy S26 Ultra Xanh 512GB",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy S26 Ultra là mẫu flagship Samsung với chip Snapdragon 8 Elite Gen 5 for Galaxy, RAM 12GB/16GB và tuỳ chọn bộ nhớ đến 1TB.",
+    "rating": 5.0,
+    "reviewCount": 11,
+    "images": ["./assets/img/Samsung/galaxy-s26-ultra-xanh-512gb_1772102552.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 36990000,
+        "oldPrice": 42990000
+      },
+      {
+        "label": "512GB",
+        "price": 40990000,
+        "oldPrice": 46990000
+      },
+      {
+        "label": "1TB",
+        "price": 46990000,
+        "oldPrice": 52990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh",
+        "code": "#E7EFFA",
+        "image": "./assets/img/Samsung/galaxy-s26-ultra-xanh-512gb_1772102552.png",
+        "gallery": ["./assets/img/Samsung/galaxy-s26-ultra-xanh-512gb_1772102552.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy S26 Ultra Xanh 512GB mang đến trải nghiệm sử dụng mượt mà với màn hình 6.9 inch Dynamic AMOLED 2X và bộ xử lý Snapdragon 8 Elite Gen 5 for Galaxy, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Chính 200MP và hệ thống camera đa tiêu cự kết hợp camera trước 12MP hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB, 512GB hoặc 1TB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 5000mAh cùng công nghệ Sạc nhanh có dây, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.9 inch Dynamic AMOLED 2X",
+      "Chip xử lý": "Snapdragon 8 Elite Gen 5 for Galaxy",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB, 512GB hoặc 1TB",
+      "Camera sau": "Chính 200MP và hệ thống camera đa tiêu cự",
+      "Camera trước": "12MP",
+      "Pin": "5000mAh",
+      "Sạc": "Sạc nhanh có dây, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-s26-ultra-tim-256gb",
+    "id": "galaxy-s26-ultra-tim-256gb",
+    "name": "Samsung Galaxy S26 Ultra Tím 256GB",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy S26 Ultra là mẫu flagship Samsung với chip Snapdragon 8 Elite Gen 5 for Galaxy, RAM 12GB/16GB và tuỳ chọn bộ nhớ đến 1TB.",
+    "rating": 5.0,
+    "reviewCount": 28,
+    "images": ["./assets/img/Samsung/galaxy-s26-ultra-tim-256gb_1772099455.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 36990000,
+        "oldPrice": 42990000
+      },
+      {
+        "label": "512GB",
+        "price": 40990000,
+        "oldPrice": 46990000
+      },
+      {
+        "label": "1TB",
+        "price": 46990000,
+        "oldPrice": 52990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Tím",
+        "code": "#6C6C86",
+        "image": "./assets/img/Samsung/galaxy-s26-ultra-tim-256gb_1772099455.png",
+        "gallery": ["./assets/img/Samsung/galaxy-s26-ultra-tim-256gb_1772099455.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy S26 Ultra Tím 256GB mang đến trải nghiệm sử dụng mượt mà với màn hình 6.9 inch Dynamic AMOLED 2X và bộ xử lý Snapdragon 8 Elite Gen 5 for Galaxy, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Chính 200MP và hệ thống camera đa tiêu cự kết hợp camera trước 12MP hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB, 512GB hoặc 1TB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 5000mAh cùng công nghệ Sạc nhanh có dây, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.9 inch Dynamic AMOLED 2X",
+      "Chip xử lý": "Snapdragon 8 Elite Gen 5 for Galaxy",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB, 512GB hoặc 1TB",
+      "Camera sau": "Chính 200MP và hệ thống camera đa tiêu cự",
+      "Camera trước": "12MP",
+      "Pin": "5000mAh",
+      "Sạc": "Sạc nhanh có dây, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-s26-ultra-den-1tb",
+    "id": "galaxy-s26-ultra-den-1tb",
+    "name": "Samsung Galaxy S26 Ultra Đen 1TB",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy S26 Ultra là mẫu flagship Samsung với chip Snapdragon 8 Elite Gen 5 for Galaxy, RAM 12GB/16GB và tuỳ chọn bộ nhớ đến 1TB.",
+    "rating": 5.0,
+    "reviewCount": 32,
+    "images": ["./assets/img/Samsung/galaxy-s26-ultra-den-1tb_1772103073.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 36990000,
+        "oldPrice": 42990000
+      },
+      {
+        "label": "512GB",
+        "price": 40990000,
+        "oldPrice": 46990000
+      },
+      {
+        "label": "1TB",
+        "price": 46990000,
+        "oldPrice": 52990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Đen",
+        "code": "#5F6267",
+        "image": "./assets/img/Samsung/galaxy-s26-ultra-den-1tb_1772103073.png",
+        "gallery": ["./assets/img/Samsung/galaxy-s26-ultra-den-1tb_1772103073.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy S26 Ultra Đen 1TB mang đến trải nghiệm sử dụng mượt mà với màn hình 6.9 inch Dynamic AMOLED 2X và bộ xử lý Snapdragon 8 Elite Gen 5 for Galaxy, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Chính 200MP và hệ thống camera đa tiêu cự kết hợp camera trước 12MP hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 16GB, bộ nhớ 256GB, 512GB hoặc 1TB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 5000mAh cùng công nghệ Sạc nhanh có dây, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "6.9 inch Dynamic AMOLED 2X",
+      "Chip xử lý": "Snapdragon 8 Elite Gen 5 for Galaxy",
+      "RAM": "16GB",
+      "Bộ nhớ trong": "256GB, 512GB hoặc 1TB",
+      "Camera sau": "Chính 200MP và hệ thống camera đa tiêu cự",
+      "Camera trước": "12MP",
+      "Pin": "5000mAh",
+      "Sạc": "Sạc nhanh có dây, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-s26-plus-xanh-256gb",
+    "id": "galaxy-s26-plus-xanh-256gb",
+    "name": "Samsung Galaxy S26 Plus Xanh 256GB",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy S26 Plus là phiên bản màn hình lớn, hiệu năng cao, phù hợp người dùng cần pin tốt và không gian hiển thị rộng.",
+    "rating": 4.9,
+    "reviewCount": 58,
+    "images": ["./assets/img/Samsung/galaxy-s26-plus-xanh-256gb_1772098685.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 29990000,
+        "oldPrice": 32990000
+      },
+      {
+        "label": "512GB",
+        "price": 34990000,
+        "oldPrice": 37990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Xanh",
+        "code": "#E7EFFA",
+        "image": "./assets/img/Samsung/galaxy-s26-plus-xanh-256gb_1772098685.png",
+        "gallery": ["./assets/img/Samsung/galaxy-s26-plus-xanh-256gb_1772098685.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy S26 Plus Xanh 256GB mang đến trải nghiệm sử dụng mượt mà với màn hình Dynamic AMOLED 2X kích thước lớn và bộ xử lý Snapdragon 8 Elite Gen 5 for Galaxy, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Cụm camera đa ống kính kết hợp camera trước 12MP hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB hoặc 512GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4900mAh cùng công nghệ Sạc nhanh có dây, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "Dynamic AMOLED 2X kích thước lớn",
+      "Chip xử lý": "Snapdragon 8 Elite Gen 5 for Galaxy",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB hoặc 512GB",
+      "Camera sau": "Cụm camera đa ống kính",
+      "Camera trước": "12MP",
+      "Pin": "4900mAh",
+      "Sạc": "Sạc nhanh có dây, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-s26-plus-trang-512gb",
+    "id": "galaxy-s26-plus-trang-512gb",
+    "name": "Samsung Galaxy S26 Plus Trắng 512GB",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy S26 Plus là phiên bản màn hình lớn, hiệu năng cao, phù hợp người dùng cần pin tốt và không gian hiển thị rộng.",
+    "rating": 4.9,
+    "reviewCount": 22,
+    "images": ["./assets/img/Samsung/galaxy-s26-plus-trang-512gb_1772101980.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 29990000,
+        "oldPrice": 32990000
+      },
+      {
+        "label": "512GB",
+        "price": 34990000,
+        "oldPrice": 37990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Trắng",
+        "code": "#FFFFFF",
+        "image": "./assets/img/Samsung/galaxy-s26-plus-trang-512gb_1772101980.png",
+        "gallery": ["./assets/img/Samsung/galaxy-s26-plus-trang-512gb_1772101980.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy S26 Plus Trắng 512GB mang đến trải nghiệm sử dụng mượt mà với màn hình Dynamic AMOLED 2X kích thước lớn và bộ xử lý Snapdragon 8 Elite Gen 5 for Galaxy, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Cụm camera đa ống kính kết hợp camera trước 12MP hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB hoặc 512GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4900mAh cùng công nghệ Sạc nhanh có dây, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "Dynamic AMOLED 2X kích thước lớn",
+      "Chip xử lý": "Snapdragon 8 Elite Gen 5 for Galaxy",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB hoặc 512GB",
+      "Camera sau": "Cụm camera đa ống kính",
+      "Camera trước": "12MP",
+      "Pin": "4900mAh",
+      "Sạc": "Sạc nhanh có dây, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "galaxy-s26-den-512gb",
+    "id": "galaxy-s26-den-512gb",
+    "name": "Samsung Galaxy S26 Đen 512GB",
+    "brand": "Samsung",
+    "category": "phone",
+    "categoryLabel": "Điện thoại",
+    "shortDescription": "Galaxy S26 là bản tiêu chuẩn của dòng S26, tập trung vào hiệu năng flagship trong thiết kế nhỏ gọn hơn.",
+    "rating": 4.9,
+    "reviewCount": 10,
+    "images": ["./assets/img/Samsung/galaxy-s26-den-512gb_1772101427.png"],
+    "storages": [
+      {
+        "label": "256GB",
+        "price": 24990000,
+        "oldPrice": 27990000
+      },
+      {
+        "label": "512GB",
+        "price": 28990000,
+        "oldPrice": 31990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Đen",
+        "code": "#5F6267",
+        "image": "./assets/img/Samsung/galaxy-s26-den-512gb_1772101427.png",
+        "gallery": ["./assets/img/Samsung/galaxy-s26-den-512gb_1772101427.png"]
+      }
+    ],
+    "details": [
+      "Samsung Galaxy S26 Đen 512GB mang đến trải nghiệm sử dụng mượt mà với màn hình Dynamic AMOLED 2X và bộ xử lý Snapdragon 8 Elite Gen 5 for Galaxy, phù hợp cho học tập, làm việc, giải trí và kết nối hằng ngày.",
+      "Hệ thống camera sau Cụm camera đa ống kính kết hợp camera trước 12MP hỗ trợ chụp ảnh, quay video, gọi video và sáng tạo nội dung rõ nét hơn.",
+      "Trang bị RAM 12GB, bộ nhớ 256GB hoặc 512GB giúp máy vận hành đa nhiệm ổn định, lưu trữ ứng dụng, hình ảnh, video và tài liệu một cách thuận tiện.",
+      "Viên pin 4300mAh cùng công nghệ Sạc nhanh có dây, sạc không dây giúp kéo dài thời gian sử dụng và rút ngắn thời gian chờ khi cần nạp năng lượng."
+    ],
+    "specs": {
+      "Màn hình": "Dynamic AMOLED 2X",
+      "Chip xử lý": "Snapdragon 8 Elite Gen 5 for Galaxy",
+      "RAM": "12GB",
+      "Bộ nhớ trong": "256GB hoặc 512GB",
+      "Camera sau": "Cụm camera đa ống kính",
+      "Camera trước": "12MP",
+      "Pin": "4300mAh",
+      "Sạc": "Sạc nhanh có dây, sạc không dây",
+      "Hệ điều hành": "Android, One UI",
+      "SIM": "Nano-SIM và eSIM"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "macbook-pro-14-m5-pro-space-black",
+    "id": "macbook-pro-14-m5-pro-space-black",
+    "name": "MacBook Pro 14 M5 Pro Space Black",
+    "brand": "MacBook",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "MacBook Pro 14 M5 Pro dành cho công việc chuyên nghiệp, màn hình Liquid Retina XDR và hiệu năng cao hơn MacBook Air.",
+    "rating": 5.0,
+    "reviewCount": 7,
+    "images": ["./assets/img/Macbook/macbook_pro_14_m5_pro_space_black_1_2b3d8ad534.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 39990000,
+        "oldPrice": 42990000
+      },
+      {
+        "label": "1TB",
+        "price": 46990000,
+        "oldPrice": 49990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "code": "#1C1D1F",
+        "image": "./assets/img/Macbook/macbook_pro_14_m5_pro_space_black_1_2b3d8ad534.png",
+        "gallery": ["./assets/img/Macbook/macbook_pro_14_m5_pro_space_black_1_2b3d8ad534.png"]
+      }
+    ],
+    "details": [
+      "MacBook Pro 14 M5 Pro Space Black nổi bật với màn hình 14 inch Liquid Retina XDR và bộ xử lý Apple M5 Pro, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 24GB hoặc cao hơn tuỳ cấu hình, ổ cứng 512GB hoặc 1TB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa GPU Apple M5 Pro đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 72.4Wh cùng kiểu dáng Dòng Pro 14 inch giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "14 inch Liquid Retina XDR",
+      "CPU": "Apple M5 Pro",
+      "RAM": "24GB hoặc cao hơn tuỳ cấu hình",
+      "Ổ cứng": "512GB hoặc 1TB SSD",
+      "Card đồ họa": "GPU Apple M5 Pro",
+      "Hệ điều hành": "macOS",
+      "Pin": "72.4Wh",
+      "Khối lượng": "Dòng Pro 14 inch"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "macbook-air-15-m5-sky-blue",
+    "id": "macbook-air-15-m5-sky-blue",
+    "name": "MacBook Air 15 M5 Sky Blue",
+    "brand": "MacBook",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "MacBook Air 15 inch M5 có màn hình lớn hơn, chip Apple M5 và thiết kế mỏng nhẹ không quạt.",
+    "rating": 4.9,
+    "reviewCount": 16,
+    "images": ["./assets/img/Macbook/macbook_air_15_m5_sky_blue_1_cd626ebb31.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 34490000,
+        "oldPrice": 34990000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Mặc định",
+        "code": "#1D232A",
+        "image": "./assets/img/Macbook/macbook_air_15_m5_sky_blue_1_cd626ebb31.png",
+        "gallery": ["./assets/img/Macbook/macbook_air_15_m5_sky_blue_1_cd626ebb31.png"]
+      }
+    ],
+    "details": [
+      "MacBook Air 15 M5 Sky Blue nổi bật với màn hình 15.3 inch Liquid Retina và bộ xử lý Apple M5, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB, ổ cứng 512GB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa GPU Apple M5 đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 66.5Wh cùng kiểu dáng Mỏng nhẹ giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "15.3 inch Liquid Retina",
+      "CPU": "Apple M5",
+      "RAM": "16GB",
+      "Ổ cứng": "512GB SSD",
+      "Card đồ họa": "GPU Apple M5",
+      "Hệ điều hành": "macOS",
+      "Pin": "66.5Wh",
+      "Khối lượng": "Mỏng nhẹ"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "macbook-air-13-m5-starlight",
+    "id": "macbook-air-13-m5-starlight",
+    "name": "MacBook Air 13 M5 Starlight",
+    "brand": "MacBook",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "MacBook Air 13 inch M5 dùng chip Apple M5, màn hình Liquid Retina 13.6 inch, thiết kế mỏng nhẹ và thời lượng pin lên đến 18 giờ.",
+    "rating": 4.9,
+    "reviewCount": 22,
+    "images": ["./assets/img/Macbook/macbook_air_13_m5_starlight_1_bfd6f1c5ed.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 29490000,
+        "oldPrice": 29990000
+      },
+      {
+        "label": "1TB",
+        "price": 34990000,
+        "oldPrice": 35490000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Mặc định",
+        "code": "#EADFC9",
+        "image": "./assets/img/Macbook/macbook_air_13_m5_starlight_1_bfd6f1c5ed.png",
+        "gallery": ["./assets/img/Macbook/macbook_air_13_m5_starlight_1_bfd6f1c5ed.png"]
+      }
+    ],
+    "details": [
+      "MacBook Air 13 M5 Starlight nổi bật với màn hình 13.6 inch Liquid Retina, 2560 x 1664, 500 nits và bộ xử lý Apple M5, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB hoặc 24GB tuỳ cấu hình, ổ cứng 512GB hoặc 1TB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa GPU 8 nhân hoặc 10 nhân đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 52.6Wh cùng kiểu dáng Khoảng 1.23kg giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "13.6 inch Liquid Retina, 2560 x 1664, 500 nits",
+      "CPU": "Apple M5",
+      "RAM": "16GB hoặc 24GB tuỳ cấu hình",
+      "Ổ cứng": "512GB hoặc 1TB SSD",
+      "Card đồ họa": "GPU 8 nhân hoặc 10 nhân",
+      "Hệ điều hành": "macOS",
+      "Pin": "52.6Wh",
+      "Khối lượng": "Khoảng 1.23kg"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  },
+  {
+    "groupId": "macbook-air-13-m5-silver",
+    "id": "macbook-air-13-m5-silver",
+    "name": "MacBook Air 13 M5 Silver",
+    "brand": "MacBook",
+    "category": "laptop",
+    "categoryLabel": "Laptop",
+    "shortDescription": "MacBook Air 13 inch M5 dùng chip Apple M5, màn hình Liquid Retina 13.6 inch, thiết kế mỏng nhẹ và thời lượng pin lên đến 18 giờ.",
+    "rating": 4.9,
+    "reviewCount": 50,
+    "images": ["./assets/img/Macbook/macbook_air_13_m5_silver_1_aaf300c0db.png"],
+    "storages": [
+      {
+        "label": "512GB",
+        "price": 29490000,
+        "oldPrice": 29990000
+      },
+      {
+        "label": "1TB",
+        "price": 34990000,
+        "oldPrice": 35490000
+      }
+    ],
+    "colors": [
+      {
+        "name": "Silver",
+        "code": "#D1D2D4",
+        "image": "./assets/img/Macbook/macbook_air_13_m5_silver_1_aaf300c0db.png",
+        "gallery": ["./assets/img/Macbook/macbook_air_13_m5_silver_1_aaf300c0db.png"]
+      }
+    ],
+    "details": [
+      "MacBook Air 13 M5 Silver nổi bật với màn hình 13.6 inch Liquid Retina, 2560 x 1664, 500 nits và bộ xử lý Apple M5, đáp ứng tốt nhu cầu học tập, làm việc, giải trí cũng như xử lý tác vụ hằng ngày.",
+      "Cấu hình gồm RAM 16GB hoặc 24GB tuỳ cấu hình, ổ cứng 512GB hoặc 1TB SSD giúp máy khởi động nhanh, xử lý đa nhiệm mượt mà và lưu trữ thuận tiện tài liệu, phần mềm, hình ảnh cá nhân.",
+      "Đồ họa GPU 8 nhân hoặc 10 nhân đáp ứng tốt nhu cầu văn phòng, học online, xem phim, trình chiếu và xử lý nội dung nhẹ nhàng.",
+      "Viên pin 52.6Wh cùng kiểu dáng Khoảng 1.23kg giúp thiết bị cân bằng giữa tính di động, hiệu năng và thời lượng sử dụng trong ngày."
+    ],
+    "specs": {
+      "Màn hình": "13.6 inch Liquid Retina, 2560 x 1664, 500 nits",
+      "CPU": "Apple M5",
+      "RAM": "16GB hoặc 24GB tuỳ cấu hình",
+      "Ổ cứng": "512GB hoặc 1TB SSD",
+      "Card đồ họa": "GPU 8 nhân hoặc 10 nhân",
+      "Hệ điều hành": "macOS",
+      "Pin": "52.6Wh",
+      "Khối lượng": "Khoảng 1.23kg"
+    },
+    "reviews": [
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Điểm mạnh thường được nhấn mạnh: thiết kế đẹp, hiệu năng ổn định và cấu hình phù hợp phân khúc."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 5,
+        "content": "Người mua nên kiểm tra giá và khuyến mãi tại cửa hàng vì giá có thể thay đổi theo thời điểm."
+      },
+      {
+        "name": "Tóm tắt đánh giá",
+        "stars": 4,
+        "content": "Thông tin đánh giá trong file là dạng tóm tắt, không gán thành lời nói trực tiếp của một khách hàng cụ thể."
+      }
+    ]
+  }
+]

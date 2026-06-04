@@ -1,0 +1,426 @@
+:root {
+  --text-sub: #64748b;
+  --border-soft: rgba(22, 32, 51, 0.08);
+  --shadow-lg: 0 30px 80px rgba(15, 23, 42, 0.12);
+  --surface: rgba(255, 255, 255, 0.88);
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #f8fbff 0%, #edf3ff 48%, #fff7ef 100%);
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 15px;
+  min-height: 76px;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(16px);
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-width: 112px;
+  height: 44px;
+  padding: 0 0.95rem;
+  border: none;
+  border-radius: 15px;
+  color: var(--text-main);
+  font-weight: 600;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.22s ease;
+}
+
+.back-btn:hover {
+  transform: translateY(-1px);
+  color: var(--brand-blue);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 22px rgba(34, 81, 255, 0.08);
+}
+
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  height: 50px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.header-spacer {
+  min-width: 112px;
+  height: 44px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* --- KHUNG ĐĂNG NHẬP CHÍNH --- */
+.auth-shell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  min-height: calc(100vh - 140px);
+}
+
+.login-panel {
+  width: 100%;
+  max-width: 410px;
+}
+
+.login-card {
+  width: 100%;
+  padding: 2.2rem 2rem;
+  background: var(--surface);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+}
+
+.login-heading {
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.card-logo {
+  width: 100px;
+  height: auto;
+  margin: 0 auto 0.75rem;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.login-kicker {
+  display: inline-flex;
+  margin-bottom: 0.5rem;
+  color: var(--brand-orange);
+  font-family: var(--font-heading), sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.login-title {
+  margin: 0;
+  color: var(--brand-dark);
+  font-family: var(--font-heading), sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.login-desc {
+  margin: 0.4rem 0 0;
+  color: var(--text-sub);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.login-form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.field-label {
+  color: var(--brand-dark);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: -0.2rem;
+}
+
+.input-group-custom {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 1.1rem;
+  z-index: 2;
+  color: #94a3b8;
+  font-size: 1.1rem;
+  transform: translateY(-50%);
+}
+
+.custom-input {
+  width: 100%;
+  height: 50px;
+  padding: 0 1rem 0 2.8rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 14px !important;
+  color: var(--text-main);
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: none !important;
+  transition: all 0.2s ease;
+}
+
+.custom-input::placeholder {
+  color: #a1afc2;
+}
+
+.custom-input:focus {
+  border-color: rgba(34, 81, 255, 0.45);
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(34, 81, 255, 0.08) !important;
+}
+
+.form-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0.2rem 0 0.4rem;
+}
+
+.remember-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--text-sub);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.remember-option input {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--brand-blue);
+  cursor: pointer;
+}
+
+.forgot-link,
+.register-link {
+  color: var(--brand-blue);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.forgot-link:hover,
+.register-link:hover {
+  color: var(--brand-orange);
+}
+
+.login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border: none;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--brand-orange), #ff9351);
+  box-shadow: 0 12px 24px rgba(255, 122, 24, 0.22);
+  transition: all 0.22s ease;
+}
+
+.login-btn:hover {
+  color: #fff;
+  filter: brightness(1.03);
+  transform: translateY(-1.5px);
+  box-shadow: 0 16px 28px rgba(255, 122, 24, 0.3);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+}
+
+.register-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: 1.5rem;
+  color: var(--text-sub);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+/* --- HỆ THỐNG THÔNG BÁO ALERT GÓC PHẢI MÀN HÌNH --- */
+.custom-toast-container {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: none; /* Tránh che chắn các nút bấm phía dưới khi container rỗng */
+}
+
+.custom-toast-item {
+  pointer-events: auto; /* Kích hoạt lại tương tác cho riêng hộp thông báo */
+  width: min(360px, calc(100vw - 48px));
+  background: #ffffff;
+  padding: 1rem 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-left: 5px solid #ef4444; /* Viền trái mặc định màu đỏ lỗi */
+
+  /* Hiệu ứng chuyển động xuất phát: Đẩy hẳn 120% ra ngoài viền phải màn hình */
+  transform: translateX(120%);
+  animation: alertSlideIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Đổi màu sắc viền trái khi đăng nhập thành công */
+.custom-toast-item.success {
+  border-left-color: #10b981;
+}
+
+.toast-item-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.toast-item-content {
+  flex: 1;
+}
+
+.toast-item-title {
+  color: #0f172a;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.toast-item-msg {
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.toast-item-close {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  padding: 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.toast-item-close:hover {
+  color: #475569;
+}
+
+.custom-toast-item.leave {
+  animation: alertSlideOut 0.4s ease forwards;
+}
+
+@keyframes alertSlideIn {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes alertSlideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .auth-page {
+    width: min(100% - 24px, 540px);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .auth-page {
+    width: min(100% - 20px, 410px);
+    padding: 12px 0;
+  }
+
+  .top-header {
+    min-height: 64px;
+    padding: 0.55rem 0.8rem;
+    border-radius: 18px;
+  }
+
+  .back-btn {
+    min-width: 42px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+  }
+
+  .back-btn span {
+    display: none;
+  }
+
+  .header-spacer {
+    min-width: 42px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .header-logo {
+    height: 40px;
+  }
+
+  .auth-shell {
+    padding-top: 1rem;
+    min-height: calc(100vh - 100px);
+  }
+
+  .login-card {
+    border-radius: 20px;
+    padding: 1.6rem 1.4rem;
+  }
+
+  .card-logo {
+    width: 86px;
+  }
+
+  .login-title {
+    font-size: 1.8rem;
+  }
+
+  .form-options {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

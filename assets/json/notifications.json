@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "theme": "danger",
+    "icon": "bi-tag-fill",
+    "title": "[GIẢM SỐC 35%] Siêu phẩm flagship tuần này!",
+    "time": "Vừa xong",
+    "desc": "Cơ hội duy nhất sở hữu iPhone 17 Pro Max phiên bản giới hạn với mức chiết khấu cực sâu.",
+    "isExtra": false
+  },
+  {
+    "id": 2,
+    "theme": "primary",
+    "icon": "bi-gift-fill",
+    "title": "[SỰ KIỆN HOT] Mua 1 Tặng 1 - Sắm Laptop rinh Chuột Gaming",
+    "time": "2 giờ trước",
+    "desc": "Khi chọn mua dòng máy tính xách tay Workstation bất kỳ, quý khách sẽ được tặng kèm chuột Gaming.",
+    "isExtra": false
+  },
+  {
+    "id": 3,
+    "theme": "warning",
+    "icon": "bi-star-fill",
+    "title": "[VÒNG QUAY MAY MẮN] Khai mạc sự kiện rinh quà công nghệ!",
+    "time": "1 ngày trước",
+    "desc": "Chương trình \"Quay trúng thưởng - Rinh quà công nghệ\" chính thức bắt đầu.",
+    "isExtra": false
+  },
+  {
+    "id": 4,
+    "theme": "danger",
+    "icon": "bi-lightning-charge-fill",
+    "title": "[FLASH SALE] Phụ kiện đồng giá thông minh chỉ từ 9K!",
+    "time": "2 ngày trước",
+    "desc": "Khung giờ vàng từ 12:00 - 14:00 mỗi ngày.",
+    "isExtra": false
+  },
+  {
+    "id": 5,
+    "theme": "primary",
+    "icon": "bi-bag-plus-fill",
+    "title": "[COMBO SIÊU HỜI] Sắm Máy tính bảng tặng Bao da thông minh!",
+    "time": "3 ngày trước",
+    "desc": "Tối ưu hiệu suất làm việc khi sở hữu Máy tính bảng thế hệ mới.",
+    "isExtra": false
+  },
+  {
+    "id": 6,
+    "theme": "warning",
+    "icon": "bi-gem",
+    "title": "[THÀNH VIÊN] Nhận lượt quay đặc quyền từ THT Rewards",
+    "time": "5 ngày trước",
+    "desc": "Hệ thống ghi nhận tài khoản của bạn đã tích lũy mốc điểm thưởng thành công.",
+    "isExtra": false
+  },
+  {
+    "id": 7,
+    "theme": "info",
+    "icon": "bi-rocket-takeoff-fill",
+    "title": "[ĐẶT TRƯỚC] Đặt gạch siêu phẩm Laptop AI thế hệ mới",
+    "time": "1 tuần trước",
+    "desc": "Chính thức mở cổng đặt trước dòng Laptop AI mới nhất.",
+    "isExtra": true
+  },
+  {
+    "id": 8,
+    "theme": "success",
+    "icon": "bi-shield-check",
+    "title": "[DỊCH VỤ] Miễn phí vệ sinh Laptop cuối tuần",
+    "time": "1 tuần trước",
+    "desc": "Đừng quên mang Laptop của bạn đến Showroom THT Tech vào Thứ 7 & Chủ Nhật.",
+    "isExtra": true
+  },
+  {
+    "id": 9,
+    "theme": "danger",
+    "icon": "bi-ticket-detailed-fill",
+    "title": "[MÃ GIẢM GIÁ] Tặng bạn mã FREESHIP toàn quốc",
+    "time": "2 tuần trước",
+    "desc": "THT Tech gửi tặng riêng bạn mã THTFREESHIP - Miễn phí giao hàng toàn quốc.",
+    "isExtra": true
+  },
+  {
+    "id": 10,
+    "theme": "primary",
+    "icon": "bi-camera-video-fill",
+    "title": "[LIVESTREAM] Đón xem Livestream xả kho cuối tháng",
+    "time": "2 tuần trước",
+    "desc": "Đón xem phiên Livestream duy nhất vào 20:00 tối nay trên nền tảng của THT Tech.",
+    "isExtra": true
+  }
+]

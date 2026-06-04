@@ -1,0 +1,426 @@
+:root {
+  --text-sub: #64748b;
+  --border-soft: rgba(22, 32, 51, 0.08);
+  --shadow-lg: 0 30px 80px rgba(15, 23, 42, 0.12);
+  --surface: rgba(255, 255, 255, 0.88);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-body), sans-serif;
+  background: linear-gradient(135deg, #f8fbff 0%, #edf3ff 48%, #fff7ef 100%);
+  overflow-x: hidden;
+}
+
+.main-wrapper {
+  width: min(1200px, calc(100% - 32px));
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- NAVBAR THANH ĐẦU TRANG --- */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 76px;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(16px);
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-width: 112px;
+  height: 44px;
+  padding: 0 0.95rem;
+  border: none;
+  border-radius: 15px;
+  color: var(--text-main);
+  font-weight: 600;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.22s ease;
+}
+
+.back-btn:hover {
+  transform: translateY(-1px);
+  color: var(--brand-blue);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 22px rgba(34, 81, 255, 0.08);
+}
+
+.brand-logo img {
+  height: 50px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.header-spacer {
+  min-width: 112px;
+  height: 44px;
+  visibility: hidden;
+}
+
+/* --- BỐ CỤC KHUNG CHÍNH (MAIN CARD) --- */
+.main-card {
+  width: 100%;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+/* --- PHÂN ĐOẠN TRÁI TRANG TRÍ --- */
+.left-side {
+  background: linear-gradient(145deg, rgba(232, 239, 255, 0.4), rgba(255, 247, 239, 0.3));
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.badge-custom {
+  width: fit-content;
+  background: rgba(34, 81, 255, 0.08);
+  color: var(--brand-blue);
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 2.8rem;
+  line-height: 1.15;
+  font-weight: 700;
+  color: var(--brand-dark);
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-desc {
+  color: var(--text-sub);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.stat-box {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.stat-number {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+.stat-text {
+  margin-top: 4px;
+  font-size: 0.88rem;
+  color: var(--text-sub);
+  font-weight: 500;
+}
+
+/* --- PHÂN ĐOẠN PHẢI FORM ĐĂNG KÝ --- */
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: #ffffff;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 390px;
+}
+
+.logo-form {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  margin-bottom: 0.5rem;
+}
+
+.form-title {
+  text-align: center;
+  font-family: var(--font-heading), sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+/* --- KHUNG TRƯỜNG NHẬP LIỆU --- */
+.input-group-custom {
+  position: relative;
+  margin-bottom: 0.9rem;
+}
+
+.form-control-custom {
+  width: 100%;
+  height: 50px;
+  padding: 0 1rem 0 2.8rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 14px;
+  color: var(--text-main);
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+}
+
+.form-control-custom:focus {
+  border-color: rgba(34, 81, 255, 0.45);
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(34, 81, 255, 0.08) !important;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 1.1rem;
+  z-index: 2;
+  color: #94a3b8;
+  font-size: 1.05rem;
+  transform: translateY(-50%);
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 1.1rem;
+  z-index: 3;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 1.1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.toggle-password:hover {
+  color: #475569;
+}
+
+/* --- NÚT ĐĂNG KÝ GRADIENT --- */
+.btn-register {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border: none;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--brand-orange), #ff9351);
+  box-shadow: 0 12px 24px rgba(255, 122, 24, 0.22);
+  transition: all 0.22s ease;
+}
+
+.btn-register:hover {
+  color: #fff;
+  filter: brightness(1.03);
+  transform: translateY(-1.5px);
+  box-shadow: 0 16px 28px rgba(255, 122, 24, 0.3);
+}
+
+/* --- CHUYỂN LOG IN TEXT --- */
+.login-text {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: 1.35rem;
+  color: var(--text-sub);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.login-text a {
+  color: var(--brand-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  color: var(--brand-orange);
+}
+
+/* ==========================================================================
+   HỆ THỐNG THÔNG BÁO ALERT GÓC PHẢI MÀN HÌNH (ĐỒNG BỘ VỚI LOGIN)
+   ========================================================================== */
+.custom-toast-container {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: none; /* Tránh che khuất các nút bấm phía dưới khi container rỗng */
+}
+
+.custom-toast-item {
+  pointer-events: auto; /* Kích hoạt lại tương tác cho hộp thông báo */
+  width: min(360px, calc(100vw - 48px));
+  background: #ffffff;
+  padding: 1rem 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-left: 5px solid #ef4444; /* Viền trái mặc định màu đỏ lỗi */
+
+  /* Hiệu ứng chuyển động xuất phát: Đẩy hẳn 120% ra ngoài viền phải màn hình */
+  transform: translateX(120%);
+  animation: alertSlideIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Đổi màu sắc viền trái khi Đăng ký/Đăng nhập thành công */
+.custom-toast-item.success {
+  border-left-color: #10b981;
+}
+
+.toast-item-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.toast-item-content {
+  flex: 1;
+}
+
+.toast-item-title {
+  color: #0f172a;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.toast-item-msg {
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.toast-item-close {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  padding: 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.toast-item-close:hover {
+  color: #475569;
+}
+
+/* Hiệu ứng trượt biến mất khi đóng thông báo */
+.custom-toast-item.leave {
+  animation: alertSlideOut 0.4s ease forwards;
+}
+
+/* --- ĐỊNH NGHĨA ANIMATION CHẠY TỪ VIỀN MÀN HÌNH --- */
+@keyframes alertSlideIn {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes alertSlideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-card {
+    height: auto;
+  }
+  .hero-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .top-bar {
+    width: 100%;
+  }
+  .main-card {
+    border-radius: 20px;
+  }
+  .right-side {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .top-bar {
+    min-height: 64px;
+    padding: 0.55rem 0.8rem;
+    border-radius: 18px;
+  }
+  .back-btn {
+    min-width: 42px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+  }
+  .back-btn span {
+    display: none;
+  }
+  .brand-logo img {
+    height: 40px;
+  }
+  .header-spacer {
+    min-width: 42px;
+  }
+  .form-title {
+    font-size: 1.5rem;
+  }
+  .form-card {
+    padding: 0;
+  }
+}
