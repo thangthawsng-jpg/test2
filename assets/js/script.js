@@ -941,14 +941,15 @@ function showSuccessToast(productName) {
     document.body.appendChild(toastBox);
   }
 
-  const toast = document.createElement("div");
+ const toast = document.createElement("div");
   toast.style.cssText = `
-    background: #28a745;
-    color: white;
+    background: white;
+    color: #333;
     padding: 12px 20px;
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     animation: slideIn 0.3s ease-out;
+    border-left: 4px solid #28a745;
   `;
   toast.textContent = `✓ ${productName} đã được thêm vào giỏ hàng`;
 
