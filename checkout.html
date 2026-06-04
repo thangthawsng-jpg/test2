@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <title>Thanh toán | THT - Tech</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style-checkout.css" />
+  </head>
+
+  <body>
+    <!-- Thanh thong bao dau trang -->
+    <div class="header-notification-bar py-2 text-light">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-center justify-content-xl-between align-items-center gap-2 text-center text-xl-start">
+          <p class="mb-0">Tuần lễ công nghệ mới: miễn phí giao nhanh nội thành và hỗ trợ trả góp 0%.</p>
+          <div class="header-notification-icons d-flex flex-wrap justify-content-center gap-3">
+            <span class="d-inline-flex align-items-center"><i class="bi bi-lightning-charge-fill"></i> Flash deal mỗi ngày</span>
+            <span class="d-inline-flex align-items-center"><i class="bi bi-shield-check"></i> Bảo hành minh bạch</span>
+            <span class="d-inline-flex align-items-center"><i class="bi bi-headset"></i> Hỗ trợ 24/7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header chinh -->
+    <header class="bg-white sticky-top shadow-sm">
+      <!-- Header desktop -->
+      <div class="d-none d-xl-block shadow-sm">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-2">
+            <a href="./index.html" class="text-decoration-none">
+              <img src="./assets/img/logo.png" alt="ĐH Công Thương" class="logo-img" style="max-width: 100%; height: auto" />
+            </a>
+          </div>
+
+          <div class="col-lg-7">
+            <form class="search-form d-none d-xl-flex align-items-center" role="search">
+              <i class="bi bi-search flex-shrink-0"></i>
+              <input type="search" class="form-control" placeholder="Tìm điện thoại..." />
+              <button class="btn btn-accent" type="submit">Tìm</button>
+            </form>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="header-notification-actions d-flex flex-wrap justify-content-evenly align-items-center gap-2 ms-0">
+              <a href="./checkout.html" class="header-action-button position-relative p-0 d-inline-flex justify-content-center align-items-center text-decoration-none">
+                <i class="bi bi-cart2 fs-5"></i>
+                <span class="header-action-badge position-absolute d-inline-flex justify-content-center align-items-center text-light" data-cart-count>0</span>
+              </a>
+
+              <a class="header-account-chip d-none d-md-inline-flex align-items-center justify-content-center text-decoration-none position-relative" href="./login.html">
+                <i class="bi bi-person-circle fs-4 me-2"></i>
+                <span class="overflow-hidden">Đăng Nhập</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav-gradient w-100">
+          <div class="container">
+            <ul class="nav justify-content-center py-1 gap-4">
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#home">Trang chủ</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#featured" data-filter-shortcut="phone">Điện thoại</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#featured" data-filter-shortcut="tablet">Máy tính bảng</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#featured" data-filter-shortcut="laptop">Laptop</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#featured" data-filter-shortcut="accessory">Phụ kiện</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#contact">Liên hệ</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#flash-deal" data-filter-shortcut="all">Khuyến Mãi</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Header mobile -->
+      <div class="d-xl-none d-flex justify-content-between align-items-center px-3 py-2 w-100">
+        <button class="btn border-0 p-0 fs-1 text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Mở menu">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <a href="./index.html">
+          <img src="./assets/img/logo.png" alt="ĐH Công Thương" height="50" />
+        </a>
+
+        <a href="./checkout.html" class="header-action-button position-relative p-0 d-inline-flex justify-content-center align-items-center text-decoration-none">
+          <i class="bi bi-cart2 fs-5"></i>
+          <span class="header-action-badge position-absolute d-inline-flex justify-content-center align-items-center text-light" data-cart-count>0</span>
+        </a>
+      </div>
+
+      <!-- Menu truot cho mobile -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header border-bottom">
+          <h2 class="visually-hidden" id="mobileMenuLabel">Menu di động</h2>
+          <img src="./assets/img/logo.png" alt="ĐH Công Thương" height="50" />
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column p-0">
+          <ul class="nav flex-column fs-6">
+            <li class="nav-item border-bottom"><a class="nav-link text-dark py-3 px-4 fw-medium" href="#featured" data-filter-shortcut="phone">ĐIỆN THOẠI</a></li>
+            <li class="nav-item border-bottom"><a class="nav-link text-dark py-3 px-4 fw-medium" href="#featured" data-filter-shortcut="tablet">MÁY TÍNH BẢNG</a></li>
+            <li class="nav-item border-bottom"><a class="nav-link text-dark py-3 px-4 fw-medium" href="#featured" data-filter-shortcut="laptop">LAPTOP</a></li>
+            <li class="nav-item border-bottom"><a class="nav-link text-dark py-3 px-4 fw-medium" href="#featured" data-filter-shortcut="accessory">PHỤ KIỆN</a></li>
+            <li class="nav-item border-bottom"><a class="nav-link text-dark py-3 px-4 fw-medium" href="#home">LIÊN HỆ</a></li>
+            <li class="nav-item border-bottom"><a class="nav-link text-dark py-3 px-4 fw-medium" href="#featured" data-filter-shortcut="all">KHUYẾN MÃI</a></li>
+          </ul>
+
+          <div class="mt-2">
+            <a href="#" class="nav-link text-dark py-3 px-4 d-flex align-items-center gap-2 fw-medium"><i class="bi bi-cart2 fs-5"></i> GIỎ HÀNG CỦA TÔI (<span data-cart-count>0</span>)</a>
+            <a href="#" class="nav-link text-dark py-2 px-4 d-flex align-items-center gap-2 fw-medium"><i class="bi bi-heart fs-5"></i> YÊU THÍCH (<span data-wishlist-count>0</span>)</a>
+          </div>
+
+          <div class="mt-auto pt-4 border-top">
+            <a href="./login.html" id="mobileLoginBtn" class="btn btn-dark w-100 rounded-0 d-flex align-items-center justify-content-center gap-2 py-2.5">
+              <i class="bi bi-box-arrow-in-right"></i>
+              <span>Đăng Nhập</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="checkout-page">
+      <section class="checkout-heading pb-0">
+        <div class="container" style="max-width: 950px">
+          <div class="checkout-title-row border-bottom pb-3">
+            <div>
+              <span class="eyebrow text-primary fw-bold"><i class="bi bi-shield-check"></i> Thanh toán an toàn</span>
+              <h1 class="fw-bold mt-4">Hoàn tất đơn hàng</h1>
+            </div>
+            <a class="checkout-back-link text-secondary" href="./index.html#featured"><i class="bi bi-arrow-left"></i> Tiếp tục mua sắm</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="checkout-content pt-4">
+        <div class="container" style="max-width: 950px">
+          <form id="checkoutForm" novalidate>
+            <div class="checkout-main">
+              <section class="checkout-panel border-0 shadow-sm mb-4 p-4 rounded-4">
+                <div class="panel-title mb-4">
+                  <div>
+                    <h2 class="fs-4 fw-bold mb-0">Địa chỉ nhận hàng</h2>
+                  </div>
+                  <i class="bi bi-geo-alt fs-2 text-primary opacity-75"></i>
+                </div>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <select class="form-select checkout-input py-3 fw-semibold shadow-none" id="addressSelect" name="customerAddressId">
+                      <option value="">Đang tải địa chỉ...</option>
+                    </select>
+                    <p class="text-muted small mt-2 mb-0">
+                      <i class="bi bi-info-circle"></i> Vui lòng thiết lập địa chỉ trong <a href="./profile.html" class="text-primary text-decoration-none">trang cá nhân</a> nếu chưa có.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="checkout-panel border-0 shadow-sm mb-4 p-4 rounded-4 bg-light">
+                <div class="panel-title mb-3 border-bottom pb-3">
+                  <div>
+                    <h2 class="fs-4 fw-bold mb-0">Kiểm tra sản phẩm</h2>
+                  </div>
+                  <i class="bi bi-bag-check fs-2 text-primary opacity-75"></i>
+                </div>
+                <div class="cart-items border-0 p-0 m-0" id="cartItems"></div>
+              </section>
+
+              <section class="checkout-panel border-0 shadow-sm mb-4 p-4 rounded-4">
+                <div class="panel-title mb-3">
+                  <div>
+                    <h2 class="fs-4 fw-bold mb-0">Mã ưu đãi / Voucher</h2>
+                  </div>
+                  <i class="bi bi-ticket-perforated fs-2 text-primary opacity-75"></i>
+                </div>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <div class="input-group">
+                      <span class="input-group-text bg-white text-danger border-end-0 fs-5"><i class="bi bi-tags"></i></span>
+                      <select class="form-select checkout-input border-start-0 py-3 ps-0 fw-semibold" id="voucherSelect" name="voucherCode"></select>
+                    </div>
+                    <p class="voucher-message mb-0 mt-2 fw-medium" id="voucherMessage"></p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="checkout-panel border-0 shadow-sm mb-4 p-4 rounded-4">
+                <div class="panel-title mb-4">
+                  <div>
+                    <h2 class="fs-4 fw-bold mb-0">Hình thức nhận hàng</h2>
+                  </div>
+                  <i class="bi bi-truck fs-2 text-primary opacity-75"></i>
+                </div>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="choice-card h-100 shadow-none bg-light">
+                      <input type="radio" name="shippingMethod" value="standard" checked />
+                      <span class="choice-icon bg-white shadow-sm"><i class="bi bi-box-seam text-primary"></i></span>
+                      <span>
+                        <strong class="fs-6">Giao tiêu chuẩn</strong>
+                        <small class="text-secondary">Đơn dưới 5 triệu miễn phí, trên 5 triệu phí 0.1%</small>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="choice-card h-100 shadow-none bg-light">
+                      <input type="radio" name="shippingMethod" value="express" />
+                      <span class="choice-icon bg-white shadow-sm"><i class="bi bi-lightning-charge text-warning"></i></span>
+                      <span>
+                        <strong class="fs-6">Giao siêu tốc</strong>
+                        <small class="text-secondary">Giao nhanh nội thành, phí linh hoạt theo đơn</small>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label class="choice-card h-100 shadow-none bg-light">
+                      <input type="radio" name="shippingMethod" value="pickup" />
+                      <span class="choice-icon bg-white shadow-sm"><i class="bi bi-shop text-success"></i></span>
+                      <span>
+                        <strong class="fs-6">Nhận tại cửa hàng</strong>
+                        <small class="text-secondary">Miễn phí nhận tại: 140 Lê Trọng Tấn, Tân Phú</small>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </section>
+
+              <section class="checkout-panel border-0 shadow-sm mb-4 p-4 rounded-4">
+                <div class="panel-title mb-4">
+                  <div>
+                    <h2 class="fs-4 fw-bold mb-0">Phương thức thanh toán</h2>
+                  </div>
+                  <i class="bi bi-wallet2 fs-2 text-primary opacity-75"></i>
+                </div>
+                <div class="row g-3 payment-methods">
+                  <div class="col-md-6">
+                    <label class="choice-card h-100 shadow-none bg-light">
+                      <input type="radio" name="paymentMethod" value="cod" checked />
+                      <span class="choice-icon bg-white shadow-sm"><i class="bi bi-cash-stack text-success"></i></span>
+                      <span>
+                        <strong class="fs-6">Tiền mặt (COD)</strong>
+                        <small class="text-secondary">Thanh toán khi nhận hàng</small>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="choice-card h-100 shadow-none bg-light">
+                      <input type="radio" name="paymentMethod" value="bank" />
+                      <span class="choice-icon bg-white shadow-sm"><i class="bi bi-bank text-info"></i></span>
+                      <span>
+                        <strong class="fs-6">Chuyển khoản</strong>
+                        <small class="text-secondary">Quét mã QR sau khi đặt hàng</small>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="payment-extra d-none mt-4 p-4 rounded-4 border bg-white shadow-sm" id="cardFields">
+                  <h6 class="fw-bold mb-3"><i class="bi bi-lock-fill text-success"></i> Nhập thông tin thẻ</h6>
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label class="form-label text-secondary" for="cardNumber">Số thẻ</label>
+                      <input class="form-control checkout-input py-2" id="cardNumber" type="text" inputmode="numeric" maxlength="19" placeholder="1234 5678 9012 3456" />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label text-secondary" for="cardExpiry">Ngày hết hạn</label>
+                      <input class="form-control checkout-input py-2" id="cardExpiry" type="text" inputmode="numeric" maxlength="5" placeholder="MM/YY" />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label text-secondary" for="cardCvv">CVV</label>
+                      <input class="form-control checkout-input py-2" id="cardCvv" type="password" inputmode="numeric" maxlength="4" placeholder="•••" />
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="checkout-panel border-warning shadow mb-5 p-4 rounded-4" style="background-color: #fffaf0">
+                <h3 class="fs-5 fw-bold mb-3 border-bottom border-warning-subtle pb-3"><i class="bi bi-receipt"></i> Tóm tắt thanh toán</h3>
+                <div class="summary-lines mt-0">
+                  <div class="d-flex justify-content-between mb-2 fs-6">
+                    <span class="text-secondary">Tổng tiền hàng</span>
+                    <strong id="subtotalValue" class="text-dark">0 đ</strong>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2 fs-6">
+                    <span class="text-secondary">Ưu đãi voucher</span>
+                    <strong id="discountValue" class="text-success">0 đ</strong>
+                  </div>
+                  <div class="d-flex justify-content-between mb-3 fs-6">
+                    <span class="text-secondary">Phí giao hàng</span>
+                    <strong id="shippingValue" class="text-dark">0 đ</strong>
+                  </div>
+                  <div class="total border-top border-warning-subtle pt-3 mt-2 d-flex justify-content-between align-items-center">
+                    <span class="fs-5 fw-bold text-dark">Tổng thanh toán</span>
+                    <strong id="totalValue" class="text-danger fw-bolder">0 đ</strong>
+                  </div>
+                </div>
+
+                <button class="btn btn-outline-danger checkout-submit mt-3 w-100 fs-5 py-3 shadow-sm fw-bold" style="border-radius: 12px" type="submit" id="submitOrderBtn">ĐẶT HÀNG NGAY</button>
+                <p class="text-center text-secondary small mt-3 mb-0"><i class="bi bi-shield-lock-fill text-success"></i> Giao dịch được mã hóa an toàn 256-bit</p>
+              </section>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-modern py-5" id="footer-section">
+      <div class="container">
+        <div class="row g-4 justify-content-between">
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="footer-contact-info">
+              <h3 class="footer-heading mb-4 text-gradient-orange">Liên Hệ Trung Tâm</h3>
+              <h4 class="h5 text-white mb-4 fw-bold">THT - Tech Support</h4>
+
+              <ul class="list-unstyled footer-contact-list">
+                <li class="d-flex align-items-start mb-3">
+                  <i class="bi bi-geo-alt-fill text-accent-blue me-3 mt-1"></i>
+                  <span><strong>Địa chỉ:</strong> 140 Lê Trọng Tấn, Q. Tân Phú, TP. HCM</span>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-envelope-fill text-accent-blue me-3"></i>
+                  <span><strong>Email:</strong> <a href="mailto:hotrosv@huit.edu.vn" class="text-decoration-none text-footer-link">hotrosv@huit.edu.vn</a></span>
+                </li>
+                <li class="d-flex align-items-center mb-4">
+                  <i class="bi bi-telephone-fill text-accent-blue me-3"></i>
+                  <span><strong>Hotline:</strong> <a href="tel:0909888777" class="text-decoration-none text-footer-link fw-bold text-orange">0909 888 777</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="footer-map-wrapper">
+              <h3 class="footer-heading mb-4 text-gradient-orange">Kênh hỗ trợ</h3>
+              <div class="checkout-footer-support">
+                <a href="tel:0909888777"><i class="bi bi-telephone-outbound"></i> Tư vấn đơn hàng</a>
+                <a href="mailto:hotrosv@huit.edu.vn"><i class="bi bi-envelope"></i> Gửi email hỗ trợ</a>
+                <a href="./index.html#featured"><i class="bi bi-bag"></i> Xem thêm sản phẩm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider my-4" />
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright-text mb-0 text-light">© 2026 THT - Tech. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-labelledby="orderSuccessTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content checkout-modal">
+          <div class="modal-body text-center">
+            <div class="success-icon"><i class="bi bi-check2"></i></div>
+            <h2 id="orderSuccessTitle">Đặt hàng thành công</h2>
+            <p class="mb-2">Mã đơn hàng: <strong id="orderCode">THT000000</strong></p>
+            <p class="text-muted">THT - Tech sẽ liên hệ xác nhận thông tin giao hàng trong thời gian sớm nhất.</p>
+            <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center mt-4">
+              <a class="btn btn-outline-dark" href="./index.html#featured">Tiếp tục mua sắm</a>
+              <a class="btn btn-accent d-flex align-items-center" href="./profile.html">Xem tài khoản</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="checkout-toast" id="checkoutToast" role="status" aria-live="polite"></div>
+
+    <script src="./assets/js/cart-manager.js"></script>
+    <script src="./assets/js/script-checkout.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

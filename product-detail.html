@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <title>Chi tiết sản phẩm</title>
+    <!-- Thu vien va stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style-product-detail.css" />
+  </head>
+  <body>
+    <!-- Thanh thong bao dau trang -->
+    <div class="header-notification-bar py-2 text-light">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-center justify-content-xl-between align-items-center gap-2 text-center text-xl-start">
+          <p class="mb-0">Tuần lễ công nghệ mới: miễn phí giao nhanh nội thành và hỗ trợ trả góp 0%.</p>
+          <div class="header-notification-icons d-flex flex-wrap justify-content-center gap-3">
+            <span class="d-inline-flex align-items-center"><i class="bi bi-lightning-charge-fill"></i> Flash deal mỗi ngày</span>
+            <span class="d-inline-flex align-items-center"><i class="bi bi-shield-check"></i> Bảo hành minh bạch</span>
+            <span class="d-inline-flex align-items-center"><i class="bi bi-headset"></i> Hỗ trợ 24/7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header chinh -->
+    <header class="bg-white sticky-top shadow-sm">
+      <!-- Header desktop -->
+      <div class="d-none d-xl-block shadow-sm">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-2">
+            <a href="./index.html" class="text-decoration-none">
+              <img src="./assets/img/logo.png" alt="ĐH Công Thương" class="logo-img" style="max-width: 100%; height: auto" />
+            </a>
+          </div>
+
+          <div class="col-lg-7">
+            <form class="search-form d-none d-xl-flex align-items-center" role="search">
+              <i class="bi bi-search flex-shrink-0"></i>
+              <input type="search" class="form-control" placeholder="Tìm điện thoại..." />
+              <button class="btn btn-accent" type="submit">Tìm</button>
+            </form>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="header-notification-actions d-flex flex-wrap justify-content-evenly align-items-center gap-2 ms-0">
+              <a href="./cart.html" class="header-action-button position-relative p-0 d-inline-flex justify-content-center align-items-center text-decoration-none">
+                <i class="bi bi-cart2 fs-5"></i>
+                <span class="header-action-badge position-absolute d-inline-flex justify-content-center align-items-center text-light" data-cart-count>0</span>
+              </a>
+
+              <a class="header-account-chip d-none d-md-inline-flex align-items-center justify-content-center text-decoration-none position-relative" href="./login.html">
+                <i class="bi bi-person-circle fs-4 me-2"></i>
+                <span class="overflow-hidden">Đăng Nhập</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav-gradient w-100">
+          <div class="container">
+            <ul class="nav justify-content-center py-1 gap-4">
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#home">Trang chủ</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#featured" data-filter-shortcut="phone">Điện thoại</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#featured" data-filter-shortcut="tablet">Máy tính bảng</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#featured" data-filter-shortcut="laptop">Laptop</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#featured" data-filter-shortcut="accessory">Phụ kiện</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#contact">Liên hệ</a></li>
+              <li class="nav-item"><a class="nav-link fs-5 text-white" href="./index.html#flash-deal" data-filter-shortcut="all">Khuyến Mãi</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Header mobile -->
+      <div class="d-xl-none d-flex justify-content-between align-items-center px-3 py-2 w-100">
+        <button class="btn border-0 p-0 fs-1 text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Mở menu">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <a href="./index.html">
+          <img src="./assets/img/logo.png" alt="ĐH Công Thương" height="50" />
+        </a>
+
+        <a href="./cart.html" class="header-action-button position-relative p-0 d-inline-flex justify-content-center align-items-center text-decoration-none">
+          <i class="bi bi-cart2 fs-5"></i>
+          <span class="header-action-badge position-absolute d-inline-flex justify-content-center align-items-center text-light" data-cart-count>0</span>
+        </a>
+      </div>
+
+      <!-- Menu truot cho mobile -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header border-bottom">
+          <h2 class="visually-hidden" id="mobileMenuLabel">Menu di động</h2>
+          <img src="./assets/img/logo.png" alt="ĐH Công Thương" height="50" />
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column p-0">
+          <ul class="nav flex-column fs-6">
+            <li class="nav-item border-bottom"><a class="nav-link text-dark py-3 px-4 fw-medium" href="#featured" data-filter-shortcut="phone">ĐIỆN THOẠI</a></li>
+            <li class="nav-item border-bottom"><a class="nav-link text-dark py-3 px-4 fw-medium" href="#featured" data-filter-shortcut="tablet">MÁY TÍNH BẢNG</a></li>
+            <li class="nav-item border-bottom"><a class="nav-link text-dark py-3 px-4 fw-medium" href="#featured" data-filter-shortcut="laptop">LAPTOP</a></li>
+            <li class="nav-item border-bottom"><a class="nav-link text-dark py-3 px-4 fw-medium" href="#featured" data-filter-shortcut="accessory">PHỤ KIỆN</a></li>
+            <li class="nav-item border-bottom"><a class="nav-link text-dark py-3 px-4 fw-medium" href="#home">LIÊN HỆ</a></li>
+            <li class="nav-item border-bottom"><a class="nav-link text-dark py-3 px-4 fw-medium" href="#featured" data-filter-shortcut="all">KHUYẾN MÃI</a></li>
+          </ul>
+
+          <div class="mt-2">
+            <a href="#" class="nav-link text-dark py-3 px-4 d-flex align-items-center gap-2 fw-medium"><i class="bi bi-cart2 fs-5"></i> GIỎ HÀNG CỦA TÔI (<span data-cart-count>0</span>)</a>
+            <a href="#" class="nav-link text-dark py-2 px-4 d-flex align-items-center gap-2 fw-medium"><i class="bi bi-heart fs-5"></i> YÊU THÍCH (<span data-wishlist-count>0</span>)</a>
+          </div>
+
+          <div class="mt-auto pt-4 border-top">
+            <a href="./login.html" id="mobileLoginBtn" class="btn btn-dark w-100 rounded-0 d-flex align-items-center justify-content-center gap-2 py-2.5">
+              <i class="bi bi-box-arrow-in-right"></i>
+              <span>Đăng Nhập</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chi tiết sản phẩm -->
+    <main class="product-page">
+      <div class="container">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb-wrap" aria-label="Đường dẫn sản phẩm">
+          <a href="./index.html">Trang chủ</a>
+          <i class="bi bi-chevron-right"></i>
+          <a href="./index.html#featured" id="bc-category">Điện thoại</a>
+          <i class="bi bi-chevron-right"></i>
+          <a href="./index.html?category=phone&brand=iphone#productLineFilter" id="bc-brand">Hãng điện thoại</a>
+          <i class="bi bi-chevron-right"></i>
+          <span id="bc-name">Sản phẩm đang xem</span>
+        </nav>
+        <!-- Sản phẩm -->
+        <section class="detail-shell" id="productDetail">
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-5">
+              <div class="gallery-wrap">
+                <div class="main-img-box">
+                  <img id="mainImg" src="" alt="" />
+                </div>
+                <div class="thumb-list" id="thumbList"></div>
+              </div>
+            </div>
+            <!-- Thông tin sản phẩm -->
+            <div class="col-lg-7">
+              <div class="info-panel">
+                <div class="product-brand" id="productBrand"></div>
+                <h1 class="product-title" id="productName"></h1>
+                <!-- Đánh giá sản phẩm -->
+                <div class="rating-row">
+                  <span class="stars" id="productStars"></span>
+                  <strong id="productRating"></strong>
+                  <span id="productReviewCount"></span>
+                </div>
+                <!-- Giá -->
+                <div class="price-row">
+                  <span class="price-tag" id="productPrice"></span>
+                  <span class="original-price" id="productOldPrice"></span>
+                  <span class="discount-badge" id="productDiscount"></span>
+                </div>
+                <!-- Chọn màu -->
+                <div class="option-block">
+                  <p class="option-label">MÀU SẮC: <strong id="selectedColor"></strong></p>
+                  <div class="color-swatch-list" id="colorList"></div>
+                </div>
+                <!-- Chọn dung lượng -->
+                <div class="option-block">
+                  <p class="option-label">DUNG LƯỢNG: <strong id="selectedStorage"></strong></p>
+                  <div class="capacity-list" id="storageList"></div>
+                </div>
+                <!-- Số lượng -->
+                <div class="option-block">
+                  <p class="option-label">SỐ LƯỢNG</p>
+                  <div class="qty-box">
+                    <button class="qty-btn" type="button" id="minusQty" aria-label="Giảm số lượng"><i class="bi bi-dash"></i></button>
+                    <input id="qtyVal" class="qty-val" value="1" readonly aria-label="Số lượng sản phẩm" />
+                    <button class="qty-btn" type="button" id="plusQty" aria-label="Tăng số lượng"><i class="bi bi-plus"></i></button>
+                  </div>
+                </div>
+                <!-- Nút thao tác -->
+                <div class="action-row">
+                  <button class="btn-buy" type="button" id="buyNowBtn"><i class="bi bi-lightning-charge me-2"></i>Mua ngay</button>
+                  <div class="mobile-action-row">
+                    <button class="btn-cart" type="button" id="addCartBtn"><i class="bi bi-cart-plus me-2"></i>Thêm giỏ hàng</button>
+                  </div>
+                </div>
+                <!-- Quyền lợi -->
+                <div class="perks-strip">
+                  <div class="perk-item">
+                    <i class="bi bi-truck"></i>
+                    <div>
+                      <h4>Giao nhanh 2h</h4>
+                      <p>Nội thành HCM</p>
+                    </div>
+                  </div>
+                  <div class="perk-item">
+                    <i class="bi bi-arrow-repeat"></i>
+                    <div>
+                      <h4>Đổi trả dễ dàng</h4>
+                      <p>Trong 30 ngày</p>
+                    </div>
+                  </div>
+                  <div class="perk-item">
+                    <i class="bi bi-shield-check"></i>
+                    <div>
+                      <h4>Bảo hành chính hãng</h4>
+                      <p>12 tháng tại TTBH</p>
+                    </div>
+                  </div>
+                  <div class="perk-item">
+                    <i class="bi bi-credit-card"></i>
+                    <div>
+                      <h4>Trả góp 0%</h4>
+                      <p>Qua thẻ tín dụng</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accordion thông tin sản phẩm -->
+                <div class="accordion product-accordion" id="productAccordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accDetails">
+                        <img class="acc-thumb" id="detailThumb" src="" alt="" />
+                        <span>Thông tin sản phẩm</span>
+                      </button>
+                    </h2>
+                    <div id="accDetails" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                      <div class="accordion-body detail-text">
+                        <ul id="detailList"></ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Thông số kỹ thuật -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accSpecs">
+                        <img class="acc-thumb" id="specThumb" src="" alt="" />
+                        <span>Thông số kỹ thuật</span>
+                      </button>
+                    </h2>
+                    <div id="accSpecs" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                      <div class="accordion-body">
+                        <table class="spec-table" id="specTable"></table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Đánh giá của khách hàng -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accReviews">
+                        <img class="acc-thumb" id="reviewThumb" src="" alt="" />
+                        <span>Đánh giá khách hàng <span class="acc-badge" id="reviewBadge"></span></span>
+                      </button>
+                    </h2>
+                    <div id="accReviews" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                      <div class="accordion-body" id="reviewList"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sản phẩm kiên quan -->
+        <section class="related-section mt-5">
+          <div class="section-heading">
+            <h2>Sản phẩm liên quan</h2>
+          </div>
+          <div class="row g-3" id="relatedProducts"></div>
+        </section>
+        <!-- So sánh sản phẩm -->
+        <section class="compare-section mt-5">
+          <div class="section-heading">
+            <h2>So sánh sản phẩm</h2>
+          </div>
+          <!-- Lựa chọn sản phẩm để so sánh -->
+          <div class="compare-select-row">
+            <select id="compareSelect1" class="compare-select" title="So sánh sản phẩm"></select>
+            <select id="compareSelect2" class="compare-select" title="So sánh sản phẩm"></select>
+            <select id="compareSelect3" class="compare-select" title="So sánh sản phẩm"></select>
+          </div>
+          <!-- Bảng so sánh -->
+          <div class="compare-table-wrap">
+            <table class="compare-table">
+              <thead>
+                <tr id="compareHead"></tr>
+              </thead>
+              <tbody id="compareBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Toast thông báo -->
+    <div id="toastBox" class="toast-box"></div>
+    <!-- Footer -->
+    <footer class="footer-modern py-5">
+      <div class="container">
+        <div class="row g-4 justify-content-between">
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="footer-contact-info">
+              <h3 class="footer-heading mb-4 text-gradient-orange">Liên Hệ Trung Tâm</h3>
+              <h4 class="h5 text-white mb-4 fw-bold">Trung tâm hỗ trợ sinh viên - HUIT</h4>
+
+              <ul class="list-unstyled footer-contact-list">
+                <li class="d-flex align-items-start mb-3">
+                  <i class="bi bi-geo-alt-fill text-accent-blue me-3 mt-1"></i>
+                  <span><strong>Địa chỉ:</strong> 140 Lê Trọng Tấn, Q. Tân Phú, TP. HCM</span>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-envelope-fill text-accent-blue me-3"></i>
+                  <span><strong>Email:</strong> <a href="mailto:hotrosv@huit.edu.vn" class="text-decoration-none text-footer-link">hotrosv@huit.edu.vn</a></span>
+                </li>
+                <li class="d-flex align-items-center mb-4">
+                  <i class="bi bi-telephone-fill text-accent-blue me-3"></i>
+                  <span><strong>Hotline:</strong> <a href="tel:0909888777" class="text-decoration-none text-footer-link fw-bold text-orange">0909 888 777</a></span>
+                </li>
+              </ul>
+
+              <div class="footer-socials d-flex gap-2">
+                <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon-btn" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="social-icon-btn" aria-label="Tiktok"><i class="bi bi-tiktok"></i></a>
+                <a href="#" class="social-icon-btn" aria-label="Globe"><i class="bi bi-globe"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="footer-map-wrapper">
+              <h3 class="footer-heading mb-4 text-gradient-orange">Vị Trí Bản Đồ</h3>
+              <div class="map-container shadow">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0673482314114!2d106.6237946776944!3d10.806153861869756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBUaMawxqFuZyBUUC4gSOG7kyBDaMOtIE1pbmggKEhVSVQp!5e0!3m2!1svi!2s!4v1778957899889!5m2!1svi!2s"
+                  width="100%"
+                  height="220"
+                  allowfullscreen=""
+                  loading="lazy"
+                  class="footer-map-frame"
+                  title="Bản đồ HUIT"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider my-4" />
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright-text mb-0 text-light">© 2026 Trung Tâm Hỗ Trợ Sinh Viên - HUIT. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/cart-manager.js"></script>
+    <script src="./assets/js/script-product-detail.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+  <title>Giỏ hàng | THT - Tech</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style-cart.css" />
+</head>
+
+<body>
+
+  <!-- Header chinh -->
+  <header class="bg-white sticky-top shadow-sm">
+    <!-- Header desktop -->
+    <div class="d-none d-xl-block shadow-sm">
+      <div class="row align-items-center justify-content-between px-3">
+        <div class="col-lg-2">
+          <a href="./index.html" class="text-decoration-none">
+            <img src="./assets/img/logo.png" alt="ĐH Công Thương" class="img-fluid logo-img" />
+          </a>
+        </div>
+
+        <div class="col-lg-7">
+          <form class="search-form d-none d-xl-flex align-items-center" role="search">
+            <i class="bi bi-search flex-shrink-0"></i>
+            <input type="search" class="form-control" placeholder="Tìm điện thoại..." />
+            <button class="btn btn-accent" type="submit">Tìm</button>
+          </form>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="header-notification-actions d-flex flex-wrap justify-content-evenly align-items-center gap-2 ms-0">
+            <a href="./cart.html" class="header-action-button position-relative p-0 d-inline-flex justify-content-center align-items-center text-decoration-none">
+              <i class="bi bi-cart2 fs-5"></i>
+              <span class="header-action-badge position-absolute d-inline-flex justify-content-center align-items-center text-light" data-cart-count>0</span>
+            </a>
+
+            <a class="header-account-chip d-none d-md-inline-flex align-items-center justify-content-center text-decoration-none position-relative" href="./login.html">
+              <i class="bi bi-person-circle fs-4 me-2"></i>
+              <span class="overflow-hidden">Đăng Nhập</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header mobile -->
+    <div class="d-xl-none d-flex justify-content-between align-items-center px-3 py-2 w-100">
+      <a href="./index.html" class="text-decoration-none">
+        <img src="./assets/img/logo.png" alt="ĐH Công Thương" class="img-fluid" style="max-width: 100px" />
+      </a>
+      <div class="header-notification-actions d-flex gap-2 align-items-center">
+        <a href="./cart.html" class="header-action-button position-relative p-0 d-inline-flex justify-content-center align-items-center text-decoration-none">
+          <i class="bi bi-cart2 fs-5"></i>
+          <span class="header-action-badge position-absolute d-inline-flex justify-content-center align-items-center text-light" data-cart-count>0</span>
+        </a>
+
+        <a class="header-account-chip d-inline-flex align-items-center justify-content-center text-decoration-none position-relative" href="./login.html">
+          <i class="bi bi-person-circle fs-4"></i>
+          <span class="overflow-hidden" style="display: none;"></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="container-fluid py-4">
+    <div class="row mb-3">
+      <!-- Back button -->
+      <div class="col-12">
+        <a href="./index.html" class="back-btn" aria-label="Quay về trang chủ">
+          <i class="bi bi-arrow-left"></i>
+          <span>Trang chủ</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Desktop: Products list (left side) -->
+      <div class="col-xl-8">
+        <div class="cart-products-section">
+          <h5 class="cart-title mb-3">
+            <i class="bi bi-bag-check"></i> Giỏ hàng của bạn
+          </h5>
+          
+          <div id="cart-products-list" class="cart-products-list">
+            <!-- Products will be inserted here by JS -->
+          </div>
+
+          <div id="empty-cart-message" class="alert alert-info text-center">
+            <i class="bi bi-info-circle"></i> Giỏ hàng của bạn trống. <a href="./index.html">Tiếp tục mua sắm</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop: Order summary (right side) -->
+      <div class="col-xl-4 d-none d-xl-block">
+        <div class="order-summary sticky-top" style="top: 100px">
+          <h5 class="summary-title mb-3">Tóm tắt đơn hàng</h5>
+
+          <div class="summary-content">
+            <div class="summary-row total">
+              <span>Tổng tiền hàng:</span>
+              <span id="total-price" class="text-danger">0đ</span>
+            </div>
+
+            <button class="btn btn-purchase w-100 mt-3" id="purchase-btn" disabled>
+              <i class="bi bi-credit-card"></i> Mua hàng (0)
+            </button>
+
+            <a href="./index.html" class="btn btn-secondary w-100 mt-2">
+              <i class="bi bi-arrow-left"></i> Tiếp tục mua sắm
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile: Order summary -->
+    <div class="d-xl-none mobile-summary sticky-bottom">
+      <div class="summary-mobile">
+        <div class="d-flex justify-content-between mb-2">
+          <span>Tổng:</span>
+          <span id="mobile-total" class="fw-bold text-danger">0đ</span>
+        </div>
+        <button class="btn btn-purchase w-100" id="mobile-purchase-btn" disabled>
+          <i class="bi bi-credit-card"></i> Mua hàng (0)
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-modern py-5" id="footer-section">
+      <div class="container">
+        <div class="row g-4 justify-content-between">
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="footer-contact-info">
+              <h3 class="footer-heading mb-4 text-gradient-orange">Liên Hệ Trung Tâm</h3>
+              <h4 class="h5 text-white mb-4 fw-bold">Trung tâm hỗ trợ sinh viên - HUIT</h4>
+
+              <ul class="list-unstyled footer-contact-list">
+                <li class="d-flex align-items-start mb-3">
+                  <i class="bi bi-geo-alt-fill text-accent-blue me-3 mt-1"></i>
+                  <span><strong>Địa chỉ:</strong> 140 Lê Trọng Tấn, Q. Tân Phú, TP. HCM</span>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-envelope-fill text-accent-blue me-3"></i>
+                  <span><strong>Email:</strong> <a href="mailto:hotrosv@huit.edu.vn" class="text-decoration-none text-footer-link">hotrosv@huit.edu.vn</a></span>
+                </li>
+                <li class="d-flex align-items-center mb-4">
+                  <i class="bi bi-telephone-fill text-accent-blue me-3"></i>
+                  <span><strong>Hotline:</strong> <a href="tel:0909888777" class="text-decoration-none text-footer-link fw-bold text-orange">0909 888 777</a></span>
+                </li>
+              </ul>
+
+              <div class="footer-socials d-flex gap-2">
+                <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon-btn" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="social-icon-btn" aria-label="Tiktok"><i class="bi bi-tiktok"></i></a>
+                <a href="#" class="social-icon-btn" aria-label="Globe"><i class="bi bi-globe"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="footer-map-wrapper">
+              <h3 class="footer-heading mb-4 text-gradient-orange">Vị Trí Bản Đồ</h3>
+              <div class="map-container shadow">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0673482314114!2d106.6237946776944!3d10.806153861869756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBUaMawxqFuZyBUUC4gSOG7kyBDaMOtIE1pbmggKEhVSVQp!5e0!3m2!1svi!2s!4v1778957899889!5m2!1svi!2s"
+                  width="100%"
+                  height="220"
+                  allowfullscreen=""
+                  loading="lazy"
+                  class="footer-map-frame"
+                  title="Bản đồ HUIT"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider my-4" />
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright-text mb-0 text-light">© 2026 Trung Tâm Hỗ Trợ Sinh Viên - HUIT. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/cart-manager.js"></script>
+  <script src="./assets/js/script-cart.js"></script>
+</body>
+</html>

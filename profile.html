@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tài khoản của tôi | THT - Tech</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style-profile.css" />
+  </head>
+  <body>
+    <header class="top-header container">
+      <a href="./index.html" class="back-btn">
+        <i class="bi bi-arrow-left"></i>
+        <span>Trang chủ</span>
+      </a>
+
+      <a href="./index.html" class="brand-link">
+        <img src="./assets/img/logo.png" alt="THT Tech" class="header-logo" />
+      </a>
+
+      <div class="header-spacer"></div>
+    </header>
+
+    <main class="profile-main">
+      <div class="container py-4">
+        <div class="row g-4 profile-layout-row">
+          <div class="col-lg-4 col-xl-3 sidebar-scroll-area">
+            <aside class="sidebar-wrapper">
+              <div class="user-info-box">
+                <div class="avatar-circle">
+                  <img src="https://placehold.co/100x100/ffedd5/ff7a18?text=U" alt="Avatar" id="profileAvatarImg" />
+                </div>
+                <div class="user-details">
+                  <h6 class="mb-1 fw-bold text-uppercase user-name-text" id="profileName">Account Name</h6>
+                </div>
+              </div>
+
+              <div class="mobile-order-section mobile-only-block">
+                <div class="section-header-sm">
+                  <span class="fw-bold">Đơn hàng của tôi</span>
+                  <a href="#" class="view-all-link-sm nav-trigger" data-trigger="#tab-orders">Xem tất cả <i class="bi bi-chevron-right"></i></a>
+                </div>
+                <div class="order-status-grid">
+                  <a href="#" class="status-item nav-trigger" data-trigger="#tab-orders" data-sub-target="#order-processing">
+                    <div class="status-icon">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.9993 26.8327C21.0756 26.8327 26.8327 21.0756 26.8327 13.9993C26.8327 6.9231 21.0756 1.16602 13.9993 1.16602C10.6523 1.16602 7.54285 2.44561 5.17643 4.70427V1.9681C5.17643 1.52481 4.81763 1.16602 4.37435 1.16602C3.93106 1.16602 3.57227 1.52481 3.57227 1.9681V6.7806C3.57227 7.22388 3.93106 7.58268 4.37435 7.58268H9.18685C9.63013 7.58268 9.98893 7.22388 9.98893 6.7806C9.98893 6.33731 9.63013 5.97852 9.18685 5.97852H6.15979C8.24413 3.93026 11.0148 2.77018 13.9993 2.77018C20.1912 2.77018 25.2285 7.80753 25.2285 13.9993C25.2285 20.1912 20.1912 25.2285 13.9993 25.2285C7.80753 25.2285 2.77018 20.1912 2.77018 13.9993C2.77018 13.5561 2.41138 13.1973 1.9681 13.1973C1.52481 13.1973 1.16602 13.5561 1.16602 13.9993C1.16602 21.0756 6.9231 26.8327 13.9993 26.8327Z"
+                          fill="#090D14"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M21 17.9609V11.1797C21 10.8655 20.8051 10.5844 20.5112 10.4739L14.4835 8.21348C14.3129 8.15019 14.1246 8.15019 13.9538 8.21348L7.926 10.4739C7.6324 10.5844 7.4375 10.8655 7.4375 11.1797V17.9609C7.4375 18.2751 7.6324 18.5562 7.926 18.6667L13.9538 20.9271C14.0392 20.9588 14.1291 20.9748 14.2187 20.9748C14.3084 20.9748 14.3983 20.9588 14.4837 20.9271L20.5115 18.6667C20.8051 18.5562 21 18.2751 21 17.9609ZM14.2187 12.6351L10.3366 11.1797L14.2187 9.7242L18.1009 11.1797L14.2187 12.6351ZM13.4653 19.1338L8.94444 17.4385V12.2672L13.4653 13.9625V19.1338ZM19.4931 12.2672V17.4385L14.9722 19.1338V13.9625L19.4931 12.2672Z"
+                          fill="#DC2626"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span>Đang xử lý</span>
+                  </a>
+
+                  <a href="#" class="status-item nav-trigger" data-trigger="#tab-orders" data-sub-target="#order-shipping">
+                    <div class="status-icon">
+                      <i class="bi bi-truck fs-4 text-dark" style="transform: scale(0.9)"></i>
+                    </div>
+                    <span>Đang giao hàng</span>
+                  </a>
+
+                  <a href="#" class="status-item nav-trigger" data-trigger="#tab-orders" data-sub-target="#order-completed">
+                    <div class="status-icon">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.5625 1.375H3.4375C2.30037 1.375 1.375 2.30037 1.375 3.4375V18.5625C1.375 19.6996 2.30037 20.625 3.4375 20.625H18.5625C19.6996 20.625 20.625 19.6996 20.625 18.5625V3.4375C20.625 2.30037 19.6996 1.375 18.5625 1.375ZM13.0632 2.75L13.0666 6.87775L13.0625 6.875L11.4125 5.6375C11.2901 5.54606 11.1451 5.5 11 5.5C10.8549 5.5 10.7099 5.54606 10.5875 5.6375L8.9375 6.875V2.75H13.0632ZM19.25 18.5625C19.25 18.9413 18.9413 19.25 18.5625 19.25H3.4375C3.05869 19.25 2.75 18.9413 2.75 18.5625V3.4375C2.75 3.05869 3.05869 2.75 3.4375 2.75H7.5625V6.875C7.5625 7.39956 7.854 7.8705 8.32288 8.10494C8.51881 8.20325 8.72919 8.25137 8.93887 8.25137C9.22969 8.25137 9.51844 8.15788 9.7625 7.975L11 7.04688L12.2375 7.975C12.6562 8.28988 13.2096 8.34006 13.6771 8.10494C14.146 7.8705 14.4375 7.39956 14.4375 6.875V2.75H18.5625C18.9413 2.75 19.25 3.05869 19.25 3.4375V18.5625Z"
+                          fill="#090D14"
+                          stroke="#090D14"
+                          stroke-width="0.4"
+                        ></path>
+                        <path d="M7.69922 11.9004L10.0286 14.3004L14.2992 9.90039" stroke="#DC2626" stroke-width="1.5"></path>
+                      </svg>
+                    </div>
+                    <span>Hoàn tất</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="sidebar-menu list-menu-mobile">
+                <a href="#" class="nav-item active desktop-only-menu" data-target="#tab-overview">
+                  <div class="nav-item-left"><i class="bi bi-house-door-fill"></i> <span>Tổng quan</span></div>
+                  <i class="bi bi-chevron-right chevron-icon"></i>
+                </a>
+                <a href="#" class="nav-item desktop-only-menu" data-target="#tab-orders">
+                  <div class="nav-item-left"><i class="bi bi-box-seam"></i> <span>Đơn hàng của tôi</span></div>
+                  <i class="bi bi-chevron-right chevron-icon"></i>
+                </a>
+                <a href="#" class="nav-item" data-target="#tab-notifications">
+                  <div class="nav-item-left"><i class="bi bi-bell"></i> <span>Thông báo của tôi</span></div>
+                  <i class="bi bi-chevron-right chevron-icon"></i>
+                </a>
+              </div>
+
+              <div class="points-card-wrapper mobile-points-wrapper">
+                <div class="section-header-sm mobile-only-flex">
+                  <span class="fw-bold">Khách hàng thân thiết</span>
+                  <a href="#" class="view-all-link-sm nav-trigger" data-trigger="#tab-rules">Xem thể lệ <i class="bi bi-chevron-right"></i></a>
+                </div>
+                <div class="points-card">
+                  <p class="mb-1 text-white fw-medium">Điểm thưởng của bạn</p>
+                  <div class="d-flex align-items-center mb-1">
+                    <div class="point-coin me-2">T</div>
+                    <h3 class="mb-0 fw-bold text-white">0</h3>
+                  </div>
+                  <a href="#" class="text-white small text-decoration-none d-inline-flex align-items-center gap-1 nav-trigger desktop-rule-link" data-trigger="#tab-rules">
+                    Xem thể lệ <i class="bi bi-chevron-right" style="font-size: 0.7rem"></i>
+                  </a>
+                  <i class="bi bi-coin bg-icon"></i>
+                </div>
+              </div>
+
+              <div class="sidebar-menu list-menu-mobile">
+                <a href="#" class="nav-item" data-target="#tab-vouchers">
+                  <div class="nav-item-left"><i class="bi bi-gift"></i> <span>Ưu đãi của tôi</span></div>
+                  <i class="bi bi-chevron-right chevron-icon"></i>
+                </a>
+                <a href="#" class="nav-item" data-target="#tab-point-history">
+                  <div class="nav-item-left"><i class="bi bi-clock-history"></i> <span>Lịch sử điểm thưởng</span></div>
+                  <i class="bi bi-chevron-right chevron-icon"></i>
+                </a>
+                <a href="#" class="nav-item" data-target="#tab-address">
+                  <div class="nav-item-left"><i class="bi bi-geo-alt"></i> <span>Sổ địa chỉ nhận hàng</span></div>
+                  <i class="bi bi-chevron-right chevron-icon"></i>
+                </a>
+              </div>
+
+              <div class="sidebar-menu mt-3 border-0 list-menu-mobile">
+                <a href="#" id="logoutBtn" class="nav-item text-danger">
+                  <div class="nav-item-left"><i class="bi bi-box-arrow-right"></i> <span>Đăng xuất</span></div>
+                  <i class="bi bi-chevron-right chevron-icon"></i>
+                </a>
+              </div>
+            </aside>
+          </div>
+
+          <div class="col-lg-8 col-xl-9 content-scroll-area">
+            <div id="tab-overview" class="tab-pane active">
+              <section class="content-block mb-4">
+                <div class="section-header">
+                  <h3 class="section-title">Đơn hàng gần đây</h3>
+                  <a href="#" class="view-all-link nav-trigger" data-trigger="#tab-orders">Xem tất cả <i class="bi bi-chevron-right"></i></a>
+                </div>
+                <div class="empty-state py-4">
+                  <i class="bi bi-box-seam text-muted" style="font-size: 3rem"></i>
+                  <h5 class="mt-3 text-muted">Bạn chưa có đơn hàng nào gần đây</h5>
+                  <p class="text-muted small">Các đơn hàng mới của bạn sẽ được hiển thị tại đây.</p>
+                </div>
+              </section>
+
+              <section class="content-block mt-5">
+                <div class="section-header">
+                  <h3 class="section-title">Ưu đãi dành riêng cho bạn</h3>
+                  <a href="#" class="view-all-link nav-trigger" data-trigger="#tab-vouchers">Xem tất cả <i class="bi bi-chevron-right"></i></a>
+                </div>
+                <div class="empty-state py-4">
+                  <i class="bi bi-ticket-perforated text-muted" style="font-size: 3rem"></i>
+                  <h5 class="mt-3 text-muted">Hiện chưa có mã ưu đãi nào</h5>
+                  <p class="text-muted small">Hãy tiếp tục mua sắm để nhận thêm các ưu đãi độc quyền.</p>
+                </div>
+              </section>
+            </div>
+
+            <div id="tab-orders" class="tab-pane">
+              <section class="content-block h-100">
+                <div class="section-header border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center">
+                  <h3 class="section-title fs-5 mb-0">Đơn hàng của tôi</h3>
+                </div>
+
+                <div class="order-search-box mb-3">
+                  <form action="#">
+                    <input type="text" placeholder="Tìm theo tên đơn, mã đơn hoặc tên sản phẩm" class="form-control py-2 ps-3 pe-5" />
+                    <i class="bi bi-search fs-5"></i>
+                  </form>
+                </div>
+
+                <div class="fpt-tabs-wrapper mb-4 border-bottom">
+                  <div class="fpt-tabs">
+                    <button class="fpt-tab-item active" data-target-pane="#order-all">Tất cả</button>
+                    <button class="fpt-tab-item" data-target-pane="#order-processing">Đang xử lý</button>
+                    <button class="fpt-tab-item" data-target-pane="#order-shipping">Đang giao</button>
+                    <button class="fpt-tab-item" data-target-pane="#order-completed">Hoàn tất</button>
+                    <button class="fpt-tab-item" data-target-pane="#order-cancelled">Đã hủy</button>
+                    <button class="fpt-tab-item" data-target-pane="#order-returned">Trả hàng</button>
+                  </div>
+                </div>
+
+                <div class="fpt-panes-container">
+                  <div id="order-all" class="fpt-pane active">
+                    <div class="empty-state py-5 border-0 bg-transparent text-center">
+                      <i class="bi bi-box2 text-muted opacity-50" style="font-size: 4rem"></i>
+                      <h5 class="mt-3 text-dark fw-bold">Chưa có đơn hàng nào</h5>
+                      <p class="text-muted small">Tất cả đơn hàng của bạn sẽ hiển thị ở đây.</p>
+                    </div>
+                  </div>
+
+                  <div id="order-processing" class="fpt-pane">
+                    <div class="empty-state py-5 border-0 bg-transparent text-center">
+                      <i class="bi bi-hourglass-split text-muted opacity-50" style="font-size: 4rem"></i>
+                      <h5 class="mt-3 text-dark fw-bold">Không có đơn hàng đang xử lý</h5>
+                    </div>
+                  </div>
+
+                  <div id="order-shipping" class="fpt-pane">
+                    <div class="empty-state py-5 border-0 bg-transparent text-center">
+                      <i class="bi bi-truck text-muted opacity-50" style="font-size: 4rem"></i>
+                      <h5 class="mt-3 text-dark fw-bold">Không có đơn hàng đang giao</h5>
+                    </div>
+                  </div>
+
+                  <div id="order-completed" class="fpt-pane">
+                    <div class="empty-state py-5 border-0 bg-transparent text-center">
+                      <i class="bi bi-check-circle text-muted opacity-50" style="font-size: 4rem"></i>
+                      <h5 class="mt-3 text-dark fw-bold">Không có đơn hàng hoàn tất</h5>
+                    </div>
+                  </div>
+
+                  <div id="order-cancelled" class="fpt-pane">
+                    <div class="empty-state py-5 border-0 bg-transparent text-center">
+                      <i class="bi bi-x-circle text-muted opacity-50" style="font-size: 4rem"></i>
+                      <h5 class="mt-3 text-dark fw-bold">Không có đơn hàng đã hủy</h5>
+                    </div>
+                  </div>
+
+                  <div id="order-returned" class="fpt-pane">
+                    <div class="empty-state py-5 border-0 bg-transparent text-center">
+                      <i class="bi bi-arrow-return-left text-muted opacity-50" style="font-size: 4rem"></i>
+                      <h5 class="mt-3 text-dark fw-bold">Không có đơn hàng trả lại</h5>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div id="tab-notifications" class="tab-pane">
+              <section class="content-block h-100">
+                <div class="section-header border-bottom pb-3 mb-4 d-flex justify-content-between align-items-center">
+                  <h3 class="section-title fs-5 mb-0">Thông báo của tôi</h3>
+                </div>
+
+                <div class="notification-list" id="notificationListContainer"></div>
+
+                <div class="text-center mt-4" id="loadMoreNotifContainer">
+                  <button id="loadMoreNotifBtn" class="btn btn-outline-dark px-4 py-2 fw-bold" style="border-width: 2px">Xem thêm thông báo <i class="bi bi-chevron-down ms-1"></i></button>
+                </div>
+              </section>
+            </div>
+
+            <div id="tab-vouchers" class="tab-pane">
+              <section class="content-block h-100">
+                <div class="section-header pb-3 mb-0 d-flex align-items-center">
+                  <h3 class="section-title fs-5 mb-0">Ưu đãi của tôi</h3>
+                </div>
+
+                <div class="fpt-tabs-wrapper border-bottom mb-4 bg-white">
+                  <div class="fpt-tabs w-100">
+                    <button class="fpt-tab-item active w-100 text-center" style="color: var(--ht-red); border-bottom-color: var(--ht-red)"><i class="bi bi-ticket-perforated"></i> Voucher</button>
+                  </div>
+                </div>
+
+                <div class="px-2">
+                  <h6 class="fw-bold mb-3 text-dark fs-6">Voucher của bạn</h6>
+                  <div class="d-flex gap-2 overflow-auto pb-2" style="scrollbar-width: none">
+                    <button class="voucher-filter-btn active" data-status="unused">Chưa sử dụng</button>
+                    <button class="voucher-filter-btn" data-status="used">Đã sử dụng</button>
+                    <button class="voucher-filter-btn" data-status="expired">Hết hạn</button>
+                  </div>
+                  <div id="voucherList" class="mt-4"></div>
+                </div>
+              </section>
+            </div>
+
+            <div id="tab-point-history" class="tab-pane">
+              <section class="content-block h-100">
+                <div class="section-header border-bottom pb-3 mb-0">
+                  <h3 class="section-title fs-5 mb-0">Lịch sử điểm thưởng</h3>
+                </div>
+                <div class="fpt-tabs-wrapper border-bottom mb-4 bg-white">
+                  <div class="fpt-tabs w-100 justify-content-between">
+                    <button class="fpt-tab-item active flex-fill text-center" data-target-pane="#point-all">Tất cả</button>
+                    <button class="fpt-tab-item flex-fill text-center" data-target-pane="#point-earned">Đã tích điểm</button>
+                    <button class="fpt-tab-item flex-fill text-center" data-target-pane="#point-used">Đã sử dụng</button>
+                  </div>
+                </div>
+
+                <div class="fpt-panes-container">
+                  <div id="point-all" class="fpt-pane active">
+                    <div class="empty-state py-5 border-0 bg-transparent text-center">
+                      <i class="bi bi-clock-history text-muted opacity-50" style="font-size: 4rem"></i>
+                      <h5 class="mt-3 text-dark fw-bold">Chưa có lịch sử điểm</h5>
+                    </div>
+                  </div>
+
+                  <div id="point-earned" class="fpt-pane">
+                    <div class="empty-state py-5 border-0 bg-transparent text-center">
+                      <i class="bi bi-plus-circle-dotted text-muted opacity-50" style="font-size: 4rem"></i>
+                      <h5 class="mt-3 text-dark fw-bold">Chưa có lịch sử tích điểm</h5>
+                    </div>
+                  </div>
+
+                  <div id="point-used" class="fpt-pane">
+                    <div class="empty-state py-5 border-0 bg-transparent text-center">
+                      <i class="bi bi-dash-circle-dotted text-muted opacity-50" style="font-size: 4rem"></i>
+                      <h5 class="mt-3 text-dark fw-bold">Chưa có lịch sử sử dụng điểm</h5>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div id="tab-rules" class="tab-pane">
+              <section class="content-block h-100">
+                <div class="section-header border-bottom pb-3 mb-4">
+                  <h3 class="section-title">Thể lệ chương trình THT Rewards</h3>
+                </div>
+
+                <div class="p-3">
+                  <p class="text-muted mb-4">
+                    Chào mừng bạn đến với <strong>THT Rewards</strong> - Chương trình khách hàng thân thiết được thiết kế riêng dành cho các tín đồ công nghệ tại THT Tech. Với mỗi giao dịch thành
+                    công, bạn không chỉ sở hữu thiết bị ưng ý mà còn tích lũy điểm số để đổi lấy hàng ngàn ưu đãi đặc quyền.
+                  </p>
+                </div>
+              </section>
+            </div>
+
+            <div id="tab-address" class="tab-pane">
+              <section class="content-block h-100">
+                <div class="section-header border-bottom pb-3 mb-4 d-flex justify-content-between align-items-center">
+                  <h3 class="section-title fs-5 mb-0">Sổ địa chỉ nhận hàng</h3>
+                  <button class="btn btn-danger-custom btn-sm d-none" id="topAddAddressBtn"><i class="bi bi-plus-lg me-1"></i>Thêm địa chỉ mới</button>
+                </div>
+
+                <div class="empty-state py-5" id="addressEmptyState">
+                  <i class="bi bi-geo-alt text-muted" style="font-size: 3rem"></i>
+                  <h5 class="mt-3 text-muted">Chưa có địa chỉ nào được lưu</h5>
+                  <button class="btn btn-outline-danger-custom mt-3" id="emptyAddAddressBtn"><i class="bi bi-plus-lg me-1"></i>Thêm địa chỉ mới</button>
+                </div>
+
+                <div id="addressListContainer" class="d-none"></div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="logoutModalOverlay" class="custom-modal-overlay">
+        <div class="custom-modal-box">
+          <button class="custom-modal-close" id="closeModalIcon" aria-label="Đóng">
+            <i class="bi bi-x-lg"></i>
+          </button>
+          <div class="custom-modal-content">
+            <img src="./assets/img/logout.webp" alt="Đăng xuất" class="custom-modal-img" />
+            <h4 class="custom-modal-title">Đăng xuất</h4>
+            <p class="custom-modal-desc">Bạn sẽ không nhận được đặc quyền<br />riêng dành cho thành viên</p>
+            <div class="custom-modal-actions">
+              <button class="btn btn-danger-custom w-100" id="cancelLogoutBtn">Đóng</button>
+              <button class="btn btn-outline-danger-custom w-100" id="confirmLogoutBtn">Đăng xuất</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="deleteAddressModalOverlay" class="custom-modal-overlay">
+        <div class="custom-modal-box">
+          <button class="custom-modal-close" id="closeDeleteModalIcon" aria-label="Đóng">
+            <i class="bi bi-x-lg"></i>
+          </button>
+          <div class="custom-modal-content">
+            <i class="bi bi-trash text-danger mb-3 d-block" style="font-size: 4rem"></i>
+
+            <h4 class="custom-modal-title">Xóa địa chỉ</h4>
+            <p class="custom-modal-desc">Bạn có chắc chắn muốn xóa địa chỉ này?<br />Hành động này không thể hoàn tác.</p>
+
+            <div class="custom-modal-actions">
+              <button class="btn btn-danger-custom w-100" id="cancelDeleteBtn">Không</button>
+              <button class="btn btn-outline-danger-custom w-100" id="confirmDeleteBtn">Xóa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="addressModalOverlay" class="custom-modal-overlay">
+        <div class="address-modal-box">
+          <h4 class="fw-bold mb-1">Địa chỉ mới</h4>
+          <p class="text-muted small mb-4">Để đặt hàng, vui lòng thêm địa chỉ nhận hàng</p>
+
+          <form id="addressForm">
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control form-control-custom" id="addrName" placeholder="Họ và tên" required />
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control form-control-custom" id="addrPhone" placeholder="Số điện thoại" pattern="[0-9]{10,11}" required />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control form-control-custom" id="addrRegion" placeholder="Tỉnh/Thành phố, Quận/Huyện, Phường/Xã" required />
+            </div>
+
+            <div class="mb-4">
+              <textarea class="form-control form-control-custom" id="addrDetail" rows="2" placeholder="Địa chỉ cụ thể (Số nhà, tên đường...)" required></textarea>
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label text-muted small d-block mb-2">Loại địa chỉ:</label>
+              <div class="d-flex gap-2">
+                <button type="button" class="btn btn-outline-secondary address-type-btn active" data-type="Nhà Riêng">Nhà Riêng</button>
+                <button type="button" class="btn btn-outline-secondary address-type-btn" data-type="Văn Phòng">Văn Phòng</button>
+              </div>
+            </div>
+
+            <div class="form-check mb-4 d-flex align-items-center">
+              <input class="form-check-input me-2 mt-0" type="checkbox" value="" id="addrDefault" />
+              <label class="form-check-label text-dark" for="addrDefault"> Đặt làm địa chỉ mặc định </label>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2 mt-2">
+              <button type="button" class="btn btn-light border px-4" id="cancelAddressBtn">Trở Lại</button>
+              <button type="submit" class="btn btn-danger-custom px-4">Hoàn thành</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal fade" id="orderDetailModal" tabindex="-1" aria-labelledby="orderDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content rounded-4 border-0 shadow">
+            <div class="modal-header border-bottom bg-light rounded-top-4">
+              <h5 class="modal-title fw-bold" id="orderDetailModalLabel">Chi tiết đơn hàng</h5>
+              <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Đóng"></button>
+            </div>
+            <div class="modal-body p-4" id="orderDetailContent"></div>
+            <div class="modal-footer border-top bg-light rounded-bottom-4">
+              <button type="button" class="btn btn-secondary px-4 rounded-3" data-bs-dismiss="modal">Đóng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/cart-manager.js"></script>
+    <script src="./assets/js/script-profile.js"></script>
+  </body>
+</html>
