@@ -932,32 +932,27 @@ function confirmQuickAdd() {
 
 // Show success toast message
 function showSuccessToast(productName) {
-  // Check if there's a toast container, if not create one
-  let toastBox = document.getElementById("toastBox");
-  if (!toastBox) {
-    toastBox = document.createElement("div");
-    toastBox.id = "toastBox";
-    toastBox.style.cssText = "position: fixed; top: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;";
-    document.body.appendChild(toastBox);
+  let box = document.getElementById("toastBox");
+  if (!box) {
+    box = document.createElement("div");
+    box.id = "toastBox";
+    box.className = "toast-box";
+    document.body.appendChild(box);
   }
-
- const toast = document.createElement("div");
-  toast.style.cssText = `
-    background: white;
-    color: #333;
-    padding: 12px 20px;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    animation: slideIn 0.3s ease-out;
-    border-left: 4px solid #28a745;
+  
+  box.innerHTML = `
+    <div class="toast-message success">
+      <i class="bi bi-check-circle-fill"></i>
+      <div>
+        <strong>Thêm giỏ hàng thành công</strong>
+        <span>${productName} đã được thêm vào giỏ hàng.</span>
+      </div>
+      <button type="button" class="toast-close" onclick="this.closest('.toast-message').remove()">×</button>
+    </div>
   `;
-  toast.textContent = `✓ ${productName} đã được thêm vào giỏ hàng`;
-
-  toastBox.appendChild(toast);
-
-  // Auto remove after 3 seconds
+  
   setTimeout(() => {
-    toast.style.animation = "slideOut 0.3s ease-out";
-    setTimeout(() => toast.remove(), 300);
-  }, 3000);
+    box.innerHTML = "";
+  }, 2600);
 }
+
