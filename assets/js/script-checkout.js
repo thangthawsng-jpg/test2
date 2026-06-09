@@ -18,6 +18,7 @@ function initCheckout() {
   loadAddresses();
   loadVouchersFromJson();
   bindCheckoutEvents();
+  renderCheckoutBreadcrumb();
   renderCheckout();
 }
 
@@ -604,4 +605,66 @@ function markVoucherAsUsed() {
     usedVouchers.push(checkoutState.voucher.code);
   }
   localStorage.setItem(getUsedVoucherKey(), JSON.stringify(usedVouchers));
+}
+
+// Build breadcrumb
+async function renderCheckoutBreadcrumb() {
+  const breadcrumb = document.getElementById("checkoutBreadcrumb");
+  if (!breadcrumb) return;
+
+  const source = sessionStorage.getItem('checkoutSource');
+
+  if (source === 'buyNow' && checkoutState.cart.length === 1) {
+    const cartItem = checkoutState.cart[0];
+    try {
+      const response = await fetch("./assets/json/products.json");
+      if (!response.ok) throw new Error("Failed to load products.json");
+      const products = await response.json();
+      
+      const product = products.find(p => p.id === cartItem.id) || products.find(p => cartItem.id && cartItem.id.includes(p.id));
+      
+      if (product) {
+        const categoryLabel = product.categoryLabel || "Sản phẩm";
+        const categoryPath = product.category || "all";
+        
+        let brandLabel = "Thương hiệu";
+        let brandPath = "";
+        const text = `${product.id} ${product.name} ${product.description}`.toLowerCase();
+        
+        if (text.includes("iphone")) { brandLabel = "iPhone"; brandPath = "iphone"; }
+        else if (text.includes("oppo")) { brandLabel = "Oppo"; brandPath = "oppo"; }
+        else if (text.includes("samsung") || text.includes("galaxy")) { brandLabel = "Samsung"; brandPath = "samsung"; }
+        else if (text.includes("xiaomi") || text.includes("poco")) { brandLabel = "Xiaomi"; brandPath = "xiaomi"; }
+        else if (text.includes("asus")) { brandLabel = "Asus"; brandPath = "asus"; }
+        else if (text.includes("macbook")) { brandLabel = "MacBook"; brandPath = "macbook"; }
+        else if (text.includes("ipad")) { brandLabel = "iPad"; brandPath = "ipad"; }
+        else if (text.includes("lenovo")) { brandLabel = "Lenovo"; brandPath = "lenovo"; }
+        else if (text.includes("dell")) { brandLabel = "Dell"; brandPath = "dell"; }
+        else if (text.includes("hp")) { brandLabel = "HP"; brandPath = "hp"; }
+        
+        let brandHtml = "";
+        if (brandPath) {
+          brandHtml = `<li class="breadcrumb-item"><a href="./index.html?category=${categoryPath}&brand=${brandPath}#productLineFilter" class="text-decoration-none text-secondary">${brandLabel}</a></li>`;
+        }
+        
+        breadcrumb.innerHTML = `
+          <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-secondary">Trang chủ</a></li>
+          <li class="breadcrumb-item"><a href="./index.html?category=${categoryPath}#featured" class="text-decoration-none text-secondary">${categoryLabel}</a></li>
+          ${brandHtml}
+          <li class="breadcrumb-item"><a href="./product-detail.html?id=${product.id}" class="text-decoration-none text-secondary">${product.name}</a></li>
+          <li class="breadcrumb-item active text-primary fw-bold" aria-current="page">Thanh toán</li>
+        `;
+        return; // Early return if dynamic breadcrumb succeeds
+      }
+    } catch (error) {
+      console.error("Error rendering checkout breadcrumb:", error);
+    }
+  }
+
+  // Default or cart source breadcrumb
+  breadcrumb.innerHTML = `
+    <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-secondary">Trang chủ</a></li>
+    <li class="breadcrumb-item"><a href="./cart.html" class="text-decoration-none text-secondary">Giỏ hàng</a></li>
+    <li class="breadcrumb-item active text-primary fw-bold" aria-current="page">Thanh toán</li>
+  `;
 }
