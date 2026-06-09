@@ -77,9 +77,15 @@
   <!-- Main content -->
   <main class="container-fluid py-4" style="padding-bottom: 150px !important;">
     <div class="row mb-3">
-      <!-- Back button -->
       <div class="col-12">
-        <a href="./index.html" class="back-btn" aria-label="Quay về trang chủ">
+        <nav aria-label="breadcrumb" class="mb-3 pt-2">
+          <ol class="breadcrumb fs-6 fw-medium mb-0" id="cartBreadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-secondary">Trang chủ</a></li>
+            <li class="breadcrumb-item active text-primary fw-bold" aria-current="page">Giỏ hàng</li>
+          </ol>
+        </nav>
+        <!-- Back button -->
+        <a href="./index.html" class="back-btn mt-2 d-inline-block" aria-label="Quay về trang chủ">
           <i class="bi bi-arrow-left"></i>
           <span>Trang chủ</span>
         </a>
