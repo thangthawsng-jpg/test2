@@ -318,6 +318,7 @@ function checkLoginStatus() {
     }
   });
 }
+
 // Build breadcrumb
 function renderCartBreadcrumb() {
   const breadcrumb = document.getElementById("cartBreadcrumb");
@@ -328,4 +329,3 @@ function renderCartBreadcrumb() {
     <li class="breadcrumb-item active text-primary fw-bold" aria-current="page">Giỏ hàng</li>
   `;
 }
-
