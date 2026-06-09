@@ -13,7 +13,48 @@ document.addEventListener('DOMContentLoaded', function () {
   updateCartBadges();
   listenToStorageChanges();
   checkLoginStatus();
+  renderCartBreadcrumb();
 });
+
+// Render breadcrumb for cart
+function renderCartBreadcrumb() {
+  const fromDetail = JSON.parse(localStorage.getItem("checkout_from_detail") || "null");
+  const bcCategory = document.getElementById("cartBcCategory");
+  const bcBrand = document.getElementById("cartBcBrand");
+  const bcBrandIcon = document.getElementById("cartBcBrandIcon");
+  const bcProduct = document.getElementById("cartBcProduct");
+  const bcProductIcon = document.getElementById("cartBcProductIcon");
+
+  if (!bcCategory) return;
+
+  // Reset về mặc định
+  bcBrand?.classList.add("d-none");
+  bcBrandIcon?.classList.add("d-none");
+  bcProduct?.classList.add("d-none");
+  bcProductIcon?.classList.add("d-none");
+
+  if (fromDetail) {
+    bcCategory.textContent = fromDetail.categoryName || "Sản phẩm";
+    bcCategory.href = fromDetail.categoryUrl || "./index.html#featured";
+
+    if (fromDetail.brandName && fromDetail.brandUrl) {
+      bcBrand.textContent = fromDetail.brandName;
+      bcBrand.href = fromDetail.brandUrl;
+      bcBrand.classList.remove("d-none");
+      bcBrandIcon.classList.remove("d-none");
+    }
+
+    if (fromDetail.productName && fromDetail.productUrl) {
+      bcProduct.textContent = fromDetail.productName;
+      bcProduct.href = fromDetail.productUrl;
+      bcProduct.classList.remove("d-none");
+      bcProductIcon.classList.remove("d-none");
+    }
+  } else {
+    bcCategory.textContent = "Sản phẩm";
+    bcCategory.href = "./index.html#featured";
+  }
+}
 
 // Load cart from localStorage (sử dụng cart-manager.js)
 function loadCartFromStorage() {
@@ -33,8 +74,6 @@ function loadCartFromStorage() {
 function renderCart() {
   const listContainer = document.getElementById('cart-products-list');
   const emptyMessage = document.getElementById('empty-cart-message');
-
-  renderCartBreadcrumb();
 
   if (cartItems.length === 0) {
     listContainer.innerHTML = '';
@@ -194,12 +233,6 @@ function formatPrice(price) {
 
 // Proceed to checkout
 function proceedToCheckout() {
-  if (!sessionStorage.getItem("user_name")) {
-    alert("Vui lòng đăng nhập để thực hiện chức năng này.");
-    window.location.href = "./login.html";
-    return;
-  }
-
   const selectedItems = cartItems.filter(item => item.selected);
 
   if (selectedItems.length === 0) {
@@ -212,7 +245,6 @@ function proceedToCheckout() {
   syncCartToStorage();
 
   // Redirect to checkout page
-  sessionStorage.setItem('checkoutSource', 'cart');
   window.location.href = './checkout.html';
 }
 
@@ -317,15 +349,4 @@ function checkLoginStatus() {
       accountLink.onclick = null;
     }
   });
-}
-
-// Build breadcrumb
-function renderCartBreadcrumb() {
-  const breadcrumb = document.getElementById("cartBreadcrumb");
-  if (!breadcrumb) return;
-
-  breadcrumb.innerHTML = `
-    <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-secondary">Trang chủ</a></li>
-    <li class="breadcrumb-item active text-primary fw-bold" aria-current="page">Giỏ hàng</li>
-  `;
 }

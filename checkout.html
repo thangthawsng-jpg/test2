@@ -6,12 +6,7 @@
     <link rel="icon" type="image/png" href="./assets/img/logo.png" />
     <title>Thanh toán | THT - Tech</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -131,17 +126,32 @@
       </div>
     </header>
 
+    <!-- Breadcumb checkout -->
+    <nav class="checkout-breadcrumb" aria-label="Đường dẫn thanh toán">
+      <div class="container" style="max-width: 950px">
+        <a href="./index.html">Trang chủ</a>
+        <i class="bi bi-chevron-right"></i>
+
+        <a id="checkoutBcCategory" href="./index.html#featured">Sản phẩm</a>
+        <i class="bi bi-chevron-right"></i>
+
+        <a id="checkoutBcBrand" class="d-none" href="#">Thương hiệu</a>
+        <i id="checkoutBcBrandIcon" class="bi bi-chevron-right d-none"></i>
+
+        <a id="checkoutBcProduct" class="d-none" href="#">Sản phẩm đang xem</a>
+        <i id="checkoutBcProductIcon" class="bi bi-chevron-right d-none"></i>
+
+        <a id="checkoutBcCart" href="./cart.html">Giỏ hàng</a>
+        <i id="checkoutBcCartIcon" class="bi bi-chevron-right"></i>
+
+        <span>Thanh toán</span>
+      </div>
+    </nav>
+
     <main class="checkout-page">
       <section class="checkout-heading pb-0">
         <div class="container" style="max-width: 950px">
-          <nav aria-label="breadcrumb" class="mb-3 pt-3">
-            <ol class="breadcrumb fs-6 fw-medium mb-0" id="checkoutBreadcrumb">
-              <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-secondary">Trang chủ</a></li>
-              <li class="breadcrumb-item"><a href="./cart.html" class="text-decoration-none text-secondary">Giỏ hàng</a></li>
-              <li class="breadcrumb-item active text-primary fw-bold" aria-current="page">Thanh toán</li>
-            </ol>
-          </nav>
-          <div class="checkout-title-row border-bottom pb-3 mt-2">
+          <div class="checkout-title-row border-bottom pb-3">
             <div>
               <span class="eyebrow text-primary fw-bold"><i class="bi bi-shield-check"></i> Thanh toán an toàn</span>
               <h1 class="fw-bold mt-4">Hoàn tất đơn hàng</h1>
@@ -167,9 +177,7 @@
                     <select class="form-select checkout-input py-3 fw-semibold shadow-none" id="addressSelect" name="customerAddressId">
                       <option value="">Đang tải địa chỉ...</option>
                     </select>
-                    <p class="text-muted small mt-2 mb-0">
-                      <i class="bi bi-info-circle"></i> Vui lòng thiết lập địa chỉ trong <a href="./profile.html" class="text-primary text-decoration-none">trang cá nhân</a> nếu chưa có.
-                    </p>
+                    <p class="text-muted small mt-2 mb-0"><i class="bi bi-info-circle"></i> Vui lòng thiết lập địa chỉ trong <a href="./profile.html" class="text-primary text-decoration-none">trang cá nhân</a> nếu chưa có.</p>
                   </div>
                 </div>
               </section>
@@ -182,24 +190,6 @@
                   <i class="bi bi-bag-check fs-2 text-primary opacity-75"></i>
                 </div>
                 <div class="cart-items border-0 p-0 m-0" id="cartItems"></div>
-              </section>
-
-              <section class="checkout-panel border-0 shadow-sm mb-4 p-4 rounded-4">
-                <div class="panel-title mb-3">
-                  <div>
-                    <h2 class="fs-4 fw-bold mb-0">Mã ưu đãi / Voucher</h2>
-                  </div>
-                  <i class="bi bi-ticket-perforated fs-2 text-primary opacity-75"></i>
-                </div>
-                <div class="row g-3">
-                  <div class="col-12">
-                    <div class="input-group">
-                      <span class="input-group-text bg-white text-danger border-end-0 fs-5"><i class="bi bi-tags"></i></span>
-                      <select class="form-select checkout-input border-start-0 py-3 ps-0 fw-semibold" id="voucherSelect" name="voucherCode"></select>
-                    </div>
-                    <p class="voucher-message mb-0 mt-2 fw-medium" id="voucherMessage"></p>
-                  </div>
-                </div>
               </section>
 
               <section class="checkout-panel border-0 shadow-sm mb-4 p-4 rounded-4">
@@ -240,6 +230,43 @@
                         <strong class="fs-6">Nhận tại cửa hàng</strong>
                         <small class="text-secondary">Miễn phí nhận tại: 140 Lê Trọng Tấn, Tân Phú</small>
                       </span>
+                    </label>
+                  </div>
+                </div>
+              </section>
+
+              <section class="checkout-panel border-0 shadow-sm mb-4 p-4 rounded-4">
+                <div class="panel-title mb-3">
+                  <div>
+                    <h2 class="fs-4 fw-bold mb-0">Mã ưu đãi / Voucher</h2>
+                  </div>
+                  <i class="bi bi-ticket-perforated fs-2 text-primary opacity-75"></i>
+                </div>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <div class="input-group">
+                      <span class="input-group-text bg-white text-danger border-end-0 fs-5"><i class="bi bi-tags"></i></span>
+                      <select class="form-select checkout-input border-start-0 py-3 ps-0 fw-semibold" id="voucherSelect" name="voucherCode"></select>
+                    </div>
+                    <p class="voucher-message mb-0 mt-2 fw-medium" id="voucherMessage"></p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="checkout-panel border-0 shadow-sm mb-4 p-4 rounded-4">
+                <div class="point-use-row">
+                  <div class="point-left">
+                    <span class="point-icon">T</span>
+                    <div>
+                      <div class="fw-bold">Điểm thưởng THT</div>
+                      <div class="text-muted small">Hiện có <strong id="availablePointText">0</strong> điểm</div>
+                    </div>
+                  </div>
+                  <div class="point-right">
+                    <span id="pointMoneyText" class="text-muted me-3"> [-0đ] </span>
+                    <label class="switch">
+                      <input type="checkbox" id="usePointSwitch" />
+                      <span class="slider"></span>
                     </label>
                   </div>
                 </div>
@@ -305,6 +332,10 @@
                   <div class="d-flex justify-content-between mb-2 fs-6">
                     <span class="text-secondary">Ưu đãi voucher</span>
                     <strong id="discountValue" class="text-success">0 đ</strong>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2 fs-6">
+                    <span class="text-secondary">Điểm thưởng</span>
+                    <strong id="pointDiscountValue" class="text-success">0 đ</strong>
                   </div>
                   <div class="d-flex justify-content-between mb-3 fs-6">
                     <span class="text-secondary">Phí giao hàng</span>
@@ -393,10 +424,6 @@
 
     <script src="./assets/js/cart-manager.js"></script>
     <script src="./assets/js/script-checkout.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>

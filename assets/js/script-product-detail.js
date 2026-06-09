@@ -87,23 +87,17 @@ const COLOR_MAP = {
   "Sky Blue": "#7dd3fc",
   Starlight: "#fde68a",
   "Mặc định": "#d1d5db",
-  "Tiêu chuẩn": "#d1d5db",
+  "Tiêu chuẩn": "#d1d5db"
 };
 
 // Lấy thông tin tài khoản đang đăng nhập
 function getCurrentUser() {
-  const userName = sessionStorage.getItem("user_name");
-  if (userName) {
-    const customUsers = JSON.parse(localStorage.getItem("custom_users")) || [];
-    return customUsers.find((user) => user.name === userName) || null;
-  }
-  return null;
+  return getCurrentUserFromSession();
 }
 
 // Tạo key riêng theo từng tài khoản người dùng
 function getUserKey(baseKey) {
-  const user = getCurrentUser();
-  return user?.account ? `${baseKey}_${user.account}` : `${baseKey}_guest`;
+  return getScopedStorageKey(baseKey);
 }
 
 // Tạo key lưu giỏ hàng trong localStorage
@@ -181,26 +175,7 @@ function buildBaseName(product) {
   const storages = safeArray(product.storages).map(getStorageLabel);
   let name = product.baseName || product.name || "";
   name = name.replace(/\([^)]*\)/g, " ");
-  [
-    ...storages,
-    color,
-    "Trắng/Bạc",
-    "Xanh Lam",
-    "Xanh Navy",
-    "Xanh Mint",
-    "Xanh Maya",
-    "Xanh Aurora",
-    "Xanh Lá",
-    "Hồng Rose",
-    "Xám Metal",
-    "Space Black",
-    "Sky Blue",
-    "Starlight",
-    "Silver",
-    "Black",
-    "Tiêu chuẩn",
-    "Mặc định",
-  ].forEach((word) => {
+  [...storages, color, "Trắng/Bạc", "Xanh Lam", "Xanh Navy", "Xanh Mint", "Xanh Maya", "Xanh Aurora", "Xanh Lá", "Hồng Rose", "Xám Metal", "Space Black", "Sky Blue", "Starlight", "Silver", "Black", "Tiêu chuẩn", "Mặc định"].forEach((word) => {
     if (!word) return;
     const escaped = String(word).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     name = name.replace(new RegExp(`\\s+${escaped}\\s*$`, "i"), "");
@@ -228,8 +203,8 @@ function normalizeProducts(data) {
           {
             label: variant.storage || "Tiêu chuẩn",
             price: variant.price ?? item.price,
-            oldPrice: variant.oldPrice ?? item.oldPrice,
-          },
+            oldPrice: variant.oldPrice ?? item.oldPrice
+          }
         ],
         category: item.category,
         categoryLabel: item.categoryLabel,
@@ -237,14 +212,9 @@ function normalizeProducts(data) {
         rating: Number(item.rating || 4.8),
         reviewCount: item.reviewCount || Math.floor(Number(item.rating || 4.8) * 10),
         shortDescription: variant.description || item.description || item.shortDescription,
-        details: [
-          variant.description || item.description || item.shortDescription || "",
-          variant.highlight || item.highlight || "",
-          "Giá bán thay đổi theo màu sắc và dung lượng.",
-          "Phù hợp cho học tập, làm việc, giải trí và sử dụng lâu dài.",
-        ].filter(Boolean),
+        details: [variant.description || item.description || item.shortDescription || "", variant.highlight || item.highlight || "", "Giá bán thay đổi theo màu sắc và dung lượng.", "Phù hợp cho học tập, làm việc, giải trí và sử dụng lâu dài."].filter(Boolean),
         specs: item.specs,
-        reviews: item.reviews,
+        reviews: item.reviews
       }));
       return {
         id: item.id,
@@ -253,7 +223,7 @@ function normalizeProducts(data) {
         categoryLabel: item.categoryLabel || "Sản phẩm",
         rating: Number(item.rating || 4.8),
         reviewCount: item.reviewCount || Math.floor(Number(item.rating || 4.8) * 10),
-        products: variants,
+        products: variants
       };
     });
   }
@@ -269,7 +239,7 @@ function normalizeProducts(data) {
         categoryLabel: product.categoryLabel || "Sản phẩm",
         rating: Number(product.rating || 4.8),
         reviewCount: product.reviewCount || safeArray(product.reviews).length || 12,
-        products: [],
+        products: []
       });
     }
     map.get(key).products.push(product);
@@ -309,7 +279,7 @@ function saveCart(cart) {
     badge.textContent = total;
   });
   // Sync cart badges across all pages
-  if (typeof updateCartBadges === 'function') {
+  if (typeof updateCartBadges === "function") {
     updateCartBadges();
   }
 }
@@ -362,7 +332,7 @@ function getSelectedStorage() {
     storages[0] || {
       label: currentProduct.storage || "Tiêu chuẩn",
       price: currentProduct.price || 0,
-      oldPrice: currentProduct.oldPrice || 0,
+      oldPrice: currentProduct.oldPrice || 0
     }
   );
 }
@@ -377,7 +347,7 @@ function getCategoryName(category) {
     tablet: "Máy tính bảng",
     laptop: "Laptop",
     accessory: "Phụ kiện",
-    accessories: "Phụ kiện",
+    accessories: "Phụ kiện"
   };
   return categoryMap[key] || currentGroup.categoryLabel || "Sản phẩm";
 }
@@ -479,21 +449,14 @@ function renderStorageList() {
         <button class="capacity-btn ${index === currentStorageIndex ? "active" : ""}" type="button" onclick="chooseStorage(${index})">
           ${getStorageLabel(item)}
         </button>
-      `,
+      `
     )
     .join("");
 }
 
 // Lấy danh sách mô tả chi tiết sản phẩm
 function getDetailList() {
-  return currentProduct.details?.length
-    ? currentProduct.details
-    : [
-        currentProduct.shortDescription || currentProduct.description || "",
-        currentProduct.highlight || "",
-        "Giá bán thay đổi theo màu sắc và dung lượng.",
-        "Phù hợp cho học tập, làm việc, giải trí và sử dụng lâu dài.",
-      ].filter(Boolean);
+  return currentProduct.details?.length ? currentProduct.details : [currentProduct.shortDescription || currentProduct.description || "", currentProduct.highlight || "", "Giá bán thay đổi theo màu sắc và dung lượng.", "Phù hợp cho học tập, làm việc, giải trí và sử dụng lâu dài."].filter(Boolean);
 }
 
 // Lấy thông số kỹ thuật sản phẩm
@@ -504,7 +467,7 @@ function getSpecObject() {
       "Phiên bản": getStorageLabel(getSelectedStorage()),
       "Màu sắc": getMainColor(currentProduct),
       "Bảo hành": "12 tháng",
-      "Tình trạng": "Hàng mới",
+      "Tình trạng": "Hàng mới"
     }
   );
 }
@@ -516,7 +479,7 @@ function getReviewList() {
     : [
         { name: "Nguyễn Minh", stars: 5, content: "Sản phẩm đẹp, đúng mô tả và dùng rất ổn." },
         { name: "Trần Hoàng", stars: 4, content: "Giá hợp lý, hiệu năng tốt trong tầm giá." },
-        { name: "Lê Phương", stars: 5, content: "Màn hình đẹp, pin ổn và giao hàng nhanh." },
+        { name: "Lê Phương", stars: 5, content: "Màn hình đẹp, pin ổn và giao hàng nhanh." }
       ];
 }
 
@@ -549,7 +512,7 @@ function renderAccordionData() {
             </div>
             <p>${review.content}</p>
           </div>
-        `,
+        `
       )
       .join("");
   }
@@ -653,15 +616,14 @@ function changeQty(step) {
 }
 
 // Thêm sản phẩm vào giỏ hàng hoặc mua ngay
-// Thêm sản phẩm vào giỏ hàng hoặc mua ngay
 function addToCart(buyNow) {
-    if (!sessionStorage.getItem("user_name")) {
-      showToast("Yêu cầu đăng nhập", "Vui lòng đăng nhập để thực hiện chức năng này.", "error");
-      setTimeout(() => {
-        window.location.href = "./login.html";
-      }, 1500);
-      return;
-    }
+  if (!sessionStorage.getItem("user_name")) {
+    showToast("Yêu cầu đăng nhập", "Vui lòng đăng nhập để thực hiện chức năng này.", "error");
+    setTimeout(() => {
+      window.location.href = "./login.html";
+    }, 1500);
+    return;
+  }
 
   const storage = getSelectedStorage();
   const colorName = getMainColor(currentProduct);
@@ -678,6 +640,17 @@ function addToCart(buyNow) {
   // (Nếu bạn muốn Mua ngay mà vẫn giữ các món đồ cũ trong giỏ, hãy xóa đoạn if(buyNow) { cart = []; } này đi)
   if (buyNow) {
     cart = [];
+    // Lưu lại thông tin breadcrumb
+    const category = currentGroup?.category || currentProduct.category || "phone";
+    const bcProductInfo = {
+      categoryName: getCategoryName(category),
+      categoryUrl: `./index.html?category=${category}#featured`,
+      brandName: getBrandName(currentProduct),
+      brandUrl: `./index.html?category=${category}&brand=${slug(getBrandName(currentProduct))}#productLineFilter`,
+      productName: currentGroup?.baseName || currentProduct.name,
+      productUrl: `./product-detail.html?id=${currentProduct.id}`
+    };
+    localStorage.setItem("checkout_from_detail", JSON.stringify(bcProductInfo));
   }
 
   const existed = cart.find((item) => item.itemId === itemId);
@@ -695,14 +668,26 @@ function addToCart(buyNow) {
       image: selectedImage, // BẮT BUỘC TRUYỀN ẢNH VÀO ĐÂY ĐỂ ĐEM QUA CHECKOUT
       quantity,
       selected: true, // Đặt mặc định là checked trong giỏ hàng
+      // breacumb cho thanh toán
+      detailUrl: `./product-detail.html?id=${getProductId(currentProduct)}`,
+      categoryUrl: `./index.html?category=${currentProduct.category || currentGroup.category}#featured`
     });
   }
 
   saveCart(cart);
-
+  localStorage.setItem(
+    "checkout_from_detail",
+    JSON.stringify({
+      productName: currentGroup.baseName,
+      productUrl: `./product-detail.html?id=${getProductId(currentProduct)}`,
+      categoryName: getCategoryName(currentGroup.category),
+      categoryUrl: `./index.html?category=${currentGroup.category}#featured`,
+      brandName: getBrandName(currentProduct),
+      brandUrl: `./index.html?category=${currentGroup.category}&brand=${slug(getBrandName(currentProduct))}#productLineFilter`
+    })
+  );
   if (buyNow) {
     // 3. CHUYỂN HƯỚNG SANG TRANG THANH TOÁN
-    sessionStorage.setItem('checkoutSource', 'buyNow');
     window.location.href = "./checkout.html";
     return;
   }
@@ -768,7 +753,7 @@ function getCompareOptions() {
         id: getProductId(product),
         name: group.baseName,
         group,
-        product,
+        product
       };
     });
 }
@@ -797,7 +782,7 @@ function renderCompareSelects() {
           (item) => `
             <option value="${item.id}" ${compareSelectedIds[index] === item.id ? "selected" : ""}>
               ${item.name}
-            </option>`,
+            </option>`
         )
         .join("")}`;
     select.onchange = () => {
@@ -833,7 +818,7 @@ function renderCompareProducts() {
       reviews: product.reviewCount || group.reviewCount || 0,
       color: getMainColor(product),
       capacity: getStorageLabel(storage),
-      specs: product.specs || {},
+      specs: product.specs || {}
     };
   });
   compareHead.innerHTML = `
@@ -849,7 +834,7 @@ function renderCompareProducts() {
               ${index === 0 ? "<small>Sản phẩm đang xem</small>" : ""}
             </div>
           </th>
-        `,
+        `
       )
       .join("")}`;
   const getSpecValue = (item, keys, fallback = "Đang cập nhật") => {
@@ -866,7 +851,7 @@ function renderCompareProducts() {
     { label: "Màn hình", getValue: (item) => getSpecValue(item, ["Màn hình", "Display", "Kích thước màn hình"]) },
     { label: "Chip xử lý", getValue: (item) => getSpecValue(item, ["Chip", "CPU", "Vi xử lý", "Bộ vi xử lý", "Chipset", "Chip xử lý"]) },
     { label: "Camera", getValue: (item) => getSpecValue(item, ["Camera", "Camera sau", "Camera chính"]) },
-    { label: "Pin", getValue: (item) => getSpecValue(item, ["Pin", "Dung lượng pin", "Battery"]) },
+    { label: "Pin", getValue: (item) => getSpecValue(item, ["Pin", "Dung lượng pin", "Battery"]) }
   ];
   compareBody.innerHTML = rows
     .map(
@@ -875,7 +860,7 @@ function renderCompareProducts() {
           <td>${row.label}</td>
           ${compareProducts.map((item) => `<td>${row.getValue(item)}</td>`).join("")}
         </tr>
-      `,
+      `
     )
     .join("");
 }
@@ -896,7 +881,7 @@ function openRelated(id) {
   renderCompareProducts();
   window.scrollTo({
     top: 0,
-    behavior: "smooth",
+    behavior: "smooth"
   });
 }
 

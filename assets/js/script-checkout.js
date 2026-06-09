@@ -1,6 +1,8 @@
 const checkoutState = {
   cart: [],
-  voucher: null
+  voucher: null,
+  usePoints: false,
+  usedPoints: 0
 };
 
 let voucherCatalog = [];
@@ -12,13 +14,13 @@ document.addEventListener("DOMContentLoaded", initCheckout);
 function initCheckout() {
   cacheCheckoutElements();
   checkoutState.cart = readCart();
+  renderCheckoutBreadcrumb();
   updateLoginState();
 
   // Nạp dữ liệu vào Select Box
   loadAddresses();
   loadVouchersFromJson();
   bindCheckoutEvents();
-  renderCheckoutBreadcrumb();
   renderCheckout();
 }
 
@@ -43,6 +45,11 @@ function cacheCheckoutElements() {
   checkoutElements.orderCode = document.getElementById("orderCode");
   checkoutElements.toast = document.getElementById("checkoutToast");
   checkoutElements.searchForm = document.querySelector(".search-form");
+  // Điểm thưởng
+  checkoutElements.pointDiscountValue = document.getElementById("pointDiscountValue");
+  checkoutElements.usePointSwitch = document.getElementById("usePointSwitch");
+  checkoutElements.availablePointText = document.getElementById("availablePointText");
+  checkoutElements.pointMoneyText = document.getElementById("pointMoneyText");
 }
 
 // ----------------------------------------
@@ -74,6 +81,50 @@ function loadAddresses() {
   select.innerHTML = html;
 }
 
+// Breadcumb checkout
+function getFirstCheckoutItem() {
+  return checkoutState.cart && checkoutState.cart.length ? checkoutState.cart[0] : null;
+}
+
+function renderCheckoutBreadcrumb() {
+  const fromDetail = JSON.parse(localStorage.getItem("checkout_from_detail") || "null");
+  const bcCategory = document.getElementById("checkoutBcCategory");
+  const bcBrand = document.getElementById("checkoutBcBrand");
+  const bcBrandIcon = document.getElementById("checkoutBcBrandIcon");
+  const bcProduct = document.getElementById("checkoutBcProduct");
+  const bcProductIcon = document.getElementById("checkoutBcProductIcon");
+  const bcCart = document.getElementById("checkoutBcCart");
+  const bcCartIcon = document.getElementById("checkoutBcCartIcon");
+  if (!bcCategory || !bcCart) return;
+  bcBrand?.classList.add("d-none");
+  bcBrandIcon?.classList.add("d-none");
+  bcProduct?.classList.add("d-none");
+  bcProductIcon?.classList.add("d-none");
+  bcCart?.classList.remove("d-none");
+  bcCartIcon?.classList.remove("d-none");
+  if (fromDetail) {
+    bcCategory.textContent = fromDetail.categoryName || "Sản phẩm";
+    bcCategory.href = fromDetail.categoryUrl || "./index.html#featured";
+    if (fromDetail.brandName && fromDetail.brandUrl) {
+      bcBrand.textContent = fromDetail.brandName;
+      bcBrand.href = fromDetail.brandUrl;
+      bcBrand.classList.remove("d-none");
+      bcBrandIcon.classList.remove("d-none");
+    }
+    if (fromDetail.productName && fromDetail.productUrl) {
+      bcProduct.textContent = fromDetail.productName;
+      bcProduct.href = fromDetail.productUrl;
+      bcProduct.classList.remove("d-none");
+      bcProductIcon.classList.remove("d-none");
+    }
+    bcCart.classList.add("d-none");
+    bcCartIcon.classList.add("d-none");
+    return;
+  }
+  bcCategory.textContent = "Sản phẩm";
+  bcCategory.href = "./index.html#featured";
+}
+
 // ----------------------------------------
 // XỬ LÝ VOUCHER BẰNG SELECT BOX
 // ----------------------------------------
@@ -96,7 +147,7 @@ function loadVouchers() {
   const usedVouchers = JSON.parse(localStorage.getItem(getUsedVoucherKey())) || [];
   const availableVouchers = voucherCatalog.filter((voucher) => {
     const voucherStatus = voucher.status || "unused";
-    return !usedVouchers.includes(voucher.code) && voucherStatus === "unused" && !isVoucherExpired(voucher);
+    return !usedVouchers.includes(voucher.code) && voucherStatus === "unused" && !isVoucherExpired(voucher) && canUseVoucherForCart(voucher);
   });
 
   if (!availableVouchers.length) {
@@ -138,7 +189,6 @@ function handleVoucherChange() {
     return;
   }
   const voucher = voucherCatalog.find((item) => item.code === code);
-
   if (!voucher) {
     checkoutState.voucher = null;
     showVoucherMessage("Mã giảm giá không hợp lệ.", "error");
@@ -149,6 +199,13 @@ function handleVoucherChange() {
     checkoutState.voucher = null;
     checkoutElements.voucherSelect.value = "";
     showVoucherMessage("Mã giảm giá đã hết hạn.", "error");
+    renderSummary();
+    return;
+  }
+  if (!canUseVoucherForCart(voucher)) {
+    checkoutState.voucher = null;
+    checkoutElements.voucherSelect.value = "";
+    showVoucherMessage("Voucher này không áp dụng cho sản phẩm trong giỏ.", "error");
     renderSummary();
     return;
   }
@@ -186,6 +243,16 @@ function bindCheckoutEvents() {
   checkoutElements.cardNumber?.addEventListener("input", formatCardNumber);
   checkoutElements.cardExpiry?.addEventListener("input", formatCardExpiry);
   togglePaymentFields();
+  // Điểm thưởng
+  checkoutElements.usePointSwitch?.addEventListener("change", function () {
+    checkoutState.usePoints = this.checked;
+    const subtotal = getSubtotal();
+    const shippingFee = getShippingFee(subtotal);
+    const discount = getDiscountAmount(subtotal, shippingFee);
+    const availablePoints = getAvailablePoints();
+    checkoutState.usedPoints = this.checked ? Math.min(Math.floor(availablePoints / 1000) * 1000, subtotal + shippingFee - discount) : 0;
+    renderSummary();
+  });
 }
 
 function handleSearchSubmit(event) {
@@ -196,17 +263,11 @@ function handleSearchSubmit(event) {
 }
 
 function getCurrentUser() {
-  const userName = sessionStorage.getItem("user_name");
-  if (userName) {
-    const customUsers = JSON.parse(localStorage.getItem("custom_users")) || [];
-    return customUsers.find((user) => user.name === userName) || null;
-  }
-  return null;
+  return getCurrentUserFromSession();
 }
 
 function getAddressStorageKey() {
-  const user = getCurrentUser();
-  return user?.account ? `tht_user_addresses_${user.account}` : "tht_user_addresses_guest";
+  return getScopedStorageKey("tht_user_addresses");
 }
 
 function readStorageJson(storage, key) {
@@ -218,9 +279,7 @@ function readStorageJson(storage, key) {
 }
 
 function getUserKey(baseKey) {
-  const user = getCurrentUser();
-  // Dùng user.account (chính là email bạn dùng đăng nhập) làm key lưu trữ
-  return user?.account ? `${baseKey}_${user.account}` : `${baseKey}_guest`;
+  return getScopedStorageKey(baseKey);
 }
 
 function getCartKey() {
@@ -231,9 +290,50 @@ function getOrderKey() {
   return getUserKey("miniProjectOrders");
 }
 
-function getVoucherKey() {
-  const user = getCurrentUser();
-  return user?.account ? `user_vouchers_${user.account}` : "user_vouchers_guest";
+// Tích điểm (mới thêm)
+function getRewardKey() {
+  return getScopedStorageKey("rewardHistory");
+}
+
+function getRewardHistory() {
+  return JSON.parse(localStorage.getItem(getRewardKey())) || [];
+}
+
+function getAvailablePoints() {
+  const history = getRewardHistory();
+  return history.reduce((total, item) => {
+    if (item.type === "earn") return total + Number(item.point || 0);
+    if (item.type === "used") return total - Number(item.point || 0);
+    return total;
+  }, 0);
+}
+
+function useRewardPoint(point, orderCode) {
+  const history = getRewardHistory();
+
+  history.unshift({
+    id: Date.now(),
+    type: "used",
+    title: "Sử dụng điểm thưởng",
+    description: `Đơn hàng #${orderCode}`,
+    point,
+    date: new Date().toLocaleString("vi-VN")
+  });
+  localStorage.setItem(getRewardKey(), JSON.stringify(history));
+}
+
+function addRewardPoint(orderCode, totalMoney) {
+  const history = JSON.parse(localStorage.getItem(getRewardKey())) || [];
+  const point = Math.floor(totalMoney / 1000);
+  history.unshift({
+    id: Date.now(),
+    type: "earn",
+    title: "Tích điểm từ đơn hàng",
+    description: `Đơn hàng #${orderCode}`,
+    point,
+    date: new Date().toLocaleString("vi-VN")
+  });
+  localStorage.setItem(getRewardKey(), JSON.stringify(history));
 }
 
 function readCart() {
@@ -253,6 +353,36 @@ function saveOrder(order) {
   const orders = readStorageJson(localStorage, getOrderKey()) || [];
   orders.unshift(order);
   localStorage.setItem(getOrderKey(), JSON.stringify(orders));
+  /* Tích điểm (mới thêm) */
+  addRewardPoint(order.code, order.totals.total);
+}
+
+function canUseVoucherForCart(voucher) {
+  if (!voucher.applyCategory) return true;
+
+  return checkoutState.cart.some((item) => {
+    const itemCategory = item.category || item.categoryLabel;
+    if (itemCategory === voucher.applyCategory) return true;
+    if (voucher.applyCategory === "phone" && (itemCategory === "Điện thoại" || item.name?.toLowerCase().includes("iphone") || item.name?.toLowerCase().includes("samsung") || item.name?.toLowerCase().includes("oppo") || item.name?.toLowerCase().includes("xiaomi"))) {
+      return true;
+    }
+    if (
+      voucher.applyCategory === "laptop" &&
+      (itemCategory === "Laptop" ||
+        item.name?.toLowerCase().includes("laptop") ||
+        item.name?.toLowerCase().includes("macbook") ||
+        item.name?.toLowerCase().includes("asus") ||
+        item.name?.toLowerCase().includes("dell") ||
+        item.name?.toLowerCase().includes("hp") ||
+        item.name?.toLowerCase().includes("lenovo"))
+    ) {
+      return true;
+    }
+    if (voucher.applyCategory === "tablet" && (itemCategory === "Máy tính bảng" || item.name?.toLowerCase().includes("ipad") || item.name?.toLowerCase().includes("tablet"))) {
+      return true;
+    }
+    return false;
+  });
 }
 
 function updateLoginState() {
@@ -295,6 +425,8 @@ function updateLoginState() {
 
 function renderCheckout() {
   renderCartItems();
+  // Điểm thưởng
+  setText(checkoutElements.availablePointText, getAvailablePoints());
   renderSummary();
   updateCartCount();
 }
@@ -327,7 +459,11 @@ function buildCartItem(item, index) {
         ${item.image ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" loading="lazy">` : `<i class="bi bi-phone"></i>`}
       </div>
       <div class="cart-item-info">
-        <h3 class="fs-6">${escapeHtml(item.name || "Sản phẩm")}</h3>
+        <h3 class="fs-6">
+          <a href="${escapeHtml(item.detailUrl || `./product-detail.html?id=${item.id}`)}" class="text-dark text-decoration-none">
+            ${escapeHtml(item.name || "Sản phẩm")}
+          </a>
+        </h3>
         <p class="text-muted small mb-2">${escapeHtml(itemMeta || "Phiên bản tiêu chuẩn")}</p>
         <div class="cart-item-bottom">
           <strong class="cart-item-price text-danger">${money(item.price)}</strong>
@@ -365,12 +501,18 @@ function renderSummary() {
   const subtotal = getSubtotal();
   const shippingFee = getShippingFee(subtotal);
   const discount = getDiscountAmount(subtotal, shippingFee);
-  const total = Math.max(subtotal + shippingFee - discount, 0);
+  const availablePoints = getAvailablePoints();
+  const pointDiscount = Math.min(checkoutState.usedPoints, subtotal + shippingFee - discount);
+  const total = Math.max(subtotal + shippingFee - discount - pointDiscount, 0);
 
   setText(checkoutElements.subtotalValue, money(subtotal));
-  setText(checkoutElements.discountValue, discount ? `-${money(discount)}` : "0 đ");
+  setText(checkoutElements.discountValue, discount ? `- ${money(discount)}` : "0đ");
+  // Điểm thưởng
+  setText(checkoutElements.pointDiscountValue, pointDiscount ? `- ${money(pointDiscount)}` : "0đ");
   setText(checkoutElements.shippingValue, shippingFee ? money(shippingFee) : "Miễn phí");
   setText(checkoutElements.totalValue, money(total));
+  setText(checkoutElements.availablePointText, availablePoints.toLocaleString("vi-VN"));
+  setText(checkoutElements.pointMoneyText, `[- ${money(Math.floor(availablePoints / 1000) * 1000)}]`);
 }
 
 function getSubtotal() {
@@ -434,7 +576,7 @@ function updateCartCount() {
     badge.textContent = totalQuantity;
   });
   // Sync cart badges across all pages
-  if (typeof updateCartBadges === 'function') {
+  if (typeof updateCartBadges === "function") {
     updateCartBadges();
   }
 }
@@ -478,6 +620,7 @@ function submitOrder(event) {
   const totals = getOrderTotals();
   const order = buildOrder(totals);
   saveOrder(order);
+  if (checkoutState.usedPoints > 0) useRewardPoint(checkoutState.usedPoints, order.code);
   markVoucherAsUsed();
   checkoutState.cart = [];
   saveCart();
@@ -514,7 +657,8 @@ function getOrderTotals() {
   const subtotal = getSubtotal();
   const shippingFee = getShippingFee(subtotal);
   const discount = getDiscountAmount(subtotal, shippingFee);
-  return { subtotal, shippingFee, discount, total: Math.max(subtotal + shippingFee - discount, 0) };
+  const pointDiscount = Math.min(checkoutState.usedPoints, subtotal + shippingFee - discount);
+  return { subtotal, shippingFee, discount, pointDiscount, total: Math.max(subtotal + shippingFee - discount - pointDiscount, 0) };
 }
 
 function buildOrder(totals) {
@@ -594,8 +738,7 @@ function showToast(message, type = "success") {
 }
 
 function getUsedVoucherKey() {
-  const user = getCurrentUser();
-  return user?.account ? `used_vouchers_${user.account}` : "used_vouchers_guest";
+  return getScopedStorageKey("used_vouchers");
 }
 
 function markVoucherAsUsed() {
@@ -605,66 +748,4 @@ function markVoucherAsUsed() {
     usedVouchers.push(checkoutState.voucher.code);
   }
   localStorage.setItem(getUsedVoucherKey(), JSON.stringify(usedVouchers));
-}
-
-// Build breadcrumb
-async function renderCheckoutBreadcrumb() {
-  const breadcrumb = document.getElementById("checkoutBreadcrumb");
-  if (!breadcrumb) return;
-
-  const source = sessionStorage.getItem('checkoutSource');
-
-  if (source === 'buyNow' && checkoutState.cart.length === 1) {
-    const cartItem = checkoutState.cart[0];
-    try {
-      const response = await fetch("./assets/json/products.json");
-      if (!response.ok) throw new Error("Failed to load products.json");
-      const products = await response.json();
-      
-      const product = products.find(p => p.id === cartItem.id) || products.find(p => cartItem.id && cartItem.id.includes(p.id));
-      
-      if (product) {
-        const categoryLabel = product.categoryLabel || "Sản phẩm";
-        const categoryPath = product.category || "all";
-        
-        let brandLabel = "Thương hiệu";
-        let brandPath = "";
-        const text = `${product.id} ${product.name} ${product.description}`.toLowerCase();
-        
-        if (text.includes("iphone")) { brandLabel = "iPhone"; brandPath = "iphone"; }
-        else if (text.includes("oppo")) { brandLabel = "Oppo"; brandPath = "oppo"; }
-        else if (text.includes("samsung") || text.includes("galaxy")) { brandLabel = "Samsung"; brandPath = "samsung"; }
-        else if (text.includes("xiaomi") || text.includes("poco")) { brandLabel = "Xiaomi"; brandPath = "xiaomi"; }
-        else if (text.includes("asus")) { brandLabel = "Asus"; brandPath = "asus"; }
-        else if (text.includes("macbook")) { brandLabel = "MacBook"; brandPath = "macbook"; }
-        else if (text.includes("ipad")) { brandLabel = "iPad"; brandPath = "ipad"; }
-        else if (text.includes("lenovo")) { brandLabel = "Lenovo"; brandPath = "lenovo"; }
-        else if (text.includes("dell")) { brandLabel = "Dell"; brandPath = "dell"; }
-        else if (text.includes("hp")) { brandLabel = "HP"; brandPath = "hp"; }
-        
-        let brandHtml = "";
-        if (brandPath) {
-          brandHtml = `<li class="breadcrumb-item"><a href="./index.html?category=${categoryPath}&brand=${brandPath}#productLineFilter" class="text-decoration-none text-secondary">${brandLabel}</a></li>`;
-        }
-        
-        breadcrumb.innerHTML = `
-          <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-secondary">Trang chủ</a></li>
-          <li class="breadcrumb-item"><a href="./index.html?category=${categoryPath}#featured" class="text-decoration-none text-secondary">${categoryLabel}</a></li>
-          ${brandHtml}
-          <li class="breadcrumb-item"><a href="./product-detail.html?id=${product.id}" class="text-decoration-none text-secondary">${product.name}</a></li>
-          <li class="breadcrumb-item active text-primary fw-bold" aria-current="page">Thanh toán</li>
-        `;
-        return; // Early return if dynamic breadcrumb succeeds
-      }
-    } catch (error) {
-      console.error("Error rendering checkout breadcrumb:", error);
-    }
-  }
-
-  // Default or cart source breadcrumb
-  breadcrumb.innerHTML = `
-    <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-secondary">Trang chủ</a></li>
-    <li class="breadcrumb-item"><a href="./cart.html" class="text-decoration-none text-secondary">Giỏ hàng</a></li>
-    <li class="breadcrumb-item active text-primary fw-bold" aria-current="page">Thanh toán</li>
-  `;
 }

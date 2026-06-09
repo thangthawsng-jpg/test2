@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const matchedUser = customUsers.find((user) => user.account.toLowerCase() === emailInput && user.password === passwordInput);
 
         if (matchedUser) {
-          sessionStorage.setItem("user_name", matchedUser.name);
+          sessionStorage.setItem("user_name", matchedUser.name || matchedUser.account);
+          sessionStorage.setItem("user_email", matchedUser.account.toLowerCase());
 
           showCustomAlert("Đăng nhập thành công", "Hệ thống đang chuyển hướng bạn về trang chủ...", "success");
 

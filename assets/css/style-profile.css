@@ -297,7 +297,7 @@ body {
 }
 
 /* ========================================================
-   CÁC CLASS CSS CHO ĐƠN HÀNG 
+   CÁC CLASS CSS CHO ĐƠN HÀNG
    ======================================================== */
 .order-card {
   background: #fff;
@@ -726,6 +726,104 @@ body {
 
 .fpt-pane.active {
   display: block;
+}
+
+/* Điểm thưởng (mới thêm) */
+.reward-page {
+  background: #fff;
+  padding: 24px;
+  border-radius: 6px;
+}
+
+.reward-page h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 18px;
+}
+
+.reward-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 30px;
+}
+
+.reward-tab {
+  background: #fff;
+  border: none;
+  padding: 16px;
+  font-size: 15px;
+  color: #374151;
+  cursor: pointer;
+  position: relative;
+}
+
+.reward-tab.active {
+  color: #ee4d2d;
+}
+
+.reward-tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: #ee4d2d;
+}
+
+.reward-list {
+  min-height: 360px;
+}
+
+.reward-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 6px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.reward-info h4 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  color: #111827;
+}
+
+.reward-info p {
+  margin: 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.reward-point {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.reward-point.plus {
+  color: #ee4d2d;
+}
+
+.reward-point.minus {
+  color: #111827;
+}
+
+.reward-empty {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #111827;
+  font-weight: 600;
+}
+
+.reward-empty i {
+  font-size: 58px;
+  color: #9ca3af;
+  margin-bottom: 14px;
 }
 /* ========================================================
    CUSTOM VOUCHER FILTER BUTTONS (TAB ƯU ĐÃI)

@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==========================================
   // 1. KIỂM TRA TRẠNG THÁI ĐĂNG NHẬP
   // ==========================================
-  const userName = sessionStorage.getItem("user_name");
+  const currentUser = getCurrentUserFromSession();
+  const userName = currentUser?.name || sessionStorage.getItem("user_name");
 
-  if (!userName) {
+  if (!currentUser) {
     window.location.href = "./login.html";
     return;
   }
@@ -21,8 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     avatarImg.src = `https://placehold.co/100x100/ffedd5/ff7a18?text=${firstLetter}`;
   }
 
-  const customUsers = JSON.parse(localStorage.getItem("custom_users")) || [];
-  const currentUser = customUsers.find((user) => user.name === userName);
   if (currentUser) {
     const emailElement = document.getElementById("profileEmail");
     if (emailElement) emailElement.textContent = currentUser.account;
@@ -54,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (confirmLogoutBtn) {
       confirmLogoutBtn.addEventListener("click", () => {
         sessionStorage.removeItem("user_name");
+        sessionStorage.removeItem("user_email");
         window.location.href = "./index.html";
       });
     }
@@ -146,7 +146,110 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+  // Điểm thưởng (mới thêm)
+  const rewardList = document.getElementById("rewardList");
+  const rewardTabs = document.querySelectorAll(".reward-tab");
 
+  function getRewardKey() {
+    return getScopedStorageKey("rewardHistory");
+  }
+
+  function getRewardHistory() {
+    return JSON.parse(localStorage.getItem(getRewardKey())) || [];
+  }
+
+  function getAvailablePoints() {
+    const history = getRewardHistory();
+    return history.reduce((total, item) => {
+      if (item.type === "earn") return total + Number(item.point || 0);
+      if (item.type === "used") return total - Number(item.point || 0);
+      return total;
+    }, 0);
+  }
+
+  function renderAvailablePoints() {
+    const pointNumber = document.querySelector(".points-card h3");
+    if (pointNumber) {
+      pointNumber.textContent = getAvailablePoints().toLocaleString("vi-VN");
+    }
+  }
+
+  function saveRewardHistory(history) {
+    localStorage.setItem(getRewardKey(), JSON.stringify(history));
+  }
+
+  function addRewardPoint(orderId, totalMoney) {
+    const history = getRewardHistory();
+    const point = Math.floor(totalMoney / 10000);
+    history.unshift({
+      id: Date.now(),
+      type: "earn",
+      title: "Tích điểm từ đơn hàng",
+      description: `Đơn hàng #${orderId}`,
+      point: point,
+      date: new Date().toLocaleString("vi-VN")
+    });
+    saveRewardHistory(history);
+  }
+
+  function useRewardPoint(point, reason = "Sử dụng điểm thưởng") {
+    const history = getRewardHistory();
+    history.unshift({
+      id: Date.now(),
+      type: "used",
+      title: reason,
+      description: "Đã dùng để giảm giá đơn hàng",
+      point: point,
+      date: new Date().toLocaleString("vi-VN")
+    });
+    saveRewardHistory(history);
+  }
+
+  function renderRewardHistory(filter = "all") {
+    const history = getRewardHistory();
+
+    const filteredHistory = filter === "all" ? history : filter === "earn" ? history.filter((item) => item.type === "earn") : history.filter((item) => item.type === "used");
+
+    const paneId = filter === "earn" ? "point-earned" : filter === "used" ? "point-used" : "point-all";
+
+    const pane = document.getElementById(paneId);
+    if (!pane) return;
+
+    if (filteredHistory.length === 0) {
+      pane.innerHTML = `
+      <div class="empty-state py-5 border-0 bg-transparent text-center">
+        <i class="bi ${filter === "used" ? "bi-dash-circle-dotted" : "bi-clock-history"} text-muted opacity-50" style="font-size: 4rem"></i>
+        <h5 class="mt-3 text-dark fw-bold">
+          ${filter === "used" ? "Chưa có lịch sử sử dụng điểm" : filter === "earn" ? "Chưa có lịch sử tích điểm" : "Chưa có lịch sử điểm"}
+        </h5>
+      </div>
+    `;
+      return;
+    }
+
+    pane.innerHTML = filteredHistory
+      .map((item) => {
+        const isEarn = item.type === "earn";
+
+        return `
+        <div class="reward-item">
+          <div class="reward-info">
+            <h4>${item.title}</h4>
+            <p>${item.description}</p>
+            <p>${item.date}</p>
+          </div>
+
+          <div class="reward-point ${isEarn ? "plus" : "minus"}">
+            ${isEarn ? "+" : "-"}${Number(item.point || 0).toLocaleString("vi-VN")}
+          </div>
+        </div>
+      `;
+      })
+      .join("");
+  }
+  document.querySelector('[data-target-pane="#point-all"]')?.addEventListener("click", () => renderRewardHistory("all"));
+  document.querySelector('[data-target-pane="#point-earned"]')?.addEventListener("click", () => renderRewardHistory("earn"));
+  document.querySelector('[data-target-pane="#point-used"]')?.addEventListener("click", () => renderRewardHistory("used"));
   // ==========================================
   // 6. LOAD THÔNG BÁO TỪ FILE JSON VÀ XEM THÊM
   // ==========================================
@@ -298,10 +401,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function getUsedVoucherKey() {
-    const userName = sessionStorage.getItem("user_name");
-    const customUsers = JSON.parse(localStorage.getItem("custom_users")) || [];
-    const currentUser = customUsers.find((user) => user.name === userName);
-    return currentUser?.account ? `used_vouchers_${currentUser.account}` : "used_vouchers_guest";
+    return getScopedStorageKey("used_vouchers");
   }
 
   // ==========================================
@@ -341,15 +441,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==========================================
   // 9. LOGIC QUẢN LÝ SỔ ĐỊA CHỈ NHẬN HÀNG
   // ==========================================
-  function getCurrentUserEmail() {
-    const userName = sessionStorage.getItem("user_name");
-    const customUsers = JSON.parse(localStorage.getItem("custom_users")) || [];
-    const currentUser = customUsers.find((user) => user.name === userName);
-    return currentUser ? currentUser.account : "guest";
-  }
-
   function getAddressStorageKey() {
-    return `tht_user_addresses_${getCurrentUserEmail()}`;
+    return getScopedStorageKey("tht_user_addresses");
   }
 
   const LOCAL_STORAGE_ADDR_KEY = getAddressStorageKey();
@@ -419,9 +512,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const typeBadge = `<span class="addr-badge badge-type ms-2">${addr.type}</span>`;
 
       // Nút "Thiết lập mặc định" chỉ hiển thị khi địa chỉ này chưa phải là mặc định
-      const setAsDefaultBtn = !addr.isDefault
-        ? `<button type="button" class="text-primary border-end pe-2 me-2 border-secondary-subtle" onclick="setDefaultAddress('${addr.id}')">Thiết lập mặc định</button>`
-        : ``;
+      const setAsDefaultBtn = !addr.isDefault ? `<button type="button" class="text-primary border-end pe-2 me-2 border-secondary-subtle" onclick="setDefaultAddress('${addr.id}')">Thiết lập mặc định</button>` : ``;
 
       html += `
         <div class="address-card ${addr.isDefault ? "is-default" : ""}">
@@ -469,7 +560,7 @@ document.addEventListener("DOMContentLoaded", () => {
         region,
         detail,
         type,
-        isDefault,
+        isDefault
       };
 
       // Nếu chọn làm mặc định, hủy mặc định của các địa chỉ cũ
@@ -581,11 +672,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Lấy key chứa đơn hàng của user hiện tại (Đồng bộ với logic bên checkout)
   function getOrderStorageKey() {
-    const userName = sessionStorage.getItem("user_name");
-    const customUsers = JSON.parse(localStorage.getItem("custom_users")) || [];
-    const currentUser = customUsers.find((user) => user.name === userName);
-    const email = currentUser ? currentUser.account : null;
-    return email ? `miniProjectOrders_${email}` : `miniProjectOrders_guest`;
+    return getScopedStorageKey("miniProjectOrders");
   }
 
   // Hàm tạo mã HTML cho 1 thẻ đơn hàng
@@ -606,7 +693,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="current-price text-danger">${formatMoney(item.price)}</div>
         </div>
       </div>
-    `,
+    `
       )
       .join("");
 
@@ -627,7 +714,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="order-footer bg-light justify-content-end gap-2">
           <button class="btn btn-outline-secondary px-4 py-2 rounded-3 fw-medium" type="button" onclick="viewOrderDetails('${order.code}')">Xem chi tiết</button>
-          
+
           <a href="${reorderLink}" class="btn btn-danger-custom px-4 py-2 rounded-3 fw-medium" style="background-color: var(--ht-red)">Mua lại</a>
         </div>
       </div>
@@ -659,7 +746,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p class="mb-0 small text-danger fw-semibold">${formatMoney(item.price)} <span class="text-muted ms-2">x${item.quantity}</span></p>
         </div>
       </div>
-    `,
+    `
       )
       .join("");
 
@@ -686,51 +773,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
     modal.show();
   };
-
-  let profileVouchers = [];
-
-  function renderProfileVouchers(status = "unused") {
-    const container = document.getElementById("voucherList");
-    if (!container) return;
-    const vouchers = profileVouchers.filter((voucher) => {
-      const expired = isProfileVoucherExpired(voucher);
-      if (status === "expired") return expired;
-      if (status === "used") return voucher.status === "used" && !expired;
-      return voucher.status === "unused" && !expired;
-    });
-    if (!vouchers.length) {
-      container.innerHTML = `
-      <div class="text-center py-5">
-        <i class="bi bi-box fs-1 text-secondary"></i>
-        <h5 class="mt-3">Bạn chưa có voucher!</h5>
-        <p class="text-muted">Hãy đổi điểm thành những voucher hấp dẫn tại THT Tech</p>
-      </div>
-    `;
-      return;
-    }
-    container.innerHTML = vouchers
-      .map(
-        (voucher) => `
-      <div class="voucher-card border rounded-4 p-3 mb-3 bg-white">
-        <div class="d-flex justify-content-between gap-3">
-          <div>
-            <h5 class="fw-bold text-danger mb-1">${voucher.code}</h5>
-            <div class="fw-semibold">${voucher.name}</div>
-            <p class="text-secondary small mb-2">${voucher.message}</p>
-            <div class="small text-muted">Điều kiện: ${voucher.condition || "Không có"}</div>
-            <div class="small text-muted">Đơn tối thiểu: ${profileMoney(voucher.minOrder)}</div>
-            <div class="small text-muted">Hạn sử dụng: ${profileFormatDate(voucher.expireDate)}</div>
-          </div>
-          <div>
-            <span class="badge bg-danger">
-              ${isProfileVoucherExpired(voucher) ? "Hết hạn" : voucher.status === "used" ? "Đã sử dụng" : "Chưa sử dụng"}
-            </span>
-          </div>
-        </div>
-      </div>`,
-      )
-      .join("");
-  }
 
   function isProfileVoucherExpired(voucher) {
     const today = new Date();
@@ -791,6 +833,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Khởi chạy hàm khi load trang Profile
+  renderAvailablePoints();
+  renderRewardHistory("all");
+  renderRewardHistory("earn");
+  renderRewardHistory("used");
   fetchVouchers("unused");
   loadAndRenderOrders();
 });

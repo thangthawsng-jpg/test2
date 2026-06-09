@@ -4,14 +4,46 @@
  */
 
 // Lấy key giỏ hàng hiện tại (theo tài khoản hoặc guest)
-function getCartKey() {
-  const userName = sessionStorage.getItem("user_name");
-  if (userName) {
-    const customUsers = JSON.parse(localStorage.getItem("custom_users")) || [];
-    const user = customUsers.find((u) => u.name === userName);
-    return user?.account ? `miniProjectCart_${user.account}` : `miniProjectCart_${userName}`;
+function normalizeAccount(account) {
+  return String(account || "").trim().toLowerCase();
+}
+
+function readLocalStorageJson(key, fallback = null) {
+  try {
+    const value = JSON.parse(localStorage.getItem(key));
+    return value ?? fallback;
+  } catch {
+    return fallback;
   }
-  return "miniProjectCart_guest";
+}
+
+function getCurrentUserFromSession() {
+  const userEmail = normalizeAccount(sessionStorage.getItem("user_email"));
+  const userName = sessionStorage.getItem("user_name");
+  const storedUsers = readLocalStorageJson("custom_users", []);
+  const customUsers = Array.isArray(storedUsers) ? storedUsers : [];
+
+  if (userEmail) {
+    const user = customUsers.find((item) => normalizeAccount(item.account) === userEmail);
+    return user || { account: userEmail, name: userName || userEmail };
+  }
+
+  if (userName) {
+    const user = customUsers.find((item) => item.name === userName);
+    return user || { account: userName, name: userName };
+  }
+
+  return null;
+}
+
+function getScopedStorageKey(baseKey) {
+  const user = getCurrentUserFromSession();
+  const account = normalizeAccount(user?.account);
+  return account ? `${baseKey}_${account}` : `${baseKey}_guest`;
+}
+
+function getCartKey() {
+  return getScopedStorageKey("miniProjectCart");
 }
 
 // Đọc giỏ hàng từ localStorage
@@ -55,7 +87,7 @@ function initCartSync() {
 
   // Lắng nghe thay đổi tài khoản
   window.addEventListener("storage", (event) => {
-    if (event.key === "user_name") {
+    if (event.key === "user_name" || event.key === "user_email") {
       updateCartBadges();
     }
   });

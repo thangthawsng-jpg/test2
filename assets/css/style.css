@@ -1222,85 +1222,105 @@ header nav .nav-link:hover {
     max-width: 180px;
   }
 }
+
 @media (max-width: 991.98px) {
   .section-space {
     padding: 4.5rem 0;
   }
+
   .hero-section {
     padding: 3.8rem 0 4rem;
   }
+
   .hero-carousel,
   .hero-carousel img {
     min-height: 380px;
     height: 380px;
   }
+
   .hero-slide-content-safe {
     width: min(360px, calc(100% - 2.5rem));
   }
+
   .category-strip {
     margin-top: 0;
   }
+
   .category-shell {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.75rem;
     padding: 1rem;
   }
+
   .category-pill {
     flex-direction: row !important;
     align-items: center;
     gap: 0.75rem;
     padding: 0.75rem;
   }
+
   .category-icon {
     width: 48px;
     height: 48px;
     font-size: 1.25rem;
     border-radius: 16px;
   }
+
   .category-pill strong {
     font-size: 0.95rem;
   }
+
   .category-pill small {
     font-size: 0.75rem;
     line-height: 1.3;
   }
+
   .floating-card {
     min-width: 250px;
     padding: 0.6rem 0.8rem;
   }
+
   .floating-card-dark {
     left: -1rem;
     bottom: 1rem;
   }
+
   .floating-card-light {
     top: 1rem;
     right: -1rem;
   }
+
   .floating-icon {
     width: 36px;
     height: 36px;
     font-size: 1rem;
   }
+
   .floating-card strong {
     font-size: 0.9rem;
   }
+
   .floating-card p {
     font-size: 0.8rem;
   }
+
   .service-card {
     padding: 1.2rem;
     border-radius: 20px;
   }
+
   .service-icon {
     width: 48px;
     height: 48px;
     font-size: 1.25rem;
     border-radius: 16px;
   }
+
   .service-card h3 {
     font-size: 1.15rem;
     margin: 0.8rem 0 0.5rem;
   }
+
   .service-card p {
     font-size: 0.85rem;
   }
@@ -1310,23 +1330,28 @@ header nav .nav-link:hover {
   .header-notification-bar {
     font-size: 0.84rem;
   }
+
   .hero-section .eyebrow {
     gap: 0.42rem;
     padding: 0.4rem 0.72rem;
     font-size: 0.72rem;
     letter-spacing: 0.04em;
   }
+
   .hero-title {
     font-size: 2.6rem;
   }
+
   .hero-slide-content {
     right: 1.25rem;
     bottom: 1.4rem;
     left: 1.25rem;
   }
+
   .hero-slide-content h2 {
     font-size: 1.5rem;
   }
+
   .category-shell {
     grid-template-columns: 1fr;
   }
@@ -1335,6 +1360,7 @@ header nav .nav-link:hover {
     left: -0.5rem;
     bottom: 0.4rem;
   }
+
   .floating-card-light {
     top: 0.4rem;
     right: -0.5rem;
@@ -1365,9 +1391,11 @@ header nav .nav-link:hover {
   .category-pill small {
     font-size: 0.8rem;
   }
+
   .filter-pills .btn {
     font-size: 0.6rem;
   }
+
   .footer-modern {
     text-align: center;
     padding-top: 3.5rem;
@@ -1414,53 +1442,66 @@ header nav .nav-link:hover {
     font-size: 0.63rem;
     letter-spacing: 0.02em;
   }
+
   .hero-actions {
     flex-direction: column;
   }
+
   .hero-actions .btn {
     width: 100%;
   }
+
   .hero-carousel,
   .hero-carousel img {
     min-height: 340px;
     height: 340px;
   }
+
   .hero-slide-content-safe {
     top: 0.5rem;
     left: 0.5rem;
     width: calc(100% - 1rem);
     padding: 0.85rem 1rem;
   }
+
   .hero-slide-content-safe span {
     font-size: 0.72rem;
   }
+
   .hero-slide-content-safe h2 {
     font-size: 1.25rem;
     line-height: 1.3;
   }
+
   .floating-card {
     min-width: 140px;
     padding: 0.5rem 0.6rem;
   }
+
   .floating-card-dark {
     left: -0.5rem;
     bottom: 0.2rem;
   }
+
   .floating-card-light {
     top: 0.2rem;
     right: -0.5rem;
   }
+
   .floating-icon {
     width: 30px;
     height: 30px;
     font-size: 0.85rem;
   }
+
   .floating-card strong {
     font-size: 0.8rem;
   }
+
   .floating-card p {
     font-size: 0.7rem;
   }
+
   .category-shell {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.5rem;
@@ -1486,6 +1527,7 @@ header nav .nav-link:hover {
   .category-pill small {
     font-size: 0.65rem;
   }
+
   .filter-pills {
     gap: 0.6rem;
   }
@@ -1494,20 +1536,24 @@ header nav .nav-link:hover {
     font-size: 0.7rem;
     padding: 0.5rem 1rem;
   }
+
   .service-card {
     padding: 0.85rem;
     border-radius: 16px;
   }
+
   .service-icon {
     width: 38px;
     height: 38px;
     font-size: 1.1rem;
     border-radius: 12px;
   }
+
   .service-card h3 {
     font-size: 0.9rem;
     margin: 0.6rem 0 0.4rem;
   }
+
   .service-card p {
     font-size: 0.75rem;
     line-height: 1.4;
@@ -1530,15 +1576,18 @@ header nav .nav-link:hover {
   .product-line-filter {
     padding: 0.5rem;
   }
+
   .product-line-filter-list {
     gap: 0.5rem;
   }
+
   .product-line-filter .btn {
     min-width: 80px;
     min-height: 40px;
     padding: 0.5rem 0.8rem;
     font-size: 0.85rem;
   }
+
   .product-line-logo {
     height: 20px;
   }
@@ -1550,18 +1599,23 @@ header nav .nav-link:hover {
     padding: 0.4rem;
     margin-top: 0.8rem;
   }
+
   .product-line-filter-list {
     gap: 0.35rem;
   }
+
   .product-line-filter .btn {
-    min-width: auto; /* Bỏ min-width cố định để nút tự co giãn */
+    min-width: auto;
+    /* Bỏ min-width cố định để nút tự co giãn */
     min-height: 36px;
     padding: 0.4rem 0.7rem;
     font-size: 0.75rem;
     border-radius: 12px;
   }
+
   .product-line-logo {
-    height: 18px; /* Thu nhỏ logo lại */
+    height: 18px;
+    /* Thu nhỏ logo lại */
     max-width: 65px;
   }
 }
@@ -1569,35 +1623,50 @@ header nav .nav-link:hover {
 /* Dành cho màn hình Mobile nhỏ (dưới 400px) */
 @media (max-width: 399.98px) {
   .product-line-filter {
-    padding: 0.3rem; /* Thu hẹp padding của thanh bọc ngoài */
+    padding: 0.3rem;
+    /* Thu hẹp padding của thanh bọc ngoài */
     margin-top: 0.6rem;
   }
+
   .product-line-filter-list {
-    gap: 0.25rem; /* Thu nhỏ khoảng cách giữa các nút */
+    gap: 0.25rem;
+    /* Thu nhỏ khoảng cách giữa các nút */
   }
+
   .product-line-filter .btn {
-    min-height: 32px; /* Giảm chiều cao nút xuống một chút */
-    padding: 0.3rem 0.5rem; /* Thu nhỏ padding trong nút */
-    font-size: 0.7rem; /* Giảm cỡ chữ để tránh bị rớt dòng */
+    min-height: 32px;
+    /* Giảm chiều cao nút xuống một chút */
+    padding: 0.3rem 0.5rem;
+    /* Thu nhỏ padding trong nút */
+    font-size: 0.7rem;
+    /* Giảm cỡ chữ để tránh bị rớt dòng */
     border-radius: 10px;
   }
+
   .product-line-logo {
-    height: 14px; /* Hạ chiều cao logo hãng */
-    max-width: 55px; /* Giới hạn lại chiều rộng tối đa của logo */
+    height: 14px;
+    /* Hạ chiều cao logo hãng */
+    max-width: 55px;
+    /* Giới hạn lại chiều rộng tối đa của logo */
   }
 }
 
 /* Thêm vào ngay dưới class .product-line-filter hiện tại của bạn */
 .product-line-filter::-webkit-scrollbar {
-  display: none; /* Ẩn thanh cuộn trên Chrome, Safari, Edge */
+  display: none;
+  /* Ẩn thanh cuộn trên Chrome, Safari, Edge */
 }
+
 .product-line-filter {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Dành cho màn hình Mobile siêu nhỏ (dưới 450px) */
 @media (max-width: 449.98px) {
+
   /* Thu nhỏ không gian viền của card */
   .product-card {
     padding: 0.6rem;
@@ -1612,7 +1681,8 @@ header nav .nav-link:hover {
   }
 
   .product-visual i {
-    font-size: 2.2rem; /* Áp dụng khi sản phẩm không có ảnh, chỉ có icon */
+    font-size: 2.2rem;
+    /* Áp dụng khi sản phẩm không có ảnh, chỉ có icon */
   }
 
   /* Thu nhỏ các thẻ text để tránh rớt dòng xấu */
@@ -1653,19 +1723,23 @@ header nav .nav-link:hover {
 
   /* Xử lý phần nút bấm (quan trọng nhất để 2 nút nằm trên 1 hàng) */
   .product-actions {
-    gap: 0.3rem; /* Giảm khoảng cách giữa 2 nút */
+    gap: 0.3rem;
+    /* Giảm khoảng cách giữa 2 nút */
   }
 
   .product-actions .btn {
     padding: 0.3rem 0.4rem;
-    font-size: 0.75rem; /* Thu nhỏ chữ "Mua ngay" */
+    font-size: 0.75rem;
+    /* Thu nhỏ chữ "Mua ngay" */
     min-height: 32px;
   }
 
   /* Nút thêm giỏ hàng (icon) */
   .product-actions .btn-dark-subtle {
-    flex: 0 0 32px; /* Ép cứng chiều rộng nút giỏ hàng nhỏ lại */
-    height: 32px; /* Cho nút vuông vức */
+    flex: 0 0 32px;
+    /* Ép cứng chiều rộng nút giỏ hàng nhỏ lại */
+    height: 32px;
+    /* Cho nút vuông vức */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1677,13 +1751,16 @@ header nav .nav-link:hover {
   #quickAddModal .modal-body {
     padding: 1rem;
   }
+
   #quickAddImage {
     width: 60px !important;
     height: 60px !important;
   }
+
   #quickAddProductName {
     font-size: 0.95rem;
   }
+
   #quickAddProductDesc {
     font-size: 0.75rem;
     display: -webkit-box;
@@ -1691,41 +1768,50 @@ header nav .nav-link:hover {
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  #quickAddColors .btn, #quickAddStorages .btn {
+
+  #quickAddColors .btn,
+  #quickAddStorages .btn {
     padding: 0.35rem 0.7rem;
     font-size: 0.8rem;
   }
+
   #quickAddQty {
     width: 45px !important;
     height: 32px;
     padding: 0;
     font-size: 0.85rem;
   }
-  #quickAddQtyMinus, #quickAddQtyPlus {
+
+  #quickAddQtyMinus,
+  #quickAddQtyPlus {
     padding: 0.15rem 0.5rem;
     height: 32px;
   }
+
   #quickAddPrice {
     font-size: 1.1rem;
   }
+
   #quickAddModal .modal-title {
     font-size: 1.1rem;
   }
+
   #quickAddModal .modal-footer .btn {
     padding: 0.4rem 1rem;
     font-size: 0.9rem;
   }
-  
+
   /* Căn chỉnh lại toast (thanh thông báo) sang phải trên mobile */
   .toast-box {
     left: auto !important;
     right: 16px !important;
   }
+
   .toast-message {
     min-width: auto !important;
     max-width: calc(100vw - 32px) !important;
   }
-  
+
   /* Nếu ở giao diện thanh toán (checkout) */
   .checkout-toast {
     right: 16px !important;

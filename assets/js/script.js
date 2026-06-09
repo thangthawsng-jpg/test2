@@ -115,7 +115,7 @@ let quickAddState = {
   selectedColor: null,
   selectedStorage: null,
   quantity: 1,
-  modal: null,
+  modal: null
 };
 
 const state = {
@@ -124,7 +124,7 @@ const state = {
   searchTerm: "",
   cartCount: calculateCartCount ? calculateCartCount() : 0,
   likedProducts: new Set(),
-  visibleLimit: 12,
+  visibleLimit: 12
 };
 
 let products = [];
@@ -135,7 +135,7 @@ const productLineFilters = {
     { value: "iphone", label: "Iphone", image: "./assets/img/Logo laptop/logo_apple_ngang_1810642801.webp" },
     { value: "oppo", label: "Oppo", image: "./assets/img/Logo điện thoại/logo_oppo_ngang_68d31fcd73.webp" },
     { value: "samsung", label: "Samsung", image: "./assets/img/Logo điện thoại/logo_samsung_ngang_1624d75bd8.webp" },
-    { value: "xiaomi", label: "Xiaomi", image: "./assets/img/Logo điện thoại/logo_xiaomi_ngang_0faf267234.webp" },
+    { value: "xiaomi", label: "Xiaomi", image: "./assets/img/Logo điện thoại/logo_xiaomi_ngang_0faf267234.webp" }
   ],
 
   tablet: [
@@ -143,7 +143,7 @@ const productLineFilters = {
     { value: "ipad", label: "iPad", image: "./assets/img/Logo laptop/logo_apple_ngang_1810642801.webp" },
     { value: "samsung", label: "Samsung", image: "./assets/img/Logo điện thoại/logo_samsung_ngang_1624d75bd8.webp" },
     { value: "xiaomi", label: "Xiaomi", image: "./assets/img/Logo điện thoại/logo_xiaomi_ngang_0faf267234.webp" },
-    { value: "lenovo", label: "Lenovo", image: "./assets/img/Logo laptop/logo_lenovo_ngang_9db13437a1.webp" },
+    { value: "lenovo", label: "Lenovo", image: "./assets/img/Logo laptop/logo_lenovo_ngang_9db13437a1.webp" }
   ],
   laptop: [
     { value: "all", label: "Tất cả laptop" },
@@ -151,15 +151,15 @@ const productLineFilters = {
     { value: "dell", label: "Dell", image: "./assets/img/Logo laptop/logo_dell_ngang_5152294265.webp" },
     { value: "hp", label: "HP", image: "./assets/img/Logo laptop/logo_hp_ngang_b77a1ee753.webp" },
     { value: "lenovo", label: "Lenovo", image: "./assets/img/Logo laptop/logo_lenovo_ngang_9db13437a1.webp" },
-    { value: "macbook", label: "Macbook", image: "./assets/img/Logo laptop/logo_apple_ngang_1810642801.webp" },
+    { value: "macbook", label: "Macbook", image: "./assets/img/Logo laptop/logo_apple_ngang_1810642801.webp" }
   ],
   accessory: [
     { value: "all", label: "Tất cả phụ kiện" },
     { value: "headphone", label: "Tai nghe" },
     { value: "charger", label: "Sạc" },
     { value: "case", label: "Ốp lưng" },
-    { value: "keyboard-mouse", label: "Bàn phím / chuột" },
-  ],
+    { value: "keyboard-mouse", label: "Bàn phím / chuột" }
+  ]
 };
 
 async function fetchProducts() {
@@ -176,7 +176,7 @@ async function fetchProducts() {
 
 function formatVND(price) {
   if (price === undefined || price === null || price === "") return "";
-  return Number(price).toLocaleString("vi-VN") + "đ";
+  return Number(price).toLocaleString("vi-VN") + " đ";
 }
 
 // Tạo hiệu ứng hiện dần cho các phần tử có thuộc tính data-reveal.
@@ -199,8 +199,8 @@ function initRevealObserver() {
     },
     {
       threshold: 0.18,
-      rootMargin: "0px 0px -20px 0px",
-    },
+      rootMargin: "0px 0px -20px 0px"
+    }
   );
 
   observeRevealTargets(document);
@@ -241,8 +241,8 @@ function initCounterObserver() {
       });
     },
     {
-      threshold: 0.5,
-    },
+      threshold: 0.5
+    }
   );
 
   counters.forEach((counter) => counterObserver.observe(counter));
@@ -287,7 +287,7 @@ function initSearchForms() {
 
       document.getElementById("featured")?.scrollIntoView({
         behavior: "smooth",
-        block: "start",
+        block: "start"
       });
     });
   });
@@ -303,16 +303,18 @@ function syncSearchInputs(value) {
 // Lắng nghe các nút thêm giỏ hàng, mua ngay, yêu thích và xem thêm
 function initActionHandlers() {
   document.addEventListener("click", (event) => {
+    // Check cart icon on index page
     const cartIconLink = event.target.closest('a[href="./cart.html"]');
     if (cartIconLink) {
-      if (!sessionStorage.getItem("user_name")) {
+      const isIndexPage = window.location.pathname.endsWith("index.html") || window.location.pathname.endsWith("/");
+      if (isIndexPage && !sessionStorage.getItem("user_name")) {
         event.preventDefault();
         showErrorToast("Yêu cầu đăng nhập", "Vui lòng đăng nhập để xem giỏ hàng.");
         setTimeout(() => {
           window.location.href = "./login.html";
         }, 1500);
+        return;
       }
-      return;
     }
 
     const loadMoreBtn = event.target.closest("#loadMoreBtn");
@@ -347,7 +349,7 @@ async function handleAddToCart(identifier) {
   if (!product) return;
 
   // Load detailed product info and show modal
-  const detailedProduct = quickAddState.allProducts.find(p => p.id === identifier);
+  const detailedProduct = quickAddState.allProducts.find((p) => p.id === identifier);
   if (!detailedProduct) return;
 
   showQuickAddModal(detailedProduct);
@@ -453,7 +455,7 @@ function scrollToAnchorTarget(targetSelector) {
 
   document.querySelector(targetSelector)?.scrollIntoView({
     behavior: "smooth",
-    block: "start",
+    block: "start"
   });
 }
 
@@ -533,7 +535,7 @@ function applyFilterFromUrl() {
     if (target) {
       target.scrollIntoView({
         behavior: "smooth",
-        block: "start",
+        block: "start"
       });
     }
   });
@@ -633,9 +635,7 @@ function getProductLine(product) {
 // Tạo HTML cho một card sản phẩm.
 function buildProductCard(product) {
   const detailUrl = `product-detail.html?id=${encodeURIComponent(product.id)}`;
-  const visualContent = product.image
-    ? `<img src="${product.image}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: contain; position: relative; z-index: 1;">`
-    : `<i class="bi ${product.icon}"></i>`;
+  const visualContent = product.image ? `<img src="${product.image}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: contain; position: relative; z-index: 1;">` : `<i class="bi ${product.icon}"></i>`;
 
   return `
     <div class="col-6 col-md-4 col-lg-3 d-flex align-items-stretch">
@@ -660,8 +660,8 @@ function buildProductCard(product) {
           </div>
 
           <div class="product-price-row">
-            <span class="product-price">$${product.price}</span>
-            <span class="product-old-price">$${product.oldPrice}</span>
+            <span class="product-price">${formatVND(product.price)}</span>
+            <span class="product-old-price">${formatVND(product.oldPrice)}</span>
           </div>
         </a>
 
@@ -817,22 +817,24 @@ function renderColorOptions(product) {
   }
 
   colorSection.style.display = "block";
-  colorContainer.innerHTML = product.colors.map((color, index) => {
-    const isSelected = quickAddState.selectedColor && quickAddState.selectedColor.name === color.name;
-    return `
-      <button 
-        type="button" 
-        class="btn btn-sm ${isSelected ? 'btn-dark' : 'btn-outline-secondary'}" 
+  colorContainer.innerHTML = product.colors
+    .map((color, index) => {
+      const isSelected = quickAddState.selectedColor && quickAddState.selectedColor.name === color.name;
+      return `
+      <button
+        type="button"
+        class="btn btn-sm ${isSelected ? "btn-dark" : "btn-outline-secondary"}"
         data-color-index="${index}"
         title="${color.name}"
       >
         ${color.name}
       </button>
     `;
-  }).join("");
+    })
+    .join("");
 
   // Add click listeners to color buttons
-  colorContainer.querySelectorAll("[data-color-index]").forEach(btn => {
+  colorContainer.querySelectorAll("[data-color-index]").forEach((btn) => {
     btn.addEventListener("click", () => {
       const index = Number(btn.dataset.colorIndex);
       quickAddState.selectedColor = product.colors[index];
@@ -853,21 +855,23 @@ function renderStorageOptions(product) {
   }
 
   storageSection.style.display = "block";
-  storageContainer.innerHTML = product.storages.map((storage, index) => {
-    const isSelected = quickAddState.selectedStorage && quickAddState.selectedStorage.label === storage.label;
-    return `
-      <button 
-        type="button" 
-        class="btn btn-sm ${isSelected ? 'btn-dark' : 'btn-outline-secondary'}" 
+  storageContainer.innerHTML = product.storages
+    .map((storage, index) => {
+      const isSelected = quickAddState.selectedStorage && quickAddState.selectedStorage.label === storage.label;
+      return `
+      <button
+        type="button"
+        class="btn btn-sm ${isSelected ? "btn-dark" : "btn-outline-secondary"}"
         data-storage-index="${index}"
       >
         ${storage.label}
       </button>
     `;
-  }).join("");
+    })
+    .join("");
 
   // Add click listeners to storage buttons
-  storageContainer.querySelectorAll("[data-storage-index]").forEach(btn => {
+  storageContainer.querySelectorAll("[data-storage-index]").forEach((btn) => {
     btn.addEventListener("click", () => {
       const index = Number(btn.dataset.storageIndex);
       quickAddState.selectedStorage = product.storages[index];
@@ -899,19 +903,8 @@ function confirmQuickAdd() {
   const product = quickAddState.currentProduct;
   if (!product || !quickAddState.selectedStorage || !quickAddState.selectedColor) return;
 
-  // Get current user info for cart key
-  const userName = sessionStorage.getItem("user_name");
-  const customUsers = JSON.parse(localStorage.getItem("custom_users")) || [];
-  const currentUser = customUsers.find((user) => user.name === userName) || null;
-  const cartKey = currentUser?.account ? `miniProjectCart_${currentUser.account}` : "miniProjectCart_guest";
-
   // Get existing cart
-  let cart = [];
-  try {
-    cart = JSON.parse(localStorage.getItem(cartKey)) || [];
-  } catch {
-    cart = [];
-  }
+  const cart = readCartFromStorage();
 
   // Create item ID
   const itemId = `${product.id}-${quickAddState.selectedStorage.label}-${quickAddState.selectedColor.name}`;
@@ -933,19 +926,19 @@ function confirmQuickAdd() {
       storage: quickAddState.selectedStorage.label,
       price: quickAddState.selectedStorage.price,
       image: selectedImage,
-      quantity: quickAddState.quantity,
+      quantity: quickAddState.quantity
     });
   }
 
   // Save cart
-  localStorage.setItem(cartKey, JSON.stringify(cart));
+  saveCartToStorage(cart);
 
   // Update cart count
-  state.cartCount += quickAddState.quantity;
+  state.cartCount = calculateCartCount();
   updateCountBadges();
-  
+
   // Sync cart badges across all pages
-  if (typeof updateCartBadges === 'function') {
+  if (typeof updateCartBadges === "function") {
     updateCartBadges();
   }
 
@@ -967,7 +960,7 @@ function showSuccessToast(productName) {
     box.className = "toast-box";
     document.body.appendChild(box);
   }
-  
+
   box.innerHTML = `
     <div class="toast-message success">
       <i class="bi bi-check-circle-fill"></i>
@@ -978,13 +971,12 @@ function showSuccessToast(productName) {
       <button type="button" class="toast-close" onclick="this.closest('.toast-message').remove()">×</button>
     </div>
   `;
-  
+
   setTimeout(() => {
     box.innerHTML = "";
   }, 2600);
 }
 
-// Show error toast message
 function showErrorToast(title, message) {
   let box = document.getElementById("toastBox");
   if (!box) {
@@ -993,7 +985,7 @@ function showErrorToast(title, message) {
     box.className = "toast-box";
     document.body.appendChild(box);
   }
-  
+
   box.innerHTML = `
     <div class="toast-message error">
       <i class="bi bi-exclamation-circle-fill"></i>
@@ -1004,7 +996,7 @@ function showErrorToast(title, message) {
       <button type="button" class="toast-close" onclick="this.closest('.toast-message').remove()">×</button>
     </div>
   `;
-  
+
   setTimeout(() => {
     box.innerHTML = "";
   }, 2600);
