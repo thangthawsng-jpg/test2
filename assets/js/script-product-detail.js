@@ -655,6 +655,13 @@ function changeQty(step) {
 // Thêm sản phẩm vào giỏ hàng hoặc mua ngay
 // Thêm sản phẩm vào giỏ hàng hoặc mua ngay
 function addToCart(buyNow) {
+  if (!sessionStorage.getItem("user_name")) {
+    showToast("Yêu cầu đăng nhập", "Vui lòng đăng nhập để thực hiện chức năng này.", "error");
+    setTimeout(() => {
+      window.location.href = "./login.html";
+    }, 1500);
+    return;
+  }
   const storage = getSelectedStorage();
   const colorName = getMainColor(currentProduct);
   const price = getStoragePrice(currentProduct, storage);
@@ -694,6 +701,7 @@ function addToCart(buyNow) {
 
   if (buyNow) {
     // 3. CHUYỂN HƯỚNG SANG TRANG THANH TOÁN
+    sessionStorage.setItem('checkoutSource', 'buyNow');
     window.location.href = "./checkout.html";
     return;
   }
