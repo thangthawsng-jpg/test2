@@ -303,6 +303,18 @@ function syncSearchInputs(value) {
 // Lắng nghe các nút thêm giỏ hàng, mua ngay, yêu thích và xem thêm
 function initActionHandlers() {
   document.addEventListener("click", (event) => {
+    const cartIconLink = event.target.closest('a[href="./cart.html"]');
+    if (cartIconLink) {
+      if (!sessionStorage.getItem("user_name")) {
+        event.preventDefault();
+        showErrorToast("Yêu cầu đăng nhập", "Vui lòng đăng nhập để xem giỏ hàng.");
+        setTimeout(() => {
+          window.location.href = "./login.html";
+        }, 1500);
+      }
+      return;
+    }
+
     const loadMoreBtn = event.target.closest("#loadMoreBtn");
     if (loadMoreBtn) {
       state.visibleLimit += calculateItemsLimit();
@@ -868,6 +880,14 @@ function updateQuickAddPrice() {
 
 // Confirm and add to cart from modal
 function confirmQuickAdd() {
+  if (!sessionStorage.getItem("user_name")) {
+    showErrorToast("Yêu cầu đăng nhập", "Vui lòng đăng nhập để thực hiện chức năng này.");
+    setTimeout(() => {
+      window.location.href = "./login.html";
+    }, 1500);
+    return;
+  }
+
   const product = quickAddState.currentProduct;
   if (!product || !quickAddState.selectedStorage || !quickAddState.selectedColor) return;
 
@@ -954,5 +974,31 @@ function showSuccessToast(productName) {
   setTimeout(() => {
     box.innerHTML = "";
   }, 2600);
+
+  // Show error toast message
+function showErrorToast(title, message) {
+  let box = document.getElementById("toastBox");
+  if (!box) {
+    box = document.createElement("div");
+    box.id = "toastBox";
+    box.className = "toast-box";
+    document.body.appendChild(box);
+  }
+  
+  box.innerHTML = `
+    <div class="toast-message error">
+      <i class="bi bi-exclamation-circle-fill"></i>
+      <div>
+        <strong>${title}</strong>
+        <span>${message}</span>
+      </div>
+      <button type="button" class="toast-close" onclick="this.closest('.toast-message').remove()">×</button>
+    </div>
+  `;
+  
+  setTimeout(() => {
+    box.innerHTML = "";
+  }, 2600);
+}
 }
 
