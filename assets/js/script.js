@@ -355,6 +355,14 @@ async function handleAddToCart(identifier) {
 
 // Tăng số lượng giỏ hàng khi người dùng bấm nút mua ngay.
 function handleBuyNow(identifier) {
+  if (!sessionStorage.getItem("user_name")) {
+    showErrorToast("Yêu cầu đăng nhập", "Vui lòng đăng nhập để thực hiện chức năng này.");
+    setTimeout(() => {
+      window.location.href = "./login.html";
+    }, 1500);
+    return;
+  }
+
   const product = resolveProduct(identifier);
   if (!product) return;
 
@@ -974,8 +982,9 @@ function showSuccessToast(productName) {
   setTimeout(() => {
     box.innerHTML = "";
   }, 2600);
+}
 
-  // Show error toast message
+// Show error toast message
 function showErrorToast(title, message) {
   let box = document.getElementById("toastBox");
   if (!box) {
@@ -1000,5 +1009,3 @@ function showErrorToast(title, message) {
     box.innerHTML = "";
   }, 2600);
 }
-}
-
